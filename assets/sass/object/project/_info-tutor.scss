@@ -1,0 +1,203 @@
+.p-info-tutor {
+  width: 100%;
+  overflow-x: hidden;
+  //main-slider
+  &__mv {
+    width: 100%;
+    padding-top: 50px;
+    &__heading {
+      width: 100%;
+      text-align: center;
+      h2 {
+        font-size: 3.2rem;
+        font-weight: bold;
+        font-family: "Montserrat";
+      }
+      p {
+        font-size: 2.4rem;
+        font-weight: 400;
+        font-family: "Montserrat";
+        span {
+          font-weight: bold;
+          border-bottom: 2px solid $maincolor;
+        }
+      }
+    }
+    &__img {
+      img {
+        width: 100%;  
+        height: 450px;
+        object-fit: cover;
+        font-family: "object-fit: cover;" !important;
+        position: relative;
+      }
+    }
+  }
+  &__detail01 {
+    width: 100%;
+    padding: 40px 0;
+    background: $maincolor;
+    &__contents {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+  }
+  &__detail02 {
+    width: 100%;
+    background: $lightgray;
+    padding: 60px 0;
+    &__heading {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        font-weight: 500;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        @media (max-width: 1024px) {
+          font-size: 1.28rem;
+          line-height: 2.6rem;
+          margin-bottom: 3%;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.2rem;
+          line-height: 2.4rem;
+          margin-bottom: 4%;
+        }
+        p {
+          font-size: 2.4rem;
+          line-height: 4.8rem;
+          font-weight: bold;
+          @media (max-width: 1024px) {
+            font-size: 2rem;
+            line-height: 3.8rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+          }
+        }
+        span {
+          font-size: 1.6rem;
+          font-weight: bold;
+          border-bottom: 3px solid $maincolor;
+          padding: 0 5px 5px 5px;
+          font-family: "Montserrat";
+          @media (max-width: 1024px) {
+            font-size: 1.4rem;
+            padding: 0 1% 1% 1%;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.3rem;
+            border-bottom: 2px solid $maincolor;
+          }
+        }
+      }
+    }
+    &__contents {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      @media (max-width: 1024px) {
+        padding: 0 2%;
+      }
+      @media (max-width: 767px) {
+        padding: 0 4%;
+      }
+    }
+    &__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      &__item {
+        width: calc(33.3% - 20px);
+        margin: 0 10px;
+        @media (max-width: 767px) {
+          width: 100%;
+          margin: 0;
+        }
+        &__link {
+          width: 100%;
+          display: block;
+          @media (max-width: 767px) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+          }
+          &__img {
+            margin-bottom: 20px;
+            @media (max-width: 767px) {
+              width: 30%;
+              margin-right: 4%;
+              margin-bottom: 4%;
+            }
+            img {
+              border-radius: 20px;
+              border: 1px solid rgba(0, 0, 0, 0.05);
+            }
+          }
+          &__text {
+            color: $blacktext;
+            font-size: 2rem;
+            font-weight: bold;
+            @media (max-width: 1024px) {
+              font-size: 1.8rem;
+            }
+            @media (max-width: 767px) {
+              width: 70%;
+              font-size: 1.6rem;
+            }
+            span {
+              display: block;
+              font-size: 1.2rem;
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+    &__banner {
+      margin-top: 80px;
+      @media (max-width: 767px) {
+        margin-top: 4%;
+      }
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+  &__btn-wrap {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    &__btn {
+      width: 100%;
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 10px 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      background: $maincolor;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $blacktext;
+      border: 3px solid #FFF;
+      border-bottom: none;
+    }
+  }
+}

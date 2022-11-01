@@ -1,0 +1,105 @@
+.c-radio__wrapper {
+  .c-radio__title {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    @include fzb(16);
+    line-height: 16px;
+    border-left: 2px solid $yellow;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+  .c-radio {
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    label {
+      position: relative;
+      font-size: 15px;
+      line-height: 22.5px;
+      cursor: pointer;
+      padding-left: 30px;
+      margin-right: 40px;
+      @media (max-width: 375px) {
+        margin-right: 20px;
+      }
+      span {
+        font-size: 14px;
+      }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+      }
+      &::before {
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $blacktext;
+      }
+      &::after {
+        top: 0;
+        left: 2px;
+        content: '\f00c';
+        font-size: 20px;
+        color: $lightblue;
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 300;
+        opacity: 0;
+      }
+    }
+    &.c-radio__modal {
+      label {
+        font-weight: 500;
+        font-size: 15px;
+        &::before {
+          width: 22px;
+          height: 22px;
+        }
+        &::after {
+          top: 5.5px;
+          left: 5.5px;
+          width: 11px;
+          height: 11px;
+        }
+        .c-radio__modal__time {
+          font-size: 18px;
+          font-weight: 500;
+          margin-left: 15px;
+          @media (max-width: 375px) {
+            margin-left: 10px;
+          }
+        }
+      }
+      .c-radio__modal__text {
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 5px;
+        @media (max-width: 375px) {
+          margin-left: 95px;
+        }
+      }
+    }
+    input[type="radio"]:checked + label {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

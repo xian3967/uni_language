@@ -1,0 +1,181 @@
+*{
+
+}
+html {
+  color: #333;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  @include fz(12);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  @media (max-width: 480px) {
+    padding: 0;
+  }
+}
+
+.isFixed {
+  overflow: hidden;
+}
+
+.isHidden {
+  display: none !important;
+}
+
+.isShow {
+  display: block !important;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+input {
+  color: #333;
+  &::placeholder {
+    color: #7b7b7b;
+  }
+  &::-ms-input-placeholder {
+    color: #7b7b7b;
+  }
+  &::-ms-input-placeholder {
+    color: #7b7b7b;
+  }
+}
+.errorColor {
+  color: $red;
+  margin-top: 4px;
+}
+
+.errorInput {
+  border: 1px solid $red;
+  background: #ffeded !important;
+}
+
+.errorButton {
+  border: 1px solid $red !important;
+  background: #ffeded !important;
+  color: $red !important;
+}
+
+@media all and (max-width: 767px) {
+  .m-sp {
+    display: block;
+  }
+  .m-pc {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .m-tb {
+    display: block;
+  }
+  .m-pc {
+    display: none;
+  }
+}
+
+@media (min-width: 993px) {
+  .m-sp {
+    display: none;
+  }
+  .m-tb {
+    display: none;
+  }
+  .m-pc {
+    display: block;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .pc_only {
+    display: block !important;
+  }
+  .sp_only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .pc_only {
+    display: none !important;
+  }
+  .sp_only {
+    display: block !important;
+  }
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+
+.y-scroll{
+  white-space: normal;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #666666;
+    border: 1px inset #000000;
+    border-radius: 0;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background: #333333;
+  }
+  &::-webkit-scrollbar-track {
+    background: #000000;
+    border: 0px none #ffffff;
+    border-radius: 0;
+  }
+  &::-webkit-scrollbar-track:hover {
+    background: #000000;
+  }
+  &::-webkit-scrollbar-track:active {
+    background: #000000;
+  }
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+/* for ie11 hack */
+@media all and (-ms-high-contrast:none) {
+  *::-ms-backdrop,
+  input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+  }
+  *::-ms-backdrop,
+  input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+  }
+}
+/* for ie11 hack */

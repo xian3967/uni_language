@@ -1,0 +1,43 @@
+.p-schedule {
+  padding-bottom: 60px;
+  .p-schedule__result {
+    .p-schedule__result__text {
+      color: $black;
+      font-size: 14px;
+    }
+    .p-schedule__result__text-color {
+      color: $gray;
+    }
+    .p-schedule__result__title {
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-weight: bold;
+
+    }
+    .p-schedule__result__submit {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
+      button {
+        width: 100%;
+        max-width: 250px;
+        padding: 10px;
+        background: $white;
+        color: $blacktext;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid $blacktext;
+        border-radius: 4px;
+        cursor: pointer;
+        @media (max-width: 767px) {
+          padding: 7px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

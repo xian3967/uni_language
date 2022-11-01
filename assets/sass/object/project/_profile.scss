@@ -1,0 +1,24 @@
+.p-profile {
+  padding-bottom: 60px;
+  .p-profile__submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      width: 100%;
+      max-width: 250px;
+      padding: 10px;
+      background: $white;
+      color: $blacktext;
+      text-align: center;
+      font-size: 16px;
+      border: 1px solid $blacktext;
+      border-radius: 4px;
+      cursor: pointer;
+      @media (max-width: 767px) {
+        padding: 7px;
+        font-size: 14px;
+      }
+    }
+  }
+}

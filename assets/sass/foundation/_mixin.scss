@@ -1,0 +1,43 @@
+@mixin sp {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin clearfix($ie7: false, $type: micro) {
+  @if ($ie7 == true) {
+    *zoom: 1;
+  }
+  @if ($type == overflow) {
+    overflow: hidden; /* Clearfix */
+  } @else {
+    &::before,
+    &::after {
+      content: "";
+      display: table;
+    }
+    &::after {
+      clear: both;
+    }
+  }
+}
+
+@mixin fz($size: 14) {
+  font-size: $size + px;
+}
+@mixin fzb($size: 14) {
+  font-size: $size + px;
+  font-weight: bold;
+}

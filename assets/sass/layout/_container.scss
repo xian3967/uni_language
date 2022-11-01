@@ -1,0 +1,16 @@
+.l-container {
+  width: 100%;
+  max-width: calc(100% - 320px);
+  background: $white;
+  padding: 25px;
+  &.main {
+    background: transparent;
+    padding: 0;
+  }
+  @media (max-width: 1024px) {
+    max-width: calc(100% - 270px);
+  }
+  @media (max-width: 767px) {
+    max-width: none;
+  }
+}

@@ -1,0 +1,176 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+figure,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+}
+
+/* form部品ブラウザごとのスタイルリセット */
+select,
+button,
+textarea,
+input,
+input[type="submit"] {
+  outline: none;
+  border: none;
+  background: #fff;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+select {
+  max-width: 450px;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background: #e6e6e6;
+}
+textarea {
+  max-width: 450px;
+  width: 100%;
+  min-height: 104px;
+  padding: 10px;
+  background: $inputColor;
+  resize: none;
+}
+button {
+  cursor: pointer;
+}
+
+/*
+  Link style
+*/
+a {
+  color: $purple;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover {
+  text-decoration: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q::before,
+q::after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  max-width: 450px;
+  height: 40px;
+  padding: 10px;
+  background: #e6e6e6;
+}
+input[type="checkbox"]:checked + label {
+  &::after {
+    opacity: 1;
+  }
+}
+input:disabled {
+  opacity: 0.7;
+  cursor: auto !important;
+}

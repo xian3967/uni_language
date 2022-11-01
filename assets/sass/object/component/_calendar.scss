@@ -1,0 +1,163 @@
+.c-calendar {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    position: relative;
+    @media (max-width: 1024px) {
+      max-width: 500px;
+    }
+    @media (max-width: 767px) {
+
+    }
+    .c-calendar__calendarYearMonth {
+      text-align: center;
+      margin-top: 10px;
+      color: $yellow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .c-calendar__calBtn {
+        user-select: none;
+        cursor: pointer;
+        background: $yellow;
+        margin: 8px 0;
+        padding: 8px 12px;
+        border-radius: 12px;
+        font-size: 14px;
+        line-height: 14px;
+        color: #fff;
+        border: 1px solid $yellow;
+    }
+    .c-calendar__left {
+        float: left;
+    }
+    .c-calendar__right {
+        float: right;
+    }
+    .c-calendar__calendarList1 {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(1, 40px);
+        align-items: center;
+        justify-items: center;
+        grid-gap: 8px;
+        font-size: 14px;
+        color: #707070;
+    }
+    .c-calendar__calendarList2 {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 40px);
+        align-items: center;
+        justify-items: center;
+        grid-gap: 8px;
+        font-size: 16px;
+        color: #707070;
+        @media (max-width: 1024px) {
+          font-size: 14px;
+        }
+        li {
+          cursor: pointer;
+          width: 25px;
+          height: 25px;
+        }
+    }
+    #yearMonth {
+      font-size: 18px;
+    }
+    #modalYearMonth {
+      font-size: 16px;
+      margin-bottom: 15px;
+      text-align: center;
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+    .c-calendar__modal {
+      position: absolute;
+      width: 100%;
+      max-width: 500px;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: auto;
+      background: #fff;
+      border-radius: 10px;
+      border: 2px solid $blacktext;
+      padding: 20px;
+      display: none;
+      z-index: 2;
+      @media (max-width: 1024px) {
+        max-width: 400px;
+        padding: 15px;
+      }
+      @media (max-width: 767px) {
+        padding: 12px;
+      }
+    }
+    .c-calendar__modal__submit {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
+      p {
+        width: 100%;
+        max-width: 250px;
+        padding: 10px;
+        background: $blacktext;
+        color: $white;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        @media (max-width: 767px) {
+          padding: 7px;
+          font-size: 14px;
+        }
+      }
+    }
+    .c-calendar__modal__close {
+      position: absolute;
+      top: 3px;
+      right: 5px;
+      display: inline-block;
+      cursor: pointer;
+      @media (max-width: 767px) {
+
+      }
+      &:after {
+        content: "\f00d";
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 300;
+        position: relative;
+        display: block;
+        font-size: 30px;
+        line-height: 30px;
+        color: $black;
+        @media (max-width: 767px) {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+}
+.c-calendar__alert {
+  font-size: 12px;
+  text-align: center;
+}
