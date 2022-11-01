@@ -40,10 +40,14 @@
     &__icon {
       font-size: 4.8rem;
       color: #70d900;
+      margin-bottom: 30px;
     }
     h2 {
       font-size: 1.8rem;
       font-weight: bold;
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+      }
     }
   }
   &__form {

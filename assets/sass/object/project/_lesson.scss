@@ -1,23 +1,69 @@
 .p-lesson {
-  padding-bottom: 60px;
-  .p-lesson__submit {
+  padding: 60px;
+  background: $lightgray;
+  &__contents {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    button {
+  }
+  &__card {
+    width: 50%;
+    background: #FFF;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0 20px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
+    &__img {
       width: 100%;
-      max-width: 250px;
-      padding: 10px;
-      background: $white;
-      color: $blacktext;
+      padding: 60px 0 30px 0;
       text-align: center;
-      font-size: 16px;
-      border: 1px solid $blacktext;
-      border-radius: 4px;
-      cursor: pointer;
-      @media (max-width: 767px) {
-        padding: 7px;
-        font-size: 14px;
+      img {
+        height: 250px;
+        display: inline-block;
+      }
+    }
+    &__text-wrap {
+      width: 100%;
+      text-align: center;
+      &__heading {
+        font-size: 3.6rem;
+        font-weight: bold;
+        p {
+          font-size: 1.4rem;
+          display: block;
+          margin-top: 10px;
+          font-weight: 400;
+          span {
+            font-weight: bold;
+            border-bottom: 2px solid $maincolor;
+          }
+        }
+        &.student {
+          p {
+            span {
+              border-bottom: 2px solid #00baff;
+            }
+          }
+        }
+      }
+    }
+    &__btn {
+      width: 100%;
+      padding: 30px 0 0 0;
+      text-align: center;
+      &__link {
+        display: block;
+        padding: 15px 50px;
+        background: $maincolor;
+        font-size: 1.8rem;
+        color: $blacktext;
+        font-weight: bold;
+        &.student {
+          background: #00baff;
+        }
       }
     }
   }
