@@ -42,12 +42,6 @@ $(function() {
 });
 
 
-$(function setScreenSize() {
-  let vh = window.innerHeight * 0.01;
-
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-
 //aside accordion
 (function($) {
   $('.js-aside-accordion').on('click', function() {
@@ -124,3 +118,23 @@ $(function(){
 
 });
 //
+
+//lesson-list page hover
+jQuery(document).ready(function() {
+  jQuery('.tutor').hover(function(){     
+        jQuery('.p-lesson').addClass('tutor_bg_animation'); 
+        jQuery('.p-lesson').removeClass('tutor_bg_animation-out');     
+    },function(){    
+       jQuery('.p-lesson').removeClass('tutor_bg_animation');     
+       jQuery('.p-lesson').addClass('tutor_bg_animation-out');  
+    });
+});
+jQuery(document).ready(function() {
+  jQuery('.student').hover(function(){     
+        jQuery('.p-lesson').addClass('student_bg_animation');  
+        jQuery('.p-lesson').removeClass('student_bg_animation-out');     
+    },function(){    
+       jQuery('.p-lesson').removeClass('student_bg_animation');     
+       jQuery('.p-lesson').addClass('student_bg_animation-out');   
+    });
+});
