@@ -153,44 +153,107 @@
     </div>
   </header>
 
-  <main class="p-lesson">
-    <div class="p-lesson__position-tutor"></div>
-    <div class="p-lesson__position-student"></div>
-    <section class="p-lesson__contents">
-      <div class="p-lesson__card tutor">
-        <div class="p-lesson__card__img">
-          <img src="assets/images/lesson/sample02.svg">
-        </div>
-        <div class="p-lesson__card__text-wrap">
-          <h3 class="p-lesson__card__text-wrap__heading">
-            レッスン検索
-            <p>私は<span>生徒</span>として<span>講師のレッスン</span>を探してます。</p>
-          </h3>
-        </div>
-        <div class="p-lesson__card__btn">
-          <a href="lesson-tutor.html" class="p-lesson__card__btn__link tutor_link">
-            レッスン一覧
-          </a>
+  <main class="p-lesson-detail list-page">
+    <section class="p-lesson-detail__contents">
+      <div class="p-lesson-detail__sidebar-tutor">
+        <div class="p-lesson-detail__sidebar-tutor__fixed">
+          <div class="p-lesson-detail__sidebar-tutor__tutor">
+            <iframe width="100%" height="180" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="p-lesson-detail__sidebar-tutor__tutor__text-wrap">
+              <h3 class="p-lesson-detail__sidebar-tutor__tutor__text-wrap__name">Valeria Elsa</h3>
+              <div class="p-lesson-detail__sidebar-tutor__tutor__text-wrap__text">
+                先生のキャッチコピー
+              </div>
+              <a href="" class="p-lesson-detail__sidebar-tutor__tutor__text-wrap__lesson-btn">
+                <span><i class="fa-regular fa-calendar"></i>現在のレッスン予約</span>
+              </a>
+              <a href="" class="p-lesson-detail__sidebar-tutor__tutor__text-wrap__message-btn">
+                <span><i class="fa-regular fa-comments-question-check"></i>講師にメッセージする</span>
+              </a>
+              <a href="" class="p-lesson-detail__sidebar-tutor__tutor__text-wrap__bookmark-btn">
+                <span><i class="fa-regular fa-heart-circle-plus"></i>お気に入りに追加</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="p-lesson__card student">
-        <div class="p-lesson__card__img">
-          <img src="assets/images/lesson/sample01.svg">
+      <div class="p-lesson-detail__lesson-wrap">
+        <h2 class="p-lesson-detail__heading">
+          English conversational lesson, beginners to intermediate
+        </h2>
+        <div class="c-calendar">
+          <div class="c-calendar__calendarYearMonth">
+              <p class="c-calendar__left c-calendar__calBtn" id="js-calendarBtnPrev"> Prev </p>
+              <p id="yearMonth"> Jan 2021 </p>
+              <p class="c-calendar__right c-calendar__calBtn" id="js-calendarBtnNext"> Next </p>
+          </div>
+          <div>
+              <ol class="c-calendar__calendarList1">
+                  <li class="day-name">Sat</li>
+                  <li class="day-name">Sun</li>
+                  <li class="day-name">Mon</li>
+                  <li class="day-name">Tue</li>
+                  <li class="day-name">Wed</li>
+                  <li class="day-name">Thu</li>
+                  <li class="day-name">Fri</li>
+              </ol>
+              <ol class="c-calendar__calendarList2" id="calendarList">
+
+              </ol>
+          </div>
         </div>
-        <div class="p-lesson__card__text-wrap">
-          <h3 class="p-lesson__card__text-wrap__heading student_text">
-            レッスン希望検索
-            <p>私は<span>講師</span>として<span>生徒のレッスン希望</span>を探してます。</p>
-          </h3>
-        </div>
-        <div class="p-lesson__card__btn">
-          <a href="lesson-student.html" class="p-lesson__card__btn__link student_link">
-            レッスン希望一覧
-          </a>
-        </div>
+        <p class="p-lesson-detail__sub-title">この講師の他のレッスン</p>
+        <ul class="p-lesson-detail__lesson-list">
+          <li class="p-lesson-detail__lesson-list__item">
+            <a href="" class="p-lesson-detail__lesson-list__item__link">
+              <div class="p-lesson-detail__lesson-list__item__link__profile-text">
+                <div class="p-lesson-detail__lesson-list__item__link__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-lesson-detail__lesson-list__item__link__lesson-title">
+                  ビジネスレベルビジネスレベル
+                </div>
+                <div class="p-lesson-detail__lesson-list__item__link__detail-text">
+                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="p-lesson-detail__lesson-list__item">
+            <a href="" class="p-lesson-detail__lesson-list__item__link">
+              <div class="p-lesson-detail__lesson-list__item__link__profile-text">
+                <div class="p-lesson-detail__lesson-list__item__link__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-lesson-detail__lesson-list__item__link__lesson-title">
+                  ビジネスレベルビジネスレベル
+                </div>
+                <div class="p-lesson-detail__lesson-list__item__link__detail-text">
+                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
+  <script src="./assets/js/calendar.js"></script>
+  <script src="./assets/js/common.js"></script>
+  <script>
+  function calendarClickEvent(element) {
+    let elementId = $(element).attr('id');
+    let text = $('#modalYearMonth').text();
+    const textArray = text.split("月");
+    let newText = textArray[0];
+    $('#modalYearMonth').text(newText + '月 ' + elementId + '日')
+    $('.c-calendar__modal').fadeIn();
+  }
+  </script>
 </body>
 
 </html>
