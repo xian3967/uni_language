@@ -1,54 +1,8 @@
-.p-lesson {
-  padding: 120px 0;
+.p-lesson-detail {
+  padding: 60px 0;
   background: $lightgray;
   position: relative;
   overflow: hidden;
-  @media (max-width: 1024px) {
-    padding: 0 2%;
-  }
-  @media (max-width: 767px) {
-    padding: 0 4% 100px 4%; 
-  }
-  &__position-tutor {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    z-index: 1;
-    background: $maincolor;
-    top: -40px;
-    left: -40px;
-    border-radius: 50%;
-  }
-  &__position-student {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    z-index: 1;
-    background: $student;
-    top: -40px;
-    right: -40px;
-    border-radius: 50%;
-  }
-  &.tutor_bg_animation {
-    .p-lesson__position-tutor {
-      animation: bg_animation-tutor 0.3s linear forwards;
-    }
-  }
-  &.tutor_bg_animation-out {
-    .p-lesson__position-tutor {
-      animation: bg_animation-tutor-out 0.3s linear forwards;
-    }
-  }
-  &.student_bg_animation {
-    .p-lesson__position-student {
-      animation: bg_animation-student 0.3s linear forwards;
-    }
-  }
-  &.student_bg_animation-out {
-    .p-lesson__position-student {
-      animation: bg_animation-student-out 0.3s linear forwards;
-    }
-  }
   &__contents {
     width: 100%;
     max-width: 1200px;
@@ -58,83 +12,8 @@
     display: flex;
     position: relative;
     z-index: 4;
-    @media (max-width: 767px) {
-      flex-wrap: wrap;
-    }
     &.student-wrap {
       flex-direction: row-reverse;
-    }
-  }
-  &__card {
-    width: 50%;
-    background: #FFF;
-    border-radius: 30px;
-    overflow: hidden;
-    margin: 0 20px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
-    @media (max-width: 767px) {
-      width: 100%;
-      margin: 0 0 10% 0;
-    }
-    &__img {
-      width: 100%;
-      padding: 60px 0 30px 0;
-      text-align: center;
-      img {
-        height: 250px;
-        display: inline-block;
-      }
-    }
-    &__text-wrap {
-      width: 100%;
-      text-align: center;
-      &__heading {
-        font-size: 3.6rem;
-        font-weight: bold;
-        p {
-          font-size: 1.4rem;
-          display: block;
-          margin-top: 10px;
-          font-weight: 400;
-          span {
-            font-weight: bold;
-            border-bottom: 2px solid $maincolor;
-          }
-        }
-        &.student_text {
-          p {
-            span {
-              border-bottom: 2px solid $student;
-            }
-          }
-        }
-      }
-    }
-    &__btn {
-      width: 100%;
-      padding: 30px 0 0 0;
-      text-align: center;
-      &__link {
-        display: block;
-        padding: 15px 50px;
-        background: $maincolor;
-        font-size: 1.8rem;
-        color: $blacktext;
-        font-weight: bold;
-        &.student_link {
-          background: $student;
-        }
-      }
-    }
-  }
-  &__heading {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    h2 {
-      font-size: 2.8rem;
-      font-weight: bold;
     }
   }
   &__sidebar-tutor {
@@ -142,130 +21,118 @@
     margin-right: 30px;
     position: relative;
     overflow: visible;
-    @media (max-width: 767px) {
-      width: 100%;
-      margin-right: 0;
-    }
     &__fixed {
       overflow: visible;
     }
-    &__search-box {
+    &__tutor {
       -webkit-position: sticky;
       position: sticky;
       background: #FFF;
-      padding: 40px 30px;
       border-radius: 30px;
+      overflow: hidden;
       top: 10px;
-      &__input-text {
-        margin-bottom: 15px;
-        input {
-          background: $lightgray;
-          border-radius: 20px;
-          padding: 10px 20px;
-        }
-      }
-      &__checkbox {
+      &__text-wrap {
         width: 100%;
-        margin-bottom: 20px;
-        h3 {
-          font-size: 1.2rem;
+        padding: 20px 30px;
+        &__name {
+          font-size: 2.4rem;
           font-weight: bold;
+          color: $blacktext;
         }
-        &__wrap {
+        &__text {
+          font-size: 1.2rem;
+          color: $blacktext;
+        }
+        &__lesson-btn {
+          width: 100%;
+          display: block;
           padding: 10px 0;
-          border-radius: 20px;
-          background: $lightgray;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          flex-wrap: wrap;
-          input {
-            display: none;
+          text-align: center;
+          background: $maincolor;
+          border-radius: 10px;
+          margin-top: 15px;
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: $blacktext;
+          span {
+            width: 170px;
+            display: inline-block;
+            text-align: left;
           }
-          label {
-            width: calc(50% - 15px);
-            height: 40px;
-            display: block;
-            cursor: pointer;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-            background: #FFF;
-            margin-left: 10px;
-            &:last-child {
-              margin-bottom: 0;
-            }
-            span {
-              width: 16px;
-              height: 16px;
-              border: 2px solid $maincolor;
-              display: block;
-              margin-top: 4px;
-              margin-right: 8px;
-              position: relative;
-              i {
-                left: 1px;
-                position: absolute;
-                font-size: 1.1rem;
-                font-weight: bold;
-                opacity: 0;
-                color: #FFF;
-              }
-            }
-          }
-          input:checked + label {
-            background: $maincolor;
-            transition: all 0.2s ease;
-            span {
-              border: 2px solid $blacktext;
-              background: $blacktext;
-              i {
-                opacity: 1;
-              }
-            }
+          i {
+            margin-right: 10px;
           }
         }
-      }
-      &__btn {
-        width: 100%;
-        display: block;
-        padding: 15px 0;
-        color: $blacktext;
-        background: $maincolor;
-        border-radius: 20px;
-        font-size: 1.4rem;
-        font-weight: bold;
-        text-align: center;
+        &__message-btn {
+          width: 100%;
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+          border: 1px solid $maincolor;
+          border-radius: 10px;
+          margin-top: 10px;
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: $blacktext;
+          span {
+            width: 170px;
+            display: inline-block;
+            text-align: left;
+          }
+          i {
+            margin-right: 10px;
+          }
+        }
+        &__bookmark-btn {
+          width: 100%;
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+          border: 1px solid $maincolor;
+          border-radius: 10px;
+          margin-top: 10px;
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: $blacktext;
+          span {
+            width: 170px;
+            display: inline-block;
+            text-align: left;
+          }
+          i {
+            margin-right: 10px;
+          }
+        }
       }
     }
   }
-  &__tutor-list {
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .c-calendar {
+    max-width: 100%;
+  }
+  &__sub-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__lesson-wrap {
     width: calc(100% - 330px);
-    background: $maincolor;
+    background: #FFF;
     padding: 40px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-radius: 30px;
     position: relative;
     z-index: 2;
-    @media (max-width: 767px) {
-      width: 100%;
-      margin-top: 10%;
-      padding: 4%;
-    }
-    &::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: $maincolor;
-      position: absolute;
-      top: 0;
-      right: -100%;
-    }
+  }
+  &__lesson-list {
+    width: 100%;
+    background: #FFF;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
     &__position-img {
       position: absolute;
       top: -212px;
@@ -289,10 +156,10 @@
         border-radius: 20px;
         box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
         @media (max-width: 1024px) {
-          padding: 2%;
+          padding: 2% 0;
         }
         @media (max-width: 767px) {
-          padding: 3%;
+          padding: 3% 0;
         }
         &__profile-img {
           width: 100px;
@@ -306,10 +173,7 @@
           }
         }
         &__profile-text {
-          width: calc(100% - 120px);
-          @media (max-width: 767px) {
-            width: calc(100% - 14vw);
-          }
+          width: 100%;
         }
         &__tag {
           font-size: 1.1rem;
@@ -362,7 +226,7 @@
           text-overflow: ellipsis;
           color: $blacktext;
           font-size: 1.2rem;
-          margin-top: 15px;
+          margin-top: 5px;
         }
       }
     }
@@ -372,10 +236,6 @@
     margin-left: 30px;
     position: relative;
     overflow: visible;
-    @media (max-width: 767px) {
-      width: 100%;
-      margin-left: 0;
-    }
     &__fixed {
       overflow: visible;
     }
@@ -482,11 +342,6 @@
     border-bottom-right-radius: 30px;
     position: relative;
     z-index: 2;
-    @media (max-width: 767px) {
-      width: 100%;
-      margin-top: 10%;
-      padding: 4%;
-    }
     &::after {
       content: "";
       width: 100%;
@@ -519,10 +374,10 @@
         border-radius: 20px;
         box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
         @media (max-width: 1024px) {
-          padding: 2%;
+          padding: 2% 0;
         }
         @media (max-width: 767px) {
-          padding: 3%;
+          padding: 3% 0;
         }
         &__profile-img {
           width: 100px;
