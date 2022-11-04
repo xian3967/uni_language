@@ -18140,6 +18140,16 @@ select option {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 1024px) {
+  .p-lesson {
+    padding: 0 2%;
+  }
+}
+@media (max-width: 767px) {
+  .p-lesson {
+    padding: 0 4% 100px 4%;
+  }
+}
 .p-lesson__position-tutor {
   width: 80px;
   height: 80px;
@@ -18186,6 +18196,12 @@ select option {
   position: relative;
   z-index: 4;
 }
+@media (max-width: 767px) {
+  .p-lesson__contents {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .p-lesson__contents.student-wrap {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -18200,6 +18216,12 @@ select option {
   margin: 0 20px;
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 4px 12px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 767px) {
+  .p-lesson__card {
+    width: 100%;
+    margin: 0 0 10% 0;
+  }
 }
 .p-lesson__card__img {
   width: 100%;
@@ -18263,8 +18285,13 @@ select option {
   position: relative;
   overflow: visible;
 }
+@media (max-width: 767px) {
+  .p-lesson__sidebar-tutor {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .p-lesson__sidebar-tutor__fixed {
-  height: 1000px;
   overflow: visible;
 }
 .p-lesson__sidebar-tutor__search-box {
@@ -18372,6 +18399,13 @@ select option {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  .p-lesson__tutor-list {
+    width: 100%;
+    margin-top: 10%;
+    padding: 4%;
+  }
+}
 .p-lesson__tutor-list::after {
   content: "";
   width: 100%;
@@ -18408,12 +18442,12 @@ select option {
 }
 @media (max-width: 1024px) {
   .p-lesson__tutor-list__item__link {
-    padding: 2% 0;
+    padding: 2%;
   }
 }
 @media (max-width: 767px) {
   .p-lesson__tutor-list__item__link {
-    padding: 3% 0;
+    padding: 3%;
   }
 }
 .p-lesson__tutor-list__item__link__profile-img {
@@ -18505,8 +18539,13 @@ select option {
   position: relative;
   overflow: visible;
 }
+@media (max-width: 767px) {
+  .p-lesson__sidebar-student {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 .p-lesson__sidebar-student__fixed {
-  height: 1000px;
   overflow: visible;
 }
 .p-lesson__sidebar-student__search-box {
@@ -18614,6 +18653,13 @@ select option {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  .p-lesson__student-list {
+    width: 100%;
+    margin-top: 10%;
+    padding: 4%;
+  }
+}
 .p-lesson__student-list::after {
   content: "";
   width: 100%;
@@ -18650,12 +18696,12 @@ select option {
 }
 @media (max-width: 1024px) {
   .p-lesson__student-list__item__link {
-    padding: 2% 0;
+    padding: 2%;
   }
 }
 @media (max-width: 767px) {
   .p-lesson__student-list__item__link {
-    padding: 3% 0;
+    padding: 3%;
   }
 }
 .p-lesson__student-list__item__link__profile-img {
