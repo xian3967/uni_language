@@ -109,7 +109,7 @@
   &__heading {
     font-size: 2.4rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .c-calendar {
     max-width: 100%;
@@ -121,11 +121,42 @@
   }
   &__lesson-wrap {
     width: calc(100% - 330px);
-    background: #FFF;
-    padding: 40px;
-    border-radius: 30px;
     position: relative;
     z-index: 2;
+    &__lesson {
+      background: #FFF;
+      padding: 40px;
+      border-radius: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &__lesson-info {
+    width: 100%;
+    margin-bottom: 30px;
+    dl {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #000;
+      dt {
+        width: 200px;
+        padding: 20px 15px;
+        background: $maincolor;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+      dd {
+        width: calc(100% - 200px);
+        padding: 20px 15px;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+      }
+    }
   }
   &__lesson-list {
     width: 100%;
@@ -230,302 +261,5 @@
         }
       }
     }
-  }
-  &__sidebar-student {
-    width: 350px;
-    margin-left: 30px;
-    position: relative;
-    overflow: visible;
-    &__fixed {
-      overflow: visible;
-    }
-    &__search-box {
-      -webkit-position: sticky;
-      position: sticky;
-      background: #FFF;
-      padding: 40px 30px;
-      border-radius: 30px;
-      top: 10px;
-      &__input-text {
-        margin-bottom: 15px;
-        input {
-          background: $lightgray;
-          border-radius: 20px;
-          padding: 10px 20px;
-        }
-      }
-      &__checkbox {
-        width: 100%;
-        margin-bottom: 20px;
-        h3 {
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
-        &__wrap {
-          padding: 10px 0;
-          border-radius: 20px;
-          background: $lightgray;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          flex-wrap: wrap;
-          input {
-            display: none;
-          }
-          label {
-            width: calc(50% - 15px);
-            height: 40px;
-            display: block;
-            cursor: pointer;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-            background: #FFF;
-            margin-left: 10px;
-            &:last-child {
-              margin-bottom: 0;
-            }
-            span {
-              width: 16px;
-              height: 16px;
-              border: 2px solid $student;
-              display: block;
-              margin-top: 4px;
-              margin-right: 8px;
-              position: relative;
-              i {
-                left: 1px;
-                position: absolute;
-                font-size: 1.1rem;
-                font-weight: bold;
-                opacity: 0;
-                color: #FFF;
-              }
-            }
-          }
-          input:checked + label {
-            background: $student;
-            transition: all 0.2s ease;
-            span {
-              border: 2px solid $blacktext;
-              background: $blacktext;
-              i {
-                opacity: 1;
-              }
-            }
-          }
-        }
-      }
-      &__btn {
-        width: 100%;
-        display: block;
-        padding: 15px 0;
-        color: $blacktext;
-        background: $student;
-        border-radius: 20px;
-        font-size: 1.4rem;
-        font-weight: bold;
-        text-align: center;
-      }
-    }
-  }
-  &__student-list {
-    width: calc(100% - 330px);
-    background: $student;
-    padding: 40px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    position: relative;
-    z-index: 2;
-    &::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: $student;
-      position: absolute;
-      top: 0;
-      left: -100%;
-    }
-    &__position-img {
-      position: absolute;
-      top: -182px;
-      right: 0;
-      z-index: -1;
-      width: 180px;
-      height: 182px;
-      overflow: hidden;
-      img {
-        margin-top: 3px;
-      }
-    }
-    &__item {
-      margin-bottom: 20px;
-      &__link {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        padding: 20px;
-        background: #FFF;
-        border-radius: 20px;
-        box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
-        @media (max-width: 1024px) {
-          padding: 2% 0;
-        }
-        @media (max-width: 767px) {
-          padding: 3% 0;
-        }
-        &__profile-img {
-          width: 100px;
-          margin-right: 20px;
-          @media (max-width: 767px) {
-            width: 12vw;
-            margin-right: 2vw;
-          }
-          img {
-            border-radius: 50%;
-          }
-        }
-        &__profile-text {
-          width: calc(100% - 120px);
-          @media (max-width: 767px) {
-            width: calc(100% - 14vw);
-          }
-        }
-        &__tag {
-          font-size: 1.1rem;
-          font-weight: bold;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          flex-wrap: wrap;
-          span {
-            background: $lightgray;
-            display: block;
-            padding: 3px 8px;
-            border-radius: 10px;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            color: $blacktext;
-            &.language {
-              background: $student;
-            }
-          }
-        }
-        &__lesson-title {
-          color: $blacktext;
-          font-size: 1.6rem;
-          font-weight: bold;
-          @media (max-width: 1024px) {
-            font-size: 1.5rem;
-          }
-          @media (max-width: 767px) {
-            font-size: 1.4rem;
-          }
-        }
-        &__name {
-          font-size: 1.2rem;
-          font-weight: bold;
-          display: block;
-          color: #999;
-          @media (max-width: 1024px) {
-            font-size: 1.1rem;
-          }
-          @media (max-width: 767px) {
-            font-size: 1rem;
-          }
-        }
-        &__detail-text {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          color: $blacktext;
-          font-size: 1.2rem;
-          margin-top: 15px;
-        }
-      }
-    }
-  }
-  &__paging-tutor {
-    text-align: center;
-    &__link {
-      width: 30px;
-      height: 30px;
-      display: inline-block;
-      font-size: 1.2rem;
-      color: $blacktext;
-      padding-top: 4px;
-      &.active {
-        background: #FFF;
-        font-weight: bold;
-        border-radius: 50%;
-      }
-    }
-  }
-}
-
-@keyframes bg_animation-tutor {
-  0% {
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-  }
-  100% {
-    width: 4500px;
-    height: 4500px;
-    top: -2250px;
-    left: -2250px;
-    z-index: 3;
-  }
-}
-
-@keyframes bg_animation-tutor-out {
-  0% {
-    width: 4500px;
-    height: 4500px;
-    top: -2250px;
-    left: -2250px;
-    z-index: 2;
-  }
-  100% {
-    width: 80px;
-    height: 80px;
-    z-index: 2;
-  }
-}
-
-@keyframes bg_animation-student {
-  0% {
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-  }
-  100% {
-    width: 4500px;
-    height: 4500px;
-    top: -2250px;
-    right: -2250px;
-    z-index: 3;
-  }
-}
-
-@keyframes bg_animation-student-out {
-  0% {
-    width: 4500px;
-    height: 4500px;
-    top: -2250px;
-    right: -2250px;
-    z-index: 2;
-  }
-  100% {
-    width: 80px;
-    height: 80px;
-    z-index: 2;
   }
 }
