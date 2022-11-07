@@ -121,21 +121,21 @@ $(function(){
 
 //lesson-list page hover
 jQuery(document).ready(function() {
-  jQuery('.tutor').hover(function(){     
-        jQuery('.p-lesson').addClass('tutor_bg_animation'); 
-        jQuery('.p-lesson').removeClass('tutor_bg_animation-out');     
-    },function(){    
-       jQuery('.p-lesson').removeClass('tutor_bg_animation');     
-       jQuery('.p-lesson').addClass('tutor_bg_animation-out');  
+  jQuery('.tutor').hover(function(){
+        jQuery('.p-lesson').addClass('tutor_bg_animation');
+        jQuery('.p-lesson').removeClass('tutor_bg_animation-out');
+    },function(){
+       jQuery('.p-lesson').removeClass('tutor_bg_animation');
+       jQuery('.p-lesson').addClass('tutor_bg_animation-out');
     });
 });
 jQuery(document).ready(function() {
-  jQuery('.student').hover(function(){     
-        jQuery('.p-lesson').addClass('student_bg_animation');  
-        jQuery('.p-lesson').removeClass('student_bg_animation-out');     
-    },function(){    
-       jQuery('.p-lesson').removeClass('student_bg_animation');     
-       jQuery('.p-lesson').addClass('student_bg_animation-out');   
+  jQuery('.student').hover(function(){
+        jQuery('.p-lesson').addClass('student_bg_animation');
+        jQuery('.p-lesson').removeClass('student_bg_animation-out');
+    },function(){
+       jQuery('.p-lesson').removeClass('student_bg_animation');
+       jQuery('.p-lesson').addClass('student_bg_animation-out');
     });
 });
 
@@ -143,3 +143,40 @@ jQuery(document).ready(function() {
 $( function() {
   $( "#tabs" ).tabs();
 } );
+//
+
+//scroll event
+$(function () {
+  $(document).ready(function () {
+    scrollAnimation()
+  });
+  $(window).scroll(function () {
+    scrollAnimation();
+  });
+
+  function scrollAnimation() {
+    $('.scroll-animation').each(function () {
+      let POS = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let windowHeight = $(window).height();
+      if (scroll > POS - windowHeight + 100) {
+        $(this).addClass('is-animated');
+      }
+    });
+  }
+});
+//
+
+
+//のコピー用
+$('.js-copybtn').on('click', function(){
+  var text = $(this).parent().find('.js-copytext').text();
+  var textarea = $('<textarea></textarea>');
+  textarea.text(text);
+  $(this).append(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  textarea.remove();
+  $('.js-copyalert').show().delay(2000).fadeOut(300);
+});
+//
