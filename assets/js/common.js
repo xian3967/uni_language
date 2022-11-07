@@ -138,3 +138,8 @@ jQuery(document).ready(function() {
        jQuery('.p-lesson').addClass('student_bg_animation-out');   
     });
 });
+
+//profile tab
+$( function() {
+  $( "#tabs" ).tabs();
+} );
