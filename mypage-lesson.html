@@ -97,63 +97,18 @@
             </div>
             <ul class="l-aside__nav__hide" style="display: block;">
               <li class="l-aside__nav__hide__item">
-                <a href="" class="is-active">
-                  전체 (0)
+                <a href="" class="">
+                  登録中 (0)
                 </a>
               </li>
               <li class="l-aside__nav__hide__item">
                 <a href="" class="">
-                  승인대기중 (0)
+                  受講中 (0)
                 </a>
               </li>
               <li class="l-aside__nav__hide__item">
                 <a href="" class="">
-                  요청중 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  마감 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  비승인 (0)
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="l-aside__nav__item">
-            <div class="l-aside__nav__link-wrap">
-              <a href="" class="l-aside__nav__link">
-                スケジュール登録
-              </a>
-              <a href="javascript:void(0);" class="l-aside__nav__link__arrow js-aside-accordion"></a>
-            </div>
-            <ul class="l-aside__nav__hide">
-              <li class="l-aside__nav__hide__item">
-                <a href="">
-                  전체 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  승인대기중 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  요청중 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  마감 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  비승인 (0)
+                  受講完了 (0)
                 </a>
               </li>
             </ul>
@@ -161,7 +116,7 @@
         </ul>
       </aside>
       <div class="l-container main">
-        <div class="p-lesson">
+        <div class="p-mypage-lesson">
           <section class="l-section">
             <h2 class="c-title"><span>レッスン登録</span></h2>
             <!--<p class="c-calendar__alert">*カレンダーからご希望の日付を選択し、スケジュールを選択してください。</p>-->
@@ -275,7 +230,81 @@
                   <input class="" type="text" id="" placeholder="タグ" >
                 </div>
               </div>
-              <div class="p-lesson__submit">
+              <h3 class="c-sub-title"><span>カレンダーからスケジュール選択</span></h3>
+              <div class="c-calendar">
+                  <div class="c-calendar__calendarYearMonth">
+                      <p class="c-calendar__left c-calendar__calBtn" id="js-calendarBtnPrev"> Prev </p>
+                      <p id="yearMonth"> Jan 2021 </p>
+                      <p class="c-calendar__right c-calendar__calBtn" id="js-calendarBtnNext"> Next </p>
+                  </div>
+                  <div>
+                      <ol class="c-calendar__calendarList1">
+                          <li class="day-name">Sat</li>
+                          <li class="day-name">Sun</li>
+                          <li class="day-name">Mon</li>
+                          <li class="day-name">Tue</li>
+                          <li class="day-name">Wed</li>
+                          <li class="day-name">Thu</li>
+                          <li class="day-name">Fri</li>
+                      </ol>
+                      <ol class="c-calendar__calendarList2" id="calendarList">
+
+                      </ol>
+                  </div>
+                  <div class="c-calendar__modal">
+                    <div class="c-calendar__modal__close js-modal-close"></div>
+                    <p id="modalYearMonth"><span>11</span></p>
+                    <div class="c-select__wrapper">
+                      <p class="c-select__title">プラン</p>
+                      <div class="c-select">
+                        <select class="calendar-select" name="" id="js-calendar-plan">
+                          <option value="" selected="">選択してください</option>
+                          <option value="オプション_01">オプション_01</option>
+                          <option value="オプション_02">オプション_02</option>
+                          <option value="オプション_03">オプション_03</option>
+                          <option value="オプション_04">オプション_04</option>
+                          <option value="オプション_05">オプション_05</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="c-select__wrapper">
+                      <p class="c-select__title">時間</p>
+                      <div class="c-select__2col">
+                        <div class="c-select">
+                          <select class="calendar-select" name="" id="js-calendar-time1">
+                            <option value="" selected="">選択してください</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                          </select>
+                        </div>
+                        <div class="c-select">
+                          <select class="calendar-select" name="" id="js-calendar-time2">
+                            <option value="" selected="">選択してください</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-calendar__modal__submit js-select disabled">
+                      <p class="">選択完了</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="p-mypage-lesson__schedule">
+                <div class="p-mypage-lesson__schedule__result" id="result">
+                  <h3 class="p-mypage-lesson__schedule__result__title">スケジュール登録確認</h3>
+                  <ul class="p-mypage-lesson__schedule__result__list">
+                  </ul>
+                </div>
+              </div>
+              <div class="p-mypage-lesson__submit">
                 <button class="js-sumit">レッスン登録完了</button>
               </div>
             </form>
@@ -284,7 +313,24 @@
       </div>
     </div>
   </main>
+  <script src="./assets/js/calendar.js"></script>
   <script src="./assets/js/common.js"></script>
+  <script>
+  function calendarClickEvent(element) {
+    let elementId = $(element).attr('id');
+    let text = $('#modalYearMonth').text();
+    const textArray = text.split("月");
+    let newText = textArray[0];
+    $('#modalYearMonth').text(newText + '月 ' + elementId + '日');
+    $('.calendar-select option:selected').prop('selected', false);
+    $('.calendar-select option:first').prop('selected', 'selected');
+    $('.c-calendar__modal__submit').addClass('disabled');
+    $('.c-calendar__modal').fadeIn();
+  }
+  function calendarRemoveEvent(element) {
+    $(element).parent('li').remove();
+  }
+  </script>
 </body>
 
 </html>

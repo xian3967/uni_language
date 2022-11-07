@@ -10,10 +10,10 @@
     margin-right: 0;
     margin-bottom: 30px;
   }
-  .l-aside__nav {
+  &__nav {
     padding-left: 30px;
     padding-right: 30px;
-    .l-aside__nav__item {
+    &__item {
       margin-bottom: 15px;
       &:last-child {
         margin-bottom: 0;
@@ -81,9 +81,9 @@
       }
     }
   }
-  .l-aside__profile {
+  &__profile {
     margin-bottom: 40px;
-    .l-aside__profile__img {
+    &__img {
       width: 100%;
       text-align: center;
       margin: 0 auto 20px;
@@ -92,7 +92,7 @@
       img {
         display: inline-block;
       }
-      .l-aside__profile__img__label {
+      &__label {
         padding: 2px 5px;
         border-radius: 4px;
         font-size: 12px;
@@ -103,13 +103,13 @@
         background-color: $yellow;
       }
     }
-    .l-aside__profile__title {
+    &__title {
       margin-bottom: 20px;
       text-align: center;
       font-size: 18px;
       color: $black;
     }
-    .l-aside__profile__title__button {
+    &__title__button {
       padding: 0 20px;
       width: 100%;
       a {
@@ -131,7 +131,7 @@
       }
     }
   }
-  .l-aside__title {
+  &__title {
     color: $black;
     font-size: 19px;
     margin-left: 25px;
