@@ -1,13 +1,45 @@
 .p-lesson {
-  padding: 120px 0;
+  padding: 80px 0;
   background: $lightgray;
   position: relative;
   overflow: hidden;
   @media (max-width: 1024px) {
-    padding: 0 2%;
+    padding: 9% 2%;
   }
   @media (max-width: 767px) {
-    padding: 0 4% 100px 4%; 
+    padding: 12% 4% 12% 4%;
+  }
+  &__accordion {
+    margin-bottom: 10px;
+    width: 100%;
+    background: $white;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: $blacktext;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    @media (max-width: 767px) {
+      display: block;
+    }
+    &:after {
+      content: "\f054";
+      position: absolute;
+      display: inline-block;
+      color: $black;
+      top: 30%;
+      font-size: 1.2rem;
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 600;
+      transform: rotate(90deg);
+      right: 15px;
+      transition: 0.3s;
+    }
+    &.is-open {
+      &:after {
+        transform: rotate(-90deg);
+      }
+    }
   }
   &__position-tutor {
     width: 80px;
@@ -65,6 +97,51 @@
       flex-direction: row-reverse;
     }
   }
+  &__position-img-01 {
+    position: absolute;
+    top: -182px;
+    right: 350px;
+    z-index: -1;
+    width: 180px;
+    height: 182px;
+    overflow: hidden;
+    @media (max-width: 1024px) {
+      top: -18.3vw;
+      width: 18vw;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      right: 0;
+      top: -25.3vw;
+      width: 25vw;
+    }
+    img {
+      margin-top: 3px;
+    }
+  }
+  &__position-img-02 {
+    position: absolute;
+    top: -212px;
+    left: 390px;
+    z-index: -1;
+    width: 220px;
+    height: 212px;
+    overflow: hidden;
+    @media (max-width: 1024px) {
+      top: -17.3vw;
+      width: 18vw;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+      right: 0;
+      left: auto;
+      top: -24.3vw;
+      width: 25vw;
+    }
+    img {
+      margin-top: 3px;
+    }
+  }
   &__card {
     width: 50%;
     background: #FFF;
@@ -75,14 +152,21 @@
     @media (max-width: 767px) {
       width: 100%;
       margin: 0 0 10% 0;
+      border-radius: 20px;
     }
     &__img {
       width: 100%;
       padding: 60px 0 30px 0;
       text-align: center;
+      @media (max-width: 767px) {
+        padding: 8% 14% 5%;
+      }
       img {
         height: 250px;
         display: inline-block;
+        @media (max-width: 767px) {
+          height: auto;
+        }
       }
     }
     &__text-wrap {
@@ -91,6 +175,13 @@
       &__heading {
         font-size: 3.6rem;
         font-weight: bold;
+        @media (max-width: 1024px) {
+          font-size: 3rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 2.2rem;
+          padding: 0 2%;
+        }
         p {
           font-size: 1.4rem;
           display: block;
@@ -114,6 +205,9 @@
       width: 100%;
       padding: 30px 0 0 0;
       text-align: center;
+      @media (max-width: 767px) {
+        padding: 5% 0 0 0;
+      }
       &__link {
         display: block;
         padding: 15px 50px;
@@ -121,6 +215,10 @@
         font-size: 1.8rem;
         color: $blacktext;
         font-weight: bold;
+        @media (max-width: 767px) {
+          padding: 10px 20px;
+          font-size: 1.6rem;
+        }
         &.student_link {
           background: $student;
         }
@@ -132,9 +230,15 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-bottom: 5%;
+    }
     h2 {
       font-size: 2.8rem;
       font-weight: bold;
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+      }
     }
   }
   &__sidebar-tutor {
@@ -148,6 +252,9 @@
     }
     &__fixed {
       overflow: visible;
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
     &__search-box {
       -webkit-position: sticky;
@@ -156,6 +263,10 @@
       padding: 40px 30px;
       border-radius: 30px;
       top: 10px;
+      @media (max-width: 767px) {
+        border-radius: 15px;
+        padding: 20px 15px;
+      }
       &__input-text {
         margin-bottom: 15px;
         input {
@@ -172,13 +283,16 @@
           font-weight: bold;
         }
         &__wrap {
-          padding: 10px 0;
+          padding: 10px 0 0;
           border-radius: 20px;
           background: $lightgray;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           flex-wrap: wrap;
+          @media (max-width: 767px) {
+            border-radius: 12px;
+          }
           input {
             display: none;
           }
@@ -197,9 +311,6 @@
             margin-bottom: 10px;
             background: #FFF;
             margin-left: 10px;
-            &:last-child {
-              margin-bottom: 0;
-            }
             span {
               width: 16px;
               height: 16px;
@@ -241,6 +352,10 @@
         font-size: 1.4rem;
         font-weight: bold;
         text-align: center;
+        @media (max-width: 767px) {
+          padding: 10px 0;
+          border-radius: 12px;
+        }
       }
     }
   }
@@ -254,8 +369,10 @@
     z-index: 2;
     @media (max-width: 767px) {
       width: 100%;
-      margin-top: 10%;
+      margin-top: 7%;
       padding: 4%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
     }
     &::after {
       content: "";
@@ -265,18 +382,6 @@
       position: absolute;
       top: 0;
       right: -100%;
-    }
-    &__position-img {
-      position: absolute;
-      top: -212px;
-      left: 20px;
-      z-index: -1;
-      width: 220px;
-      height: 212px;
-      overflow: hidden;
-      img {
-        margin-top: 3px;
-      }
     }
     &__item {
       margin-bottom: 20px;
@@ -289,10 +394,11 @@
         border-radius: 20px;
         box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
         @media (max-width: 1024px) {
-          padding: 2%;
+          padding: 4%;
         }
         @media (max-width: 767px) {
-          padding: 3%;
+          padding: 5%;
+          border-radius: 12px;
         }
         &__profile-img {
           width: 100px;
@@ -378,6 +484,9 @@
     }
     &__fixed {
       overflow: visible;
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
     &__search-box {
       -webkit-position: sticky;
@@ -386,6 +495,10 @@
       padding: 40px 30px;
       border-radius: 30px;
       top: 10px;
+      @media (max-width: 767px) {
+        border-radius: 15px;
+        padding: 20px 15px;
+      }
       &__input-text {
         margin-bottom: 15px;
         input {
@@ -402,13 +515,16 @@
           font-weight: bold;
         }
         &__wrap {
-          padding: 10px 0;
+          padding: 10px 0 0;
           border-radius: 20px;
           background: $lightgray;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           flex-wrap: wrap;
+          @media (max-width: 767px) {
+            border-radius: 12px;
+          }
           input {
             display: none;
           }
@@ -427,9 +543,6 @@
             margin-bottom: 10px;
             background: #FFF;
             margin-left: 10px;
-            &:last-child {
-              margin-bottom: 0;
-            }
             span {
               width: 16px;
               height: 16px;
@@ -471,6 +584,10 @@
         font-size: 1.4rem;
         font-weight: bold;
         text-align: center;
+        @media (max-width: 767px) {
+          padding: 10px 0;
+          border-radius: 12px;
+        }
       }
     }
   }
@@ -484,8 +601,10 @@
     z-index: 2;
     @media (max-width: 767px) {
       width: 100%;
-      margin-top: 10%;
+      margin-top: 7%;
       padding: 4%;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
     &::after {
       content: "";
@@ -495,18 +614,6 @@
       position: absolute;
       top: 0;
       left: -100%;
-    }
-    &__position-img {
-      position: absolute;
-      top: -182px;
-      right: 0;
-      z-index: -1;
-      width: 180px;
-      height: 182px;
-      overflow: hidden;
-      img {
-        margin-top: 3px;
-      }
     }
     &__item {
       margin-bottom: 20px;
@@ -519,10 +626,11 @@
         border-radius: 20px;
         box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
         @media (max-width: 1024px) {
-          padding: 2%;
+          padding: 4%;
         }
         @media (max-width: 767px) {
-          padding: 3%;
+          padding: 5%;
+          border-radius: 12px;
         }
         &__profile-img {
           width: 100px;
