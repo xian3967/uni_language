@@ -11,7 +11,7 @@
     padding: 5% 2%;
   }
   @media (max-width: 767px) {
-    padding: 8% 6% 13% 6%;
+    padding: 8% 6% 20% 6%;
   }
   &.tutor {
     height: 100%;
@@ -31,6 +31,7 @@
     }
     @media (max-width: 767px) {
       padding: 6%;
+      border-radius: 12px;
     }
   }
   &__heading {
@@ -108,6 +109,7 @@
         padding: 10px 10px 10px 30px;
         background: #FFF;
         border-bottom: 1px solid $lightgray;
+        width: 100%;
         &:focus {
           border-bottom: 1px solid $blacktext;
         }
@@ -144,7 +146,7 @@
         position: fixed;
         bottom: 0;
         left: 0;
-      }      
+      }
       button {
         width: 100%;
         padding: 10px 0;
@@ -152,12 +154,14 @@
         border-radius: 20px;
         color: $blacktext;
         font-size: 1.4rem;
+        line-height: 1.4rem;
         font-weight: bold;
         @media (max-width: 767px) {
           padding: 5% 0;
+          border-radius: 12px;
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
-        }   
+        }
       }
     }
     &__google {
@@ -177,6 +181,9 @@
         color: #FFF;
         background: $blacktext;
         border-radius: 20px;
+        @media (max-width: 767px) {
+          border-radius: 12px;
+        }
         i {
           margin-right: 5px;
         }
@@ -199,6 +206,9 @@
         color: $blacktext;
         background: $lightgray;
         border-radius: 20px;
+        @media (max-width: 767px) {
+          border-radius: 12px;
+        }
         i {
           margin-right: 5px;
         }
@@ -228,13 +238,14 @@
         background: #f6f6f6;
         @media (max-width: 767px) {
           padding: 2% 4%;
+          border-radius: 12px;
         }
         img {
           width: 60px;
           display: inline-block;
           @media (max-width: 767px) {
             width: 12vw;
-          }              
+          }
         }
         span {
           display: block;
@@ -244,7 +255,7 @@
           @media (max-width: 767px) {
             font-size: 1rem;
             margin-top: 2%;
-          }  
+          }
         }
       }
       input:checked + label {
