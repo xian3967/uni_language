@@ -120,8 +120,4 @@
   $('.js-modal-close').on('click', function() {
     $('.c-calendar__modal').fadeOut();
   });
-  $('.js-calendar-close').on('click', function() {
-    alert('dd');
-    $(this).parent().remove();
-  });
 })(jQuery);
