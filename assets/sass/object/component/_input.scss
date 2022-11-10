@@ -3,6 +3,50 @@
   @media (max-width: 767px) {
     margin-bottom: 20px;
   }
+  &__img {
+    width: 140px;
+    margin-right: 20px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__img-upload {
+    p {
+      padding-bottom: 20px;
+      font-size: 1.4rem;
+      color: #999;
+    }
+    label {
+      padding: 12px 25px;
+      background: $maincolor;
+      font-weight: bold;
+      font-size: 1.4rem;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  }
+  &__movie {
+    width: 240px;
+    margin-right: 20px;
+    iframe {
+      border-radius: 30px;
+    }
+  }
+  &__movie-upload {
+    p {
+      padding-bottom: 20px;
+      font-size: 1.4rem;
+      color: #999;
+    }
+    label {
+      padding: 12px 25px;
+      background: $maincolor;
+      font-weight: bold;
+      font-size: 1.4rem;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  }
   .c-input__title {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -10,10 +54,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: bold;
     line-height: 16px;
-    border-left: 2px solid $yellow;
     padding-left: 5px;
     margin-bottom: 10px;
     width: 100%;
@@ -46,16 +89,19 @@
     display: -ms-flexbox;
     display: flex;
     padding-left: 12px;
-    border: 1px solid $blacktext;
-    border-radius: 8px;
-    background: #fff;
-    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background: $white;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 24px;
     max-width: none;
     @media (max-width: 767px) {
       border-radius: 4px;
       font-size: 14px;
+    }
+    &:focus {
+      border: 1px solid $maincolor;
     }
   }
 }
