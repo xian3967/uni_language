@@ -7,14 +7,14 @@
     justify-content: center;
     button {
       width: 100%;
-      max-width: 250px;
-      padding: 10px;
-      background: $white;
+      max-width: 100%;
+      padding: 15px 10px;
+      background: $maincolor;
       color: $blacktext;
       text-align: center;
-      font-size: 16px;
-      border: 1px solid $blacktext;
-      border-radius: 4px;
+      font-size: 1.4rem;
+      border-radius: 15px;
+      font-weight: bold;
       cursor: pointer;
       @media (max-width: 767px) {
         padding: 7px;
