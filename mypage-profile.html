@@ -29,7 +29,167 @@
   <title>U&I Language</title>
 </head>
 <body>
-  <header class="l-header">
+  <header class="l-header" id="header">
+    <!--event-warp-->
+    <div class="l-header__top-wrap">
+      <div class="l-header__contents">
+        <div class="l-header__top-wrap__language-select">
+          <select>
+            <option>Japanese</option>
+            <option>Enlish</option>
+            <option>Korea</option>
+          </select>
+        </div>
+        <div class="l-header__top-wrap__icon-wrap">
+          <ul class="l-header__top-wrap__icon-wrap__list">
+            <li class="l-header__top-wrap__icon-wrap__list__item">
+              <a href="" class="l-header__top-wrap__icon-wrap__list__item__link" alt="お知らせ">
+                <i class="fas fa-bell"></i>
+                <span>10</span>
+              </a>
+            </li>
+            <li class="l-header__top-wrap__icon-wrap__list__item">
+              <a href="" class="l-header__top-wrap__icon-wrap__list__item__link" alt="チャット">
+                <i class="fas fa-comment-alt"></i>
+                <span>2</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--logo erea-->
+    <div class="l-header__logo-wrap">
+      <div class="l-header__logo-wrap__contents">
+        <div class="l-header__logo-wrap__logo">
+          <h1><img src="assets/images/common/logo.png" alt="U&ILanguage"></h1>
+        </div>
+        <div class="l-header__logo-wrap__sp-nav-btn js-hambugermenu__button">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="l-header__logo-wrap__btns">
+            <a href="" class="l-header__logo-wrap__btns__link" title="講師登録">
+              講師登録
+            </a>
+            <a href="login.html" class="l-header__logo-wrap__btns__link" title="ログイン">
+              ログイン
+            </a>
+            <a href="signup.html" class="l-header__logo-wrap__btns__link signup" title="無料登録">
+              無料会員登録
+            </a>
+        </div>
+      </div>
+    </div>
+    <!--Main nav-->
+    <div class="l-header__nav-wrap">
+      <nav class="l-header__nav-wrap__menu">
+        <ul class="l-header__nav-wrap__menu__list">
+          <li class="l-header__nav-wrap__menu__list__item">
+            <a href="/" class="l-header__nav-wrap__menu__list__item__link" titie>
+              Home
+            </a>
+          </li>
+          <li class="l-header__nav-wrap__menu__list__item">
+            <a href="lesson-list.html" class="l-header__nav-wrap__menu__list__item__link" titie>
+              Lesson
+            </a>
+          </li>
+          <li class="l-header__nav-wrap__menu__list__item">
+            <a href="tutor.html" class="l-header__nav-wrap__menu__list__item__link" titie>
+              Tutor
+            </a>
+          </li>
+          <li class="l-header__nav-wrap__menu__list__item">
+            <a href="news.html" class="l-header__nav-wrap__menu__list__item__link" titie>
+              News
+            </a>
+          </li>
+          <li class="l-header__nav-wrap__menu__list__item">
+            <a href="company.html" class="l-header__nav-wrap__menu__list__item__link" titie>
+              Company
+            </a>
+          </li>
+          <li class="l-header__nav-wrap__menu__list__item">
+            <a href="contact.html" class="l-header__nav-wrap__menu__list__item__link" titie>
+              Contact
+            </a>
+          </li>
+        </ul>
+        <a href="guide.html" class="l-header__nav-wrap__menu__link">初めてご利用の方は、<span>利用ガイドはこちら</span></a>
+      </nav>
+    </div>
+
+    <div class="l-header__fixed-nav">
+      <ul class="l-header__fixed-nav__list">
+        <li class="l-header__fixed-nav__list__item">
+          <a href="" class="l-header__fixed-nav__list__item__link">
+            <i class="fa-light fa-house"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="l-header__fixed-nav__list__item">
+          <a href="search.html" class="l-header__fixed-nav__list__item__link search">
+            <i class="fa-light fa-magnifying-glass"></i>
+            <span>Search</span>
+          </a>
+        </li>
+        <li class="l-header__fixed-nav__list__item">
+          <a href="" class="l-header__fixed-nav__list__item__link">
+            <i class="fa-light fa-screen-users"></i>
+            <span>Lesson</span>
+          </a>
+        </li>
+        <li class="l-header__fixed-nav__list__item">
+          <a href="" class="l-header__fixed-nav__list__item__link">
+            <i class="fa-light fa-message-dots"></i>
+            <span>Message</span>
+          </a>
+        </li>
+        <li class="l-header__fixed-nav__list__item">
+          <a href="" class="l-header__fixed-nav__list__item__link">
+            <i class="fa-light fa-user-gear"></i>
+            <span>Mypage</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="l-header__nav-sp__wrapper">
+      <div class="l-header__nav-sp y-scroll">
+        <ul class="l-header__nav-sp__list">
+          <li class="l-header__nav-sp__list__item">
+            <a href="/" class="l-header__nav-sp__list__item__link" titie>
+              Home
+            </a>
+          </li>
+          <li class="l-header__nav-sp__list__item">
+            <a href="lesson-list.html" class="l-header__nav-sp__list__item__link" titie>
+              Lesson
+            </a>
+          </li>
+          <li class="l-header__nav-sp__list__item">
+            <a href="tutor.html" class="l-header__nav-sp__list__item__link" titie>
+              Tutor
+            </a>
+          </li>
+          <li class="l-header__nav-sp__list__item">
+            <a href="news.html" class="l-header__nav-sp__list__item__link" titie>
+              News
+            </a>
+          </li>
+          <li class="l-header__nav-sp__list__item">
+            <a href="company.html" class="l-header__nav-sp__list__item__link" titie>
+              Company
+            </a>
+          </li>
+          <li class="l-header__nav-sp__list__item">
+            <a href="contact.html" class="l-header__nav-sp__list__item__link" titie>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="l-header__nav-sp__bg"></div>
+    </div>
   </header>
 
   <main class="l-main">
@@ -38,14 +198,14 @@
         <div class="l-aside__profile">
           <div class="l-aside__profile__img">
             <img src="assets/images/mypage/aside_img_01.png" alt="プロフィールイメージ">
-            <span class="l-aside__profile__img__label">의뢰인</span>
+            <span class="l-aside__profile__img__label"><i class="fa-sharp fa-solid fa-shield-check"></i>承認済み</span>
           </div>
           <p class="l-aside__profile__title">
-            제이비드 킴
+            Valeria Elsa
           </p>
           <div class="l-aside__profile__title__button">
             <a href="#">
-              <img src="assets/images/mypage/aside_icon_01.png" alt="">전문가로 전환
+              <i class="fa-regular fa-gear"></i>プロフィール編集
             </a>
           </div>
         </div>
@@ -118,27 +278,115 @@
       <div class="l-container main">
         <div class="p-mypage-profile">
           <section class="l-section">
-            <h2 class="c-title"><span>プロフィール登録</span></h2>
+            <h2 class="c-title"><span>プロフィール写真</span></h2>
+            <!--<p class="c-calendar__alert">*カレンダーからご希望の日付を選択し、スケジュールを選択してください。</p>-->
+            <form class="" action="" method="post">
+              <div class="c-input__2col">
+                <div class="c-input__img">
+                  <img src="assets/images/top/sample-user.png" alt="profile-img">
+                </div>
+                <div class="c-input__img-upload">
+                  <p>
+                    他のユーザーから見れるプロフィールページ・リストページなどに表示されます。<br>
+                    最大サイズ：2MB
+                  </p>
+                  <label>
+                    <input class="absolute" type="file" style="display: none;">
+                    イメージアップロード
+                  </label>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class="l-section">
+            <h2 class="c-title"><span>自分PR動画</span></h2>
+            <!--<p class="c-calendar__alert">*カレンダーからご希望の日付を選択し、スケジュールを選択してください。</p>-->
+            <form class="" action="" method="post">
+              <div class="c-input__2col">
+                <div class="c-input__movie">
+                  <iframe width="100%" height="180" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="c-input__movie-upload">
+                  <p>
+                    レッスン前に生徒にアピールできるPR動画をアップしてください。<br>
+                    動画は運営側から確認の後、反映されますので1~2日かかります。
+                  </p>
+                  <label>
+                    <input class="absolute" type="file" style="display: none;">
+                    動画アップロード
+                  </label>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class="l-section">
+            <h2 class="c-title"><span>基本情報</span></h2>
             <!--<p class="c-calendar__alert">*カレンダーからご希望の日付を選択し、スケジュールを選択してください。</p>-->
             <form class="" action="" method="post">
               <div class="c-input__2col">
                 <div class="c-input">
-                  <p class="c-input__title">タイトル</p>
-                  <input class="" type="text" id="" placeholder="タイトル" >
+                  <p class="c-input__title">お名前</p>
+                  <input class="" type="text" id="" placeholder="お名前" >
                 </div>
                 <div class="c-input">
-                  <p class="c-input__title">フリガナ</p>
-                  <input class="" type="text" id="" placeholder="フリガナ" >
+                  <p class="c-input__title">国籍</p>
+                  <select>
+                    <option>------</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
                 </div>
               </div>
               <div class="c-input__2col">
                 <div class="c-input">
-                  <p class="c-input__title">電話番号</p>
-                  <input class="" type="tel" id="" placeholder="08012345678" >
+                  <p class="c-input__title">在住</p>
+                  <input class="" type="text" id="" placeholder="在住" >
                 </div>
                 <div class="c-input">
-                  <p class="c-input__title">メールアドレス</p>
-                  <input class="" type="email" id="" placeholder="メールアドレス" >
+                  <p class="c-input__title">最終学歴</p>
+                  <input class="" type="text" id="" placeholder="最終学歴" >
+                </div>
+              </div>
+              <div class="c-input__2col">
+                <div class="c-input">
+                  <p class="c-input__title">専攻</p>
+                  <input class="" type="text" id="" placeholder="専攻" >
+                </div>
+                <div class="c-input">
+                  <p class="c-input__title">講師経歴</p>
+                  <input class="" type="text" id="" placeholder="講師経歴" >
+                </div>
+              </div>
+              <div class="c-input__2col">
+                <div class="c-input">
+                  <p class="c-input__title">教える言語</p>
+                  <input class="" type="text" id="" placeholder="教える言語" >
+                </div>
+                <div class="c-input">
+                  <p class="c-input__title">話せる言語</p>
+                  <input class="" type="text" id="" placeholder="話せる言語" >
+                </div>
+              </div>
+              <div class="c-input__2col">
+                <div class="c-input">
+                  <p class="c-input__title">レッスン対象</p>
+                  <input class="" type="text" id="" placeholder="在住" >
+                </div>
+                <div class="c-input">
+                  <p class="c-input__title">最終学歴</p>
+                  <input class="" type="text" id="" placeholder="最終学歴" >
+                </div>
+              </div>
+              <div class="c-input__2col">
+                <div class="c-input">
+                  <p class="c-input__title">自己紹介・レッスンスタイル</p>
+                  <input class="" type="text" id="" placeholder="在住" >
+                </div>
+                <div class="c-input">
+                  <p class="c-input__title">経歴詳細</p>
+                  <input class="" type="text" id="" placeholder="最終学歴" >
                 </div>
               </div>
               <div class="c-radio__wrapper">
