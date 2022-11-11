@@ -1,0 +1,177 @@
+.p-tutor {
+  width: 100%;
+  overflow-x: hidden;
+  //tutor-list
+  &__tutor-list {
+    width: 100%;
+    padding: 60px 0;
+    background: $lightgray;
+    @media (max-width: 1024px) {
+      padding: 4% 0;
+    }
+    @media (max-width: 767px) {
+      padding: 6% 0;
+    }
+    &__heading {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        @media (max-width: 1024px) {
+          font-size: 1.28rem;
+          line-height: 2.6rem;
+          margin-bottom: 3%;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.2rem;
+          line-height: 2.4rem;
+          margin-bottom: 4%;
+        }
+        p {
+          font-size: 2.4rem;
+          line-height: 4.8rem;
+          font-weight: bold;
+          @media (max-width: 1024px) {
+            font-size: 2rem;
+            line-height: 3.8rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+          }
+        }
+        span {
+          font-size: 1.6rem;
+          font-weight: bold;
+          border-bottom: 3px solid $maincolor;
+          padding: 0 5px 5px 5px;
+          font-family: "Montserrat";
+          @media (max-width: 1024px) {
+            font-size: 1.4rem;
+            padding: 0 1% 1% 1%;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.3rem;
+            border-bottom: 2px solid $maincolor;
+          }
+        }
+      }
+    }
+    &__contents {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 1024px) {
+        padding: 0 2%;
+      }
+      @media (max-width: 767px) {
+        padding: 0 4%;
+      }
+    }
+    &__item {
+      width: calc(25% - 20px);
+      background: #FFF;
+      box-sizing: border-box;
+      box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 10px;
+      @media (max-width: 1024px) {
+        margin: 7px;
+        width: calc(33.3% - 14px);
+      }
+      @media (max-width: 767px) {
+        width: 96%;
+        margin: 2%;
+      }
+      &__movie {
+        position: relative;
+      }
+      &__add-wishlist {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        input {
+          display: none;
+        }
+      }
+      &__profile {
+        padding: 20px;
+        @media (max-width: 1024px) {
+          padding: 4%;
+        }
+        @media (max-width: 767px) {
+          padding: 6%;
+        }
+        &__link {
+          display: block;
+        }
+        &__tag {
+          font-size: 1.1rem;
+          font-weight: bold;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-wrap: wrap;
+          span {
+            background: $lightgray;
+            display: block;
+            padding: 3px 8px;
+            border-radius: 10px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: $blacktext;
+            &.language {
+              background: $maincolor;
+            }
+          }
+        }
+        &__name {
+          color: $blacktext;
+          font-size: 2.4rem;
+          font-weight: bold;
+          padding: 5px 0 10px 0;
+          @media (max-width: 1024px) {
+            font-size: 2rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.8rem;
+          }
+          span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            color: #999;
+            @media (max-width: 767px) {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+    &__more-view {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      border: 1px solid $blacktext;
+      border-radius: 4px;
+      margin-top: 20px;
+      font-size: 1.6rem;
+      color: $blacktext;
+    }
+  }
+}
