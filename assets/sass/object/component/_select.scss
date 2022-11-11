@@ -6,30 +6,36 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 16px;
+    font-size: 1.4rem;
     font-weight: bold;
     line-height: 16px;
-    border-left: 2px solid $yellow;
     padding-left: 5px;
     margin-bottom: 10px;
     width: 100%;
+    span {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-right: 10px;
+      display: inline-block;
+    }
   }
   .c-select {
     position: relative;
     cursor: pointer;
-    margin-bottom: 30px;
+    width: 49%;
     @media (max-width: 767px) {
-      margin-bottom: 20px;
     }
     &::after {
       content: "\f054";
       font-size: 12px;
-      color: $blacktext;
+      color: #999;
       font-family: "Font Awesome 6 Pro";
       position: absolute;
-      transform: translateY(-50%) rotate(90deg);
-      top: 50%;
-      right: 17px;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+      bottom: 15px;
+      right: 10px;
+      font-weight: bold;
     }
     .c-input__text__gray {
       font-size: 12px;
@@ -49,13 +55,12 @@
       display: -ms-flexbox;
       display: flex;
       padding-left: 12px;
-      border: 1px solid $blacktext;
+      border: 1px solid #999;
       border-radius: 8px;
       background: #fff;
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 1.4rem;
       line-height: 24px;
-      color: $black;
+      color: #999;
       max-width: none !important;
       @media (max-width: 767px) {
         font-size: 14px;

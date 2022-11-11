@@ -1,7 +1,8 @@
 .l-aside {
-  width: 300px;
-  margin-right: 20px;
+  width: 350px;
+  margin-right: 30px;
   background: $white;
+  border-radius: 30px;
   @media (max-width: 1024px) {
     width: 250px;
   }
@@ -83,6 +84,7 @@
   }
   &__profile {
     margin-bottom: 40px;
+    padding: 30px;
     &__img {
       width: 100%;
       text-align: center;
@@ -93,21 +95,27 @@
         display: inline-block;
       }
       &__label {
-        padding: 2px 5px;
-        border-radius: 4px;
-        font-size: 12px;
-        color: $white;
+        padding: 4px 8px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $blacktext;
         position: absolute;
         right: 0;
         top: 0;
-        background-color: $yellow;
+        background-color: $maincolor;
+        i {
+          font-size: 1.6rem;
+          margin-right: 2px;
+        }
       }
     }
     &__title {
       margin-bottom: 20px;
       text-align: center;
-      font-size: 18px;
-      color: $black;
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #202020;
     }
     &__title__button {
       padding: 0 20px;

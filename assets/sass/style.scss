@@ -18,7 +18,7 @@
 // ==========================================================================
 // Layout
 // ==========================================================================
-@import "layout/footer";
+@import "layout/footer"; 
 @import "layout/header";
 @import "layout/slider";
 @import "layout/container";
@@ -48,7 +48,9 @@
 @import "object/project/info-tutor";
 @import "object/project/login";
 @import "object/project/mypage-lesson";
+@import "object/project/mypage-lesson-complete"; 
 @import "object/project/mypage-mylesson";
 @import "object/project/mypage-mylesson-detail";
 @import "object/project/company";
 @import "object/project/contact";
+@import "object/project/mypage-mylesson-detail"; 
