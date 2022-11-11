@@ -1,0 +1,95 @@
+.p-mypage-lesson {
+  padding-bottom: 60px;
+  &__notice {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  &__complete {
+    width: 100%;
+    padding: 30px 0;
+    &__icon {
+      width: 100%;
+      text-align: center;
+    }
+    &__text {
+      width: 100%;
+      text-align: center;
+      margin: 50px 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+      p {
+        font-size: 2.2rem;
+        font-weight: bold;
+      }
+      &__link {
+        padding: 15px 25px;
+        background: $maincolor;
+        border-radius: 15px;
+        font-size: 1.4rem;
+        color: $blacktext;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 15px;
+      }
+    }
+  }
+  &__list {
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0;
+    &__item {
+      width: 49%;
+      margin-bottom: 20px;
+      border: 1px solid #999;
+      border-radius: 20px;
+      padding: 30px;
+      &:nth-child(2n) {
+        margin-left: 2%;
+      }
+      &__icon {
+        width: 100%;
+        text-align: center;
+        img {
+          width: 150px;
+        }
+      }
+      &__title {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 15px;
+        span {
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+      &__text {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #999;
+      }
+      &__link {
+        width: 100%;
+        display: block;
+        padding: 8px 0;
+        margin-top: 10px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background: $maincolor;
+        color: $blacktext;
+      }
+    }
+  }
+}

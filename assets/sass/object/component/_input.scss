@@ -184,6 +184,13 @@
         margin-top: 15px;
       }
     }
+    &__cheack {
+      font-size: 1.6rem;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: $green;
+    }
   }
 }
 .c-input__select-language {
@@ -305,6 +312,7 @@
       width: 15px;
       height: 15px;
       border: 1px solid $blacktext;
+      border-radius: 3px;
     }
   }
   input[type="checkbox"]:checked + label {
