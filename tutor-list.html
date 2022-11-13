@@ -202,349 +202,411 @@
     <section class="p-tutor__tutor-list">
       <div class="p-tutor__tutor-list__heading">
         <h2>
-          おすすめ講師
+          講師検索
         </h2>
       </div>
-      <ul class="p-tutor__tutor-list__contents">
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+      <div class="p-tutor__tutor-list__contents">
+        <div class="p-tutor__tutor-list__sidebar-tutor">
+          <h3 class="p-tutor__tutor-list__accordion js-sidebar-accordion">
+            詳細検索はこちら
+          </h3>
+          <div class="p-tutor__tutor-list__sidebar-tutor__fixed">
+            <div class="p-tutor__tutor-list__sidebar-tutor__search-box">
+              <div class="p-tutor__tutor-list__sidebar-tutor__search-box__input-text">
+                <input type="text" placeholder="keyword...">
+              </div>
+              <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox">
+                <h3>どんなコースを希望しますか？</h3>
+                <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox__wrap">
+                  <input id="course01" type="checkbox" >
+                  <label for="course01">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    20分
+                  </label>
+                  <input id="course02" type="checkbox" >
+                  <label for="course02">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    45分
+                  </label>
+                </div>
+              </div>
+              <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox">
+                <h3>習いたい言語を選んでください。</h3>
+                <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox__wrap">
+                  <input id="language01" type="checkbox" >
+                  <label for="language01">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    英語
+                  </label>
+                  <input id="language02" type="checkbox" >
+                  <label for="language02">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    韓国語
+                  </label>
+                  <input id="language03" type="checkbox" >
+                  <label for="language03">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    日本語
+                  </label>
+                  <input id="language04" type="checkbox" >
+                  <label for="language04">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    その他
+                  </label>
+                </div>
+              </div>
+              <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox">
+                <h3>講師が話せる言語</h3>
+                <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox__wrap">
+                  <input id="language05" type="checkbox" >
+                  <label for="language05">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    英語
+                  </label>
+                  <input id="language06" type="checkbox" >
+                  <label for="language06">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    韓国語
+                  </label>
+                  <input id="language07" type="checkbox" >
+                  <label for="language07">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    日本語
+                  </label>
+                  <input id="language08" type="checkbox" >
+                  <label for="language08">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    その他
+                  </label>
+                </div>
+              </div>            
+              <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox">
+                <h3>レベルはどのくらいですか？</h3>
+                <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox__wrap">
+                  <input id="level01" type="checkbox" >
+                  <label for="level01">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    初心者
+                  </label>
+                  <input id="level02" type="checkbox" >
+                  <label for="level02">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    中級者
+                  </label>
+                  <input id="level03" type="checkbox" >
+                  <label for="level03">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    上級者
+                  </label>
+                  <input id="level04" type="checkbox" >
+                  <label for="level04">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    ビジネス
+                  </label>
+                </div>
+              </div>
+              <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox">
+                <h3>スケジュールを選択してください。</h3>
+                <div class="p-tutor__tutor-list__sidebar-tutor__search-box__checkbox__wrap">
+                  <input id="time01" type="checkbox" >
+                  <label for="time01">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    朝時間
+                  </label>
+                  <input id="time02" type="checkbox" >
+                  <label for="time02">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    昼時間
+                  </label>
+                  <input id="time03" type="checkbox" >
+                  <label for="time03">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    夜時間
+                  </label>
+                  <input id="time04" type="checkbox" >
+                  <label for="time04">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    平日
+                  </label>
+                  <input id="time05" type="checkbox" >
+                  <label for="time05">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    週末
+                  </label>
+                </div>
+              </div>
+              <a href="" class="p-tutor__tutor-list__sidebar-tutor__search-box__btn">
+                再検索
+              </a>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
+        </div>
+        <ul class="p-tutor__tutor-list__list">
+          <li class="p-tutor__tutor-list__item">
+            <div class="p-tutor__tutor-list__item__movie">
+              <div class="p-tutor__tutor-list__item__add-wishlist">
+                <input id="wishlist" type="checkbox" class="search-selects">
+                <label for="wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </label>
               </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
+              <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-tutor__tutor-list__item__profile">
+              <a href="tutor-detail.html" class="p-tutor__tutor-list__item__profile__link">
+                <div class="p-tutor__tutor-list__item__profile__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__name">
+                  Valeria Elsa
+                  <span>講師のキャッチコピー</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__detail-info">
+                    英語 <span class="native-icon">Naitve</span>
+                    韓国語 <span class="native-icon lv01">初級</span>
+                    日本語 <span class="native-icon lv02">中級</span>
+                </div>
+              </a>
+            </div>
+          </li>
 
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#ffcc00" fill-opacity="1" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+          <li class="p-tutor__tutor-list__item">
+            <div class="p-tutor__tutor-list__item__movie">
+              <div class="p-tutor__tutor-list__item__add-wishlist">
+                <input id="wishlist" type="checkbox" class="search-selects">
+                <label for="wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </label>
+              </div>
+              <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
+            <div class="p-tutor__tutor-list__item__profile">
+              <a href="tutor-detail.html" class="p-tutor__tutor-list__item__profile__link">
+                <div class="p-tutor__tutor-list__item__profile__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__name">
+                  Valeria Elsa
+                  <span>講師のキャッチコピー</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__detail-info">
+                    英語 <span class="native-icon">Naitve</span>
+                    韓国語 <span class="native-icon lv01">初級</span>
+                    日本語 <span class="native-icon lv02">中級</span>
+                </div>
+              </a>
+            </div>
+          </li>
 
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+          <li class="p-tutor__tutor-list__item">
+            <div class="p-tutor__tutor-list__item__movie">
+              <div class="p-tutor__tutor-list__item__add-wishlist">
+                <input id="wishlist" type="checkbox" class="search-selects">
+                <label for="wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </label>
+              </div>
+              <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
+            <div class="p-tutor__tutor-list__item__profile">
+              <a href="tutor-detail.html" class="p-tutor__tutor-list__item__profile__link">
+                <div class="p-tutor__tutor-list__item__profile__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__name">
+                  Valeria Elsa
+                  <span>講師のキャッチコピー</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__detail-info">
+                    英語 <span class="native-icon">Naitve</span>
+                    韓国語 <span class="native-icon lv01">初級</span>
+                    日本語 <span class="native-icon lv02">中級</span>
+                </div>
+              </a>
+            </div>
+          </li>
 
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+          <li class="p-tutor__tutor-list__item">
+            <div class="p-tutor__tutor-list__item__movie">
+              <div class="p-tutor__tutor-list__item__add-wishlist">
+                <input id="wishlist" type="checkbox" class="search-selects">
+                <label for="wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </label>
+              </div>
+              <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
+            <div class="p-tutor__tutor-list__item__profile">
+              <a href="tutor-detail.html" class="p-tutor__tutor-list__item__profile__link">
+                <div class="p-tutor__tutor-list__item__profile__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__name">
+                  Valeria Elsa
+                  <span>講師のキャッチコピー</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__detail-info">
+                    英語 <span class="native-icon">Naitve</span>
+                    韓国語 <span class="native-icon lv01">初級</span>
+                    日本語 <span class="native-icon lv02">中級</span>
+                </div>
+              </a>
+            </div>
+          </li>
 
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+          <li class="p-tutor__tutor-list__item">
+            <div class="p-tutor__tutor-list__item__movie">
+              <div class="p-tutor__tutor-list__item__add-wishlist">
+                <input id="wishlist" type="checkbox" class="search-selects">
+                <label for="wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </label>
+              </div>
+              <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
+            <div class="p-tutor__tutor-list__item__profile">
+              <a href="tutor-detail.html" class="p-tutor__tutor-list__item__profile__link">
+                <div class="p-tutor__tutor-list__item__profile__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__name">
+                  Valeria Elsa
+                  <span>講師のキャッチコピー</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__detail-info">
+                    英語 <span class="native-icon">Naitve</span>
+                    韓国語 <span class="native-icon lv01">初級</span>
+                    日本語 <span class="native-icon lv02">中級</span>
+                </div>
+              </a>
+            </div>
+          </li>
 
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+          <li class="p-tutor__tutor-list__item">
+            <div class="p-tutor__tutor-list__item__movie">
+              <div class="p-tutor__tutor-list__item__add-wishlist">
+                <input id="wishlist" type="checkbox" class="search-selects">
+                <label for="wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </label>
+              </div>
+              <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
+            <div class="p-tutor__tutor-list__item__profile">
+              <a href="tutor-detail.html" class="p-tutor__tutor-list__item__profile__link">
+                <div class="p-tutor__tutor-list__item__profile__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__name">
+                  Valeria Elsa
+                  <span>講師のキャッチコピー</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__detail-info">
+                    英語 <span class="native-icon">Naitve</span>
+                    韓国語 <span class="native-icon lv01">初級</span>
+                    日本語 <span class="native-icon lv02">中級</span>
+                </div>
+              </a>
+            </div>
+          </li>
 
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+          <li class="p-tutor__tutor-list__item">
+            <div class="p-tutor__tutor-list__item__movie">
+              <div class="p-tutor__tutor-list__item__add-wishlist">
+                <input id="wishlist" type="checkbox" class="search-selects">
+                <label for="wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </label>
+              </div>
+              <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
+            <div class="p-tutor__tutor-list__item__profile">
+              <a href="tutor-detail.html" class="p-tutor__tutor-list__item__profile__link">
+                <div class="p-tutor__tutor-list__item__profile__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__name">
+                  Valeria Elsa
+                  <span>講師のキャッチコピー</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__detail-info">
+                    英語 <span class="native-icon">Naitve</span>
+                    韓国語 <span class="native-icon lv01">初級</span>
+                    日本語 <span class="native-icon lv02">中級</span>
+                </div>
+              </a>
+            </div>
+          </li>
 
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#ffcc00" fill-opacity="1" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+          <li class="p-tutor__tutor-list__item">
+            <div class="p-tutor__tutor-list__item__movie">
+              <div class="p-tutor__tutor-list__item__add-wishlist">
+                <input id="wishlist" type="checkbox" class="search-selects">
+                <label for="wishlist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </label>
+              </div>
+              <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
-
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
+            <div class="p-tutor__tutor-list__item__profile">
+              <a href="tutor-detail.html" class="p-tutor__tutor-list__item__profile__link">
+                <div class="p-tutor__tutor-list__item__profile__tag">
+                  <span class="language">English</span>
+                  <span>初心者向け</span>
+                  <span>ビジネスレベル</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__name">
+                  Valeria Elsa
+                  <span>講師のキャッチコピー</span>
+                </div>
+                <div class="p-tutor__tutor-list__item__profile__detail-info">
+                    英語 <span class="native-icon">Naitve</span>
+                    韓国語 <span class="native-icon lv01">初級</span>
+                    日本語 <span class="native-icon lv02">中級</span>
+                </div>
+              </a>
             </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
-
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
-            </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
-
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
-            </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
-
-        <li class="p-tutor__tutor-list__item">
-          <div class="p-tutor__tutor-list__item__movie">
-            <div class="p-tutor__tutor-list__item__add-wishlist">
-              <input id="wishlist" type="checkbox" class="search-selects">
-              <label for="wishlist">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 7.68998C0.75 4.18927 3.57229 1.34998 7.06 1.34998C8.79674 1.34998 10.3646 2.05596 11.5003 3.19469C12.6385 2.05561 14.2122 1.34998 15.94 1.34998C19.4277 1.34998 22.25 4.18927 22.25 7.68998C22.25 11.4395 20.5107 14.4001 18.4342 16.5276C16.3683 18.6443 13.9235 19.9861 12.3657 20.5186C12.0914 20.6147 11.7773 20.65 11.5 20.65C11.2227 20.65 10.9086 20.6147 10.6343 20.5186C9.07655 19.9861 6.63169 18.6443 4.56577 16.5276C2.48932 14.4001 0.75 11.4395 0.75 7.68998Z" fill="#232323" fill-opacity="0.3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </label>
-            </div>
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BtwF7Y0_MTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="p-tutor__tutor-list__item__profile">
-            <a href="p-tutor__tutor-list__item__profile__link">
-              <div class="p-tutor__tutor-list__item__profile__tag">
-                <span class="language">English</span>
-                <span>初心者向け</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-                <span>ビジネスレベル</span>
-              </div>
-              <div class="p-tutor__tutor-list__item__profile__name">
-                Valeria Elsa
-                <span>講師のキャッチコピー</span>
-              </div>
-            </a>
-          </div>
-        </li>
-      </ul>
-      <a href="" class="p-tutor__tutor-list__more-view">
-        View More
-      </a>
+          </li>
+          <div class="p-tutor__tutor-list__paging-tutor">
+            <a href="" class="p-tutor__tutor-list__paging-tutor__link active">1</a>
+            <a href="" class="p-tutor__tutor-list__paging-tutor__link">2</a>
+            <a href="" class="p-tutor__tutor-list__paging-tutor__link">3</a>
+            <a href="" class="p-tutor__tutor-list__paging-tutor__link">4</a>
+            <a href="" class="p-tutor__tutor-list__paging-tutor__link">5</a>
+            <a href="" class="p-tutor__tutor-list__paging-tutor__link"><i class="fa-regular fa-angle-right"></i></a>
+        </div>
+        </ul>
+      </div>
     </section>
   </main>
   <script src="./assets/js/common.js"></script>

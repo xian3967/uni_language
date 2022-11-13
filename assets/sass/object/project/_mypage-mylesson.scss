@@ -7,24 +7,20 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-top: 20px;
     &__item {
-      width: calc(50% - 10px);
-      margin-right: 20px;
+      width: 100%;
       margin-bottom: 30px;
       background: $white;
-      //border: 1px solid $black;
-      box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-      border-radius: 7px;
-      padding: 15px 0 0;
+      border-radius: 20px;
+      border: 1px solid $lightgray;
+      box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-between;
       overflow: hidden;
       position: relative;
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
       @media (max-width: 1024px) {
         width: 100%;
         margin-right: 0;
@@ -42,13 +38,13 @@
         flex-wrap: wrap;
         align-items: flex-end;
         width: 100%;
-        padding: 0 15px;
+        padding: 30px 30px 20px 30px;
       }
       &__left {
-        width: calc(100% - 120px);
+        width: calc(100% - 170px);
       }
       &__right {
-        width: 100px;
+        width: 150px;
         margin-left: 20px;
         display: flex;
         flex-flow: row nowrap;
@@ -57,15 +53,19 @@
         display: block;
         width: 100%;
         max-width: fit-content;
-        background: $lightpink;
+        background: $maincolor;
         padding: 6px 12px;
         font-size: 12px;
         line-height: 12px;
-        color: #fff;
+        color: $blacktext;
+        font-weight: bold;
         border-radius: 50px;
         box-sizing: border-box;
         text-align: center;
         margin-bottom: 5px;
+        &.offer {
+          background: $student;
+        }
       }
       &__status {
         display: block;
@@ -80,8 +80,9 @@
         box-sizing: border-box;
         text-align: center;
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 55px;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 2;
         &.pink {
           background: $lightpink;
@@ -91,34 +92,44 @@
         }
       }
       &__title {
-        font-size: 16px;
-        font-weight: 500;
-        color: $black;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $blacktext;
+        margin-top: 5px;
       }
       &__name {
-        font-size: 12px;
+        font-size: 1.4rem;
         line-height: 18px;
-        font-weight: 400;
-        color: $black;
+        font-weight: 500;
+        color: $blacktext;
         margin-bottom: 15px;
       }
       &__tiems {
-        font-size: 12px;
+        font-size: 1.4rem;
         line-height: 18px;
-        font-weight: 400;
-        color: $black;
+        font-weight: 500;
+        color: $blacktext;
         margin-bottom: 5px;
       }
       &__date {
-        font-size: 12px;
+        font-size: 1.4rem;
         line-height: 18px;
-        font-weight: 400;
-        color: $black;
-        margin-bottom: 15px;
+        font-weight: 500;
+        color: $blacktext;
+      }
+      &__date-next {
+        font-size: 1.4rem;
+        line-height: 18px;
+        font-weight: bold;
+        color: $blacktext;
+        margin: 10px 0;
+        padding: 10px;
+        background: $lightgray;
+        border-radius: 10px;
       }
       &__button {
         width: 100%;
-        padding: 0 15px;
+        display: flex;
         a {
           width: 100%;
           display: flex;
@@ -126,10 +137,19 @@
           align-items: center;
           justify-content: center;
           height: 40px;
-          background: $pink;
-          color: $white;
-          border-radius: 10px;
-          margin-bottom: 10px;
+          background: $maincolor;
+          color: $blacktext;
+          font-size: 1.4rem;
+          font-weight: bold;
+          &.green {
+            background: $green;
+          }
+          &.red {
+            background: $pink;
+          }
+          &.gray {
+            background: $lightgray;
+          }
         }
       }
       &__result {
@@ -180,7 +200,7 @@
         font-size: 14px;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 60%;
         text-align: center;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -214,6 +234,7 @@
       margin-right: 10px;
     }
     .c-select {
+      width: 100% !important;
       &:after {
         @media (max-width: 767px) {
           right: 10px !important;

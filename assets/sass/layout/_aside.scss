@@ -32,6 +32,11 @@
         &:hover {
           opacity: 0.7;
         }
+        i {
+          margin-right: 10px;
+          color: $maincolor;
+          font-size: 1.6rem;
+        }
       }
       .l-aside__nav__link__arrow {
         position: relative;
@@ -55,7 +60,7 @@
       .l-aside__nav__hide {
         width: 100%;
         margin: 5px 0;
-        padding: 10px 30px;
+        padding: 10px 20px;
         background-color: #f3f4f8;
         border-radius: 4px;
         display: none;
@@ -64,6 +69,21 @@
           &.is-active {
             color: $black;
             text-decoration: underline;
+          }
+          i {
+            margin-right: 5px;
+            &.yellow {
+              color: $maincolor;
+            }
+            &.grren {
+              color: $green;
+            }
+            &.blue {
+              color: $blue;
+            }
+            &.red {
+              color: $red;
+            }
           }
         }
         .l-aside__nav__hide__item {
