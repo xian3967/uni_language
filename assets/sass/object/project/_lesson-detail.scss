@@ -398,6 +398,12 @@
       &__detail-info {
         margin-top: 10px;
         font-size: 1.4rem;
+        p {
+          padding: 5px 10px;
+          &.language {
+            background: $lightgray;
+          }
+        }
         span {
           font-weight: bold;
         }
@@ -407,6 +413,19 @@
           line-height: 1.4rem;
           border-radius: 10px;
           padding: 0 10px;
+          margin-right: 5px;
+          &.lv01 {
+            background: $green;
+          }
+          &.lv02 {
+            background: $lightblue;
+          }
+          &.lv03 {
+            background: $purple;
+          }
+          &.lv04 {
+            background: $pink;
+          }
         }
       }
     }

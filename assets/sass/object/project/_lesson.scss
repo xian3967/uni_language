@@ -312,17 +312,18 @@
             background: #FFF;
             margin-left: 10px;
             span {
-              width: 16px;
-              height: 16px;
+              width: 13px;
+              height: 13px;
               border: 2px solid $maincolor;
               display: block;
               margin-top: 4px;
               margin-right: 8px;
               position: relative;
               i {
-                left: 1px;
+                left: -1px;
+                bottom: -2px;
                 position: absolute;
-                font-size: 1.1rem;
+                font-size: 1.6rem;
                 font-weight: bold;
                 opacity: 0;
                 color: #FFF;
@@ -544,17 +545,18 @@
             background: #FFF;
             margin-left: 10px;
             span {
-              width: 16px;
-              height: 16px;
+              width: 13px;
+              height: 13px;
               border: 2px solid $student;
               display: block;
               margin-top: 4px;
               margin-right: 8px;
               position: relative;
               i {
-                left: 1px;
+                left: -1px;
+                bottom: -2px;
                 position: absolute;
-                font-size: 1.1rem;
+                font-size: 1.6rem;
                 font-weight: bold;
                 opacity: 0;
                 color: #FFF;

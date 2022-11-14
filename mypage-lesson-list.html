@@ -148,20 +148,9 @@
       <div class="l-container main">
         <div class="p-mypage-mylesson">
           <section class="l-section">
-            <h2 class="c-title"><span>受講中のレッスン</span></h2>
+            <h2 class="c-title"><span>登録中のレッスン</span></h2>
             <div class="p-mypage-mylesson__search">
-              <div class="p-mypage-mylesson__search-select">
-                <div class="c-select__wrapper">
-                  <div class="c-select">
-                    <select class="selected__color" name="" id="">
-                      <option value="すべて" selected="">すべて</option>
-                      <option value="レッスン">レッスン</option>
-                      <option value="レッスン希望">レッスン希望</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="p-mypage-mylesson__search-icon-box">
+              <div class="p-mypage-mylesson__search-icon-box" style="width: 100%;">
                 <div class="p-mypage-mylesson__search-icon-box__btn">
                   <input type="text" placeholder="keyword...">
                   <button class="p-mypage-mylesson__search-icon-box__btn__btn">
@@ -176,67 +165,55 @@
                   <div class="p-mypage-mylesson__list__item__left">
                     <p class="p-mypage-mylesson__list__item__label">レッスン</p>
                     <h3 class="p-mypage-mylesson__list__item__title">レッスンタイトル</h3>
-                    <p class="p-mypage-mylesson__list__item__name">生徒の名前</p>
-                    <p class="p-mypage-mylesson__list__item__tiems">購入回数 4回</p>
-                    <p class="p-mypage-mylesson__list__item__date">レッスン期間 2022.10.30 ~ 2022.12.01</p>
-                    <p class="p-mypage-mylesson__list__item__date-next">次のレッスン 2022.11.15 15:00</p>
-                  </div>
-                  <div class="p-mypage-mylesson__list__item__right">
-                    <div class="p-mypage-mylesson__list__item__single-chart">
-                      <p class="p-mypage-mylesson__list__item__percentage">25%<span class="small-text"> 完了</span><br />1回／<span class="small-text">全4回</span></p>
-                      <p class="p-mypage-mylesson__list__item__status pink">受講中</p>
-                      <svg viewBox="0 0 36 36" class="p-mypage-mylesson__list__item__circular-chart orange">
-                        <path class="p-mypage-mylesson__list__item__circle-bg"
-                          d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                        <path class="p-mypage-mylesson__list__item__circle scroll-animation"
-                          stroke-dasharray="25, 100"
-                          d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                      </svg>
-                    </div>
+                    <p class="p-mypage-mylesson__list__item__tiems">受講生 4人</p>
                   </div>
                 </div>
                 <div class="p-mypage-mylesson__list__item__button">
-                  <a href="mypage-lesson-mylesson-detail.html">詳細を見る</a>
+                  <a href="mypage-lesson-mylesson.html">受講中一覧</a>
+                  <a href="mypage-lesson.html" class="green">編集</a>
+                  <a href="" class="red">削除</a>
                 </div>
               </li>
               <li class="p-mypage-mylesson__list__item">
                 <div class="p-mypage-mylesson__list__item__wrap">
                   <div class="p-mypage-mylesson__list__item__left">
-                    <p class="p-mypage-mylesson__list__item__label offer">レッスン希望</p>
-                    <h3 class="p-mypage-mylesson__list__item__title">レッスン希望タイトル</h3>
-                    <p class="p-mypage-mylesson__list__item__name">生徒の名前</p>
-                    <p class="p-mypage-mylesson__list__item__tiems">購入回数 4回</p>
-                    <p class="p-mypage-mylesson__list__item__date">レッスン期間 2022.10.30 ~ 2022.12.01</p>
-                    <p class="p-mypage-mylesson__list__item__date-next">次のレッスン 2022.11.15 15:00</p>
-                  </div>
-                  <div class="p-mypage-mylesson__list__item__right">
-                    <div class="p-mypage-mylesson__list__item__single-chart">
-                      <p class="p-mypage-mylesson__list__item__percentage">75%<span class="small-text"> 完了</span><br />3回／<span class="small-text">全4回</span></p>
-                      <p class="p-mypage-mylesson__list__item__status pink">受講中</p>
-                      <svg viewBox="0 0 36 36" class="p-mypage-mylesson__list__item__circular-chart orange">
-                        <path class="p-mypage-mylesson__list__item__circle-bg"
-                          d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                        <path class="p-mypage-mylesson__list__item__circle scroll-animation offer"
-                          stroke-dasharray="75, 100"
-                          d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                      </svg>
-                    </div>
+                    <p class="p-mypage-mylesson__list__item__label">レッスン</p>
+                    <h3 class="p-mypage-mylesson__list__item__title">レッスンタイトル</h3>
+                    <p class="p-mypage-mylesson__list__item__tiems">受講生 4人</p>
                   </div>
                 </div>
                 <div class="p-mypage-mylesson__list__item__button">
-                  <a href="mypage-lesson-mylesson-detail.html" class="offer">詳細を見る</a>
+                  <a href="mypage-lesson-mylesson.html">受講中一覧</a>
+                  <a href="mypage-lesson.html" class="green">編集</a>
+                  <a href="" class="red">削除</a>
+                </div>
+              </li>
+              <li class="p-mypage-mylesson__list__item">
+                <div class="p-mypage-mylesson__list__item__wrap">
+                  <div class="p-mypage-mylesson__list__item__left">
+                    <p class="p-mypage-mylesson__list__item__label">レッスン</p>
+                    <h3 class="p-mypage-mylesson__list__item__title">レッスンタイトル</h3>
+                    <p class="p-mypage-mylesson__list__item__tiems">受講生 4人</p>
+                  </div>
+                </div>
+                <div class="p-mypage-mylesson__list__item__button">
+                  <a href="mypage-lesson-mylesson.html">受講中一覧</a>
+                  <a href="mypage-lesson.html" class="green">編集</a>
+                  <a href="" class="red">削除</a>
+                </div>
+              </li>
+              <li class="p-mypage-mylesson__list__item">
+                <div class="p-mypage-mylesson__list__item__wrap">
+                  <div class="p-mypage-mylesson__list__item__left">
+                    <p class="p-mypage-mylesson__list__item__label">English</p>
+                    <h3 class="p-mypage-mylesson__list__item__title">レッスンタイトル</h3>
+                    <p class="p-mypage-mylesson__list__item__tiems">受講生 4人</p>
+                  </div>
+                </div>
+                <div class="p-mypage-mylesson__list__item__button">
+                  <a href="mypage-lesson-mylesson.html">受講中一覧</a>
+                  <a href="mypage-lesson.html" class="green">編集</a>
+                  <a href="" class="red">削除</a>
                 </div>
               </li>
             </ul>

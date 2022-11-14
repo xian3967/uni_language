@@ -1,13 +1,19 @@
 .p-contact {
   padding: 80px 0;
-  background: $white;
+  background: $lightgray;
   position: relative;
   overflow: hidden;
+  .c-title {
+    padding: 0 30px 0 30px;
+  }
   &__inner {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 30px 0 0 0;
+    border-radius: 30px;
+    background: $white;
+    overflow: hidden;
     @media (max-width: 1024px) {
       padding: 0 2%;
     }
@@ -16,7 +22,6 @@
     }
   }
   &__contents {
-
   }
   &__text {
     font-size: 16px;
@@ -24,6 +29,7 @@
     color: $black;
     line-height: 30px;
     margin-bottom: 40px;
+    padding: 0 30px 0 30px;
     span {
       color: $darkgray;
       font-weight: 400;
@@ -35,8 +41,10 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 10px;
+      padding: 0 30px 0 30px;
       &__left {
-        width: 220px;
+        width: 170px;
         margin-right: 20px;
         @media (max-width: 767px) {
           width: 100%;
@@ -63,10 +71,10 @@
           }
           &::before {
             content: "※";
-            font-size: 14px;
-            font-size: 1.4rem;
+            font-size: 12px;
+            font-size: 1.2rem;
             font-weight: 500;
-            color: $black;
+            color: $red;
             position: absolute;
             top: 11px;
             right: 10px;
@@ -86,7 +94,7 @@
         }
       }
       &__right {
-        width: calc(100% - 240px);
+        width: calc(100% - 190px);
         @media (max-width: 767px) {
           width: 100%;
         }
@@ -107,19 +115,19 @@
       justify-content: center;
       align-items: center;
       button {
-        width: 250px;
+        width: 100%;
         height: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         background: $yellow;
-        border-radius: 10px;
-        color: $black;
-        font-size: 16px;
+        color: $blacktext;
+        font-size: 1.4rem;
+        font-weight: bold;
         transition: 0.5s;
         @media (max-width: 767px) {
-          width: 220px;
+          width: 100%;
           height: 40px;
           border-radius: 7px;
           font-size: 14px;
