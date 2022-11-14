@@ -121,7 +121,7 @@
         font-size: 1.4rem;
         line-height: 18px;
         font-weight: bold;
-        color: $blacktext;
+        color: $red;
         margin: 10px 0;
         padding: 10px;
         background: $lightgray;
@@ -149,6 +149,9 @@
           }
           &.gray {
             background: $lightgray;
+          }
+          &.offer {
+            background: $student;
           }
         }
       }
@@ -193,6 +196,9 @@
         &.is-animated {
           stroke: $yellow;
           animation: progress 1s ease-out forwards;
+        }
+        &.offer {
+          stroke: $student;
         }
       }
       &__percentage {
