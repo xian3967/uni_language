@@ -142,41 +142,45 @@
                   <div class="c-calendar__modal">
                     <div class="c-calendar__modal__close js-modal-close"></div>
                     <p id="modalYearMonth"><span>11</span></p>
-                    <div class="c-select__wrapper">
-                      <p class="c-select__title">プラン</p>
-                      <div class="c-select">
-                        <select class="calendar-select" name="" id="js-calendar-plan">
-                          <option value="" selected="">選択してください</option>
-                          <option value="オプション_01">オプション_01</option>
-                          <option value="オプション_02">オプション_02</option>
-                          <option value="オプション_03">オプション_03</option>
-                          <option value="オプション_04">オプション_04</option>
-                          <option value="オプション_05">オプション_05</option>
-                        </select>
+                    <div class="c-checkbox">
+                      <p class="c-checkbox__title">プラン</p>
+                      <div class="c-checkbox__flex__2col">
+                        <div class="c-checkbox__flex__contents">
+                          <input type="radio" id="plan_01" name="plan" value="20分コース" class="js-calendar__plan" checked>
+                          <label for="plan_01">20分コース</label>
+                        </div>
+                        <div class="c-checkbox__flex__contents">
+                          <input type="radio" id="plan_02" name="plan" value="45分コース" class="js-calendar__plan">
+                          <label for="plan_02">45分コース</label>
+                        </div>
                       </div>
                     </div>
-                    <div class="c-select__wrapper">
-                      <p class="c-select__title">時間</p>
-                      <div class="c-select__2col">
-                        <div class="c-select">
-                          <select class="calendar-select" name="" id="js-calendar-time1">
-                            <option value="" selected="">選択してください</option>
-                            <option value="01:00">01:00</option>
-                            <option value="02:00">02:00</option>
-                            <option value="03:00">03:00</option>
-                            <option value="04:00">04:00</option>
-                            <option value="05:00">05:00</option>
-                          </select>
+                    <div class="c-checkbox">
+                      <p class="c-checkbox__title">時間</p>
+                      <div class="c-checkbox__flex__3col">
+                        <div class="c-checkbox__flex__contents">
+                          <input type="checkbox" id="time_01" name="time" value="02:00" class="js-calendar__time">
+                          <label for="time_01">02:00</label>
                         </div>
-                        <div class="c-select">
-                          <select class="calendar-select" name="" id="js-calendar-time2">
-                            <option value="" selected="">選択してください</option>
-                            <option value="01:00">01:00</option>
-                            <option value="02:00">02:00</option>
-                            <option value="03:00">03:00</option>
-                            <option value="04:00">04:00</option>
-                            <option value="05:00">05:00</option>
-                          </select>
+                        <div class="c-checkbox__flex__contents">
+                          <input type="checkbox" id="time_02" name="time" value="02:30" class="js-calendar__time">
+                          <label for="time_02">02:30</label>
+                        </div>
+                        <div class="c-checkbox__flex__contents">
+                          <input type="checkbox" id="time_03" name="time" value="03:00" class="js-calendar__time">
+                          <label for="time_03">03:00</label>
+                        </div>
+                        <div class="c-checkbox__flex__contents">
+                          <input type="checkbox" id="time_04" name="time" value="03:30" class="js-calendar__time">
+                          <label for="time_04">03:30</label>
+                        </div>
+                        <div class="c-checkbox__flex__contents">
+                          <input type="checkbox" id="time_05" name="time" value="11:00" class="js-calendar__time">
+                          <label for="time_05">11:00</label>
+                        </div>
+                        <div class="c-checkbox__flex__contents">
+                          <input type="checkbox" id="time_06" name="time" value="12:00" class="js-calendar__time">
+                          <label for="time_06">12:00</label>
                         </div>
                       </div>
                     </div>
@@ -210,8 +214,7 @@
     const textArray = text.split("月");
     let newText = textArray[0];
     $('#modalYearMonth').text(newText + '月 ' + elementId + '日');
-    $('.calendar-select option:selected').prop('selected', false);
-    $('.calendar-select option:first').prop('selected', 'selected');
+    $('.js-calendar__time').prop('checked', false );
     $('.c-calendar__modal__submit').addClass('disabled');
     $('.c-calendar__modal').fadeIn();
   }

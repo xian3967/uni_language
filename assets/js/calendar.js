@@ -82,39 +82,36 @@
   $('#js-calendarBtnNext').on('click', function() {
     nextMonth();
   });
-  $('.calendar-select').on('change', function() {
-    let time1 = $('#js-calendar-time1').find(":selected").val();
-    let time2 = $('#js-calendar-time2').find(":selected").val();
-    let plan = $('#js-calendar-plan').find(":selected").val();
-    if (time1 === '' ||　time2 === ''　||　plan === '') {
-      $('.c-calendar__modal__submit').addClass('disabled');
-    } else {
+  $('.js-calendar__time').on('click', function() {
+    if ($('.js-calendar__time').is(':checked')) {
       $('.c-calendar__modal__submit').removeClass('disabled');
+    } else {
+      $('.c-calendar__modal__submit').addClass('disabled');
     }
   });
+
+
   $('.js-select').on('click', function() {
-    let date = $('#modalYearMonth').text();
-    let time1 = $('#js-calendar-time1').find(":selected").val();
-    let time2 = $('#js-calendar-time2').find(":selected").val();
-    let plan = $('#js-calendar-plan').find(":selected").val();
-    let lessonList = [
-      '<li class="p-mypage-lesson__schedule__result__list__item">',
-      '<div class="p-mypage-lesson__schedule__result__list__item__close" onClick="calendarRemoveEvent(this);"></div>',
-      '<h4 class="c-sub-title margin-t-0"><span>希望日</span></h3>',
-      '<p class="p-mypage-lesson__schedule__result__text" id="schedule-result-date">' + date + '</p>',
-      '<h4 class="c-sub-title"><span>時間</span></h3>',
-      '<p class="p-mypage-lesson__schedule__result__text" id="schedule-result-time">'+ time1 + ' ~ ' + time2 + '</p>',
-      '<h4 class="c-sub-title"><span>プラン</span></h3>',
-      '<p class="p-mypage-lesson__schedule__result__text" id="schedule-result-plan">' + plan + '</p>',
-      '</li>'
-    ].join("");
-    $('.p-mypage-lesson__schedule__result__list').append(lessonList);
+    $('.js-calendar__time').each(function() {
+      if ($(this).is(':checked')) {
+        let date = $('#modalYearMonth').text();
+        let time = $(this).val();
+        let plan = $('.js-calendar__plan:checked').val();
+        let lessonList = [
+          '<li class="p-mypage-lesson__schedule__result__list__item">',
+          '<div class="p-mypage-lesson__schedule__result__list__item__close" onClick="calendarRemoveEvent(this);"></div>',
+          '<h4 class="c-sub-title margin-t-0"><span>希望日</span></h3>',
+          '<p class="p-mypage-lesson__schedule__result__text schedule-result-date">' + date + '</p>',
+          '<h4 class="c-sub-title"><span>時間</span></h3>',
+          '<p class="p-mypage-lesson__schedule__result__text schedule-result-time">' + time + '</p>',
+          '<h4 class="c-sub-title"><span>プラン</span></h3>',
+          '<p class="p-mypage-lesson__schedule__result__text schedule-result-plan">' + plan + '</p>',
+          '</li>'
+        ].join("");
+        $('.p-mypage-lesson__schedule__result__list').append(lessonList);
+      }
+    });
     $('.c-calendar__modal').fadeOut();
-    /*
-    $('html, body').animate({
-      scrollTop: $('#result').offset().top - 600
-    }, 500);
-    */
   });
 
   $('.js-modal-close').on('click', function() {
