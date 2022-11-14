@@ -211,6 +211,13 @@ $('.js-copybtn').on('click', function() {
   textarea.select();
   document.execCommand('copy');
   textarea.remove();
+  if (!$(this).hasClass('is-show')) {
+    $(this).addClass('is-show');
+    $(this).next('.js-copyalert').fadeIn().delay(1500).fadeOut(300);
+  }
+  setTimeout(function() {
+    $('.js-copybtn').removeClass('is-show');
+  }, 1500);
 });
 //
 

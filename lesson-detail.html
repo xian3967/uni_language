@@ -27,7 +27,6 @@
   <script src="assets/js/owl.carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
   <script src="https://kit.fontawesome.com/9c4b4c7e12.js" crossorigin="anonymous"></script>
-  <script src="./assets/js/common.js"></script>  
   <title>U&I Language</title>
 </head>
 <body>
@@ -201,25 +200,80 @@
             </dl>
           </div>
           <div class="c-calendar">
-            <p class="p-lesson-detail__sub-title">授業スケジュール</p>
-            <div class="c-calendar__calendarYearMonth">
-                <p class="c-calendar__left c-calendar__calBtn" id="js-calendarBtnPrev"> Prev </p>
-                <p id="yearMonth"> Jan 2021 </p>
-                <p class="c-calendar__right c-calendar__calBtn" id="js-calendarBtnNext"> Next </p>
-            </div>
-            <div>
-                <ol class="c-calendar__calendarList1">
-                    <li class="day-name">Sat</li>
-                    <li class="day-name">Sun</li>
-                    <li class="day-name">Mon</li>
-                    <li class="day-name">Tue</li>
-                    <li class="day-name">Wed</li>
-                    <li class="day-name">Thu</li>
-                    <li class="day-name">Fri</li>
-                </ol>
-                <ol class="c-calendar__calendarList2" id="calendarList">
+              <div class="c-calendar__calendarYearMonth">
+                  <p class="c-calendar__left c-calendar__calBtn" id="js-calendarBtnPrev"> Prev </p>
+                  <p id="yearMonth"> Jan 2021 </p>
+                  <p class="c-calendar__right c-calendar__calBtn" id="js-calendarBtnNext"> Next </p>
+              </div>
+              <div>
+                  <ol class="c-calendar__calendarList1">
+                      <li class="day-name">Sat</li>
+                      <li class="day-name">Sun</li>
+                      <li class="day-name">Mon</li>
+                      <li class="day-name">Tue</li>
+                      <li class="day-name">Wed</li>
+                      <li class="day-name">Thu</li>
+                      <li class="day-name">Fri</li>
+                  </ol>
+                  <ol class="c-calendar__calendarList2" id="calendarList">
 
-                </ol>
+                  </ol>
+              </div>
+              <div class="c-calendar__modal">
+                <div class="c-calendar__modal__close js-modal-close"></div>
+                <p id="modalYearMonth"><span>11</span></p>
+                <div class="c-checkbox">
+                  <p class="c-checkbox__title">プラン</p>
+                  <div class="c-checkbox__flex__2col">
+                    <div class="c-checkbox__flex__contents">
+                      <input type="radio" id="plan_01" name="plan" value="20分コース" class="js-calendar__plan" checked>
+                      <label for="plan_01">20分コース</label>
+                    </div>
+                    <div class="c-checkbox__flex__contents">
+                      <input type="radio" id="plan_02" name="plan" value="45分コース" class="js-calendar__plan">
+                      <label for="plan_02">45分コース</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-checkbox">
+                  <p class="c-checkbox__title">時間</p>
+                  <div class="c-checkbox__flex__3col">
+                    <div class="c-checkbox__flex__contents">
+                      <input type="checkbox" id="time_01" name="time" value="02:00" class="js-calendar__time">
+                      <label for="time_01">02:00</label>
+                    </div>
+                    <div class="c-checkbox__flex__contents">
+                      <input type="checkbox" id="time_02" name="time" value="02:30" class="js-calendar__time">
+                      <label for="time_02">02:30</label>
+                    </div>
+                    <div class="c-checkbox__flex__contents">
+                      <input type="checkbox" id="time_03" name="time" value="03:00" class="js-calendar__time">
+                      <label for="time_03">03:00</label>
+                    </div>
+                    <div class="c-checkbox__flex__contents">
+                      <input type="checkbox" id="time_04" name="time" value="03:30" class="js-calendar__time">
+                      <label for="time_04">03:30</label>
+                    </div>
+                    <div class="c-checkbox__flex__contents">
+                      <input type="checkbox" id="time_05" name="time" value="11:00" class="js-calendar__time">
+                      <label for="time_05">11:00</label>
+                    </div>
+                    <div class="c-checkbox__flex__contents">
+                      <input type="checkbox" id="time_06" name="time" value="12:00" class="js-calendar__time">
+                      <label for="time_06">12:00</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-calendar__modal__submit js-select disabled">
+                  <p class="">選択完了</p>
+                </div>
+              </div>
+          </div>
+          <div class="p-mypage-lesson__schedule">
+            <div class="p-mypage-lesson__schedule__result" id="result">
+              <h3 class="p-mypage-lesson__schedule__result__title">スケジュール登録確認</h3>
+              <ul class="p-mypage-lesson__schedule__result__list">
+              </ul>
             </div>
           </div>
           <p class="p-lesson-detail__sub-title">この講師の他のレッスン</p>
@@ -420,8 +474,13 @@
     let text = $('#modalYearMonth').text();
     const textArray = text.split("月");
     let newText = textArray[0];
-    $('#modalYearMonth').text(newText + '月 ' + elementId + '日')
+    $('#modalYearMonth').text(newText + '月 ' + elementId + '日');
+    $('.js-calendar__time').prop('checked', false );
+    $('.c-calendar__modal__submit').addClass('disabled');
     $('.c-calendar__modal').fadeIn();
+  }
+  function calendarRemoveEvent(element) {
+    $(element).parent('li').remove();
   }
   </script>
 </body>

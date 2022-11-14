@@ -339,6 +339,27 @@
         display: flex;
         width: 100%;
         margin-bottom: 20px;
+        position: relative;
+        &__alert {
+          position: absolute;
+          top: -32px;
+          padding: 5px 10px;
+          background: $red;
+          color: $white;
+          right: 0;
+          display: none;
+          border-radius: 40px;
+          font-size: 11px;
+          line-height: 11px;
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            right: 28px;
+            border: 8px solid transparent;
+            border-top: 9px solid $red;
+          }
+        }
         &__left {
           width: 100%;
           background: $lightgray;
