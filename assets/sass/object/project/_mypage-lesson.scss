@@ -15,11 +15,10 @@
           width: calc(33.33333% - 12px);
           margin-right: 18px;
           margin-bottom: 18px;
-          //border: 1px solid $black;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
           border-radius: 7px;
-          padding: 20px;
           position: relative;
+          background: $lightgray;
+          overflow: hidden;
           &:nth-child(3n) {
             margin-right: 0;
           }
@@ -48,35 +47,99 @@
               margin-right: 0;
             }
           }
+          &__title {
+            padding: 10px;
+            text-align: center;
+            span {
+              font-size: 1.1rem;
+              font-weight: bold;
+            }
+          }
           &__close {
+            width: 20px;
+            height: 20px;
             position: absolute;
-            top: 3px;
+            top: 5px;
             right: 5px;
             display: inline-block;
             cursor: pointer;
+            background: #000;
+            border-radius: 50%;
+            text-align: center;
             @media (max-width: 767px) {
 
             }
             &:after {
               content: "\f00d";
               font-family: "Font Awesome 6 Pro";
-              font-weight: 300;
+              font-weight: bold;
               position: relative;
               display: block;
-              font-size: 20px;
-              line-height: 30px;
-              color: $black;
+              font-size: 1.4rem;
+              color: $white;
               @media (max-width: 425px) {
                 font-size: 15px;
                 line-height: 20px;
               }
             }
           }
+          &__ticket {    
+            height: 20px;
+            background-size: 4px 2px;
+            background-repeat: repeat-x;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              top: 0;
+              left: -10px;
+              transform: rotate(45deg);
+              background: $white;
+              border-radius: 50%;
+              pointer-events: none;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              top: 0;
+              right: -10px;
+              transform: rotate(45deg);
+              background: $white;
+              border-radius: 50%;
+              pointer-events: none;
+            }
+          }
         }
       }
       &__text {
         color: $black;
-        font-size: 14px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+      }
+      &__text-date {
+        color: $black;
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+      }
+      &__text-time {
+        color: $black;
+        font-size: 2rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        color: $red;
+        padding-bottom: 10px;
       }
       &__text-color {
         color: $gray;
@@ -85,7 +148,6 @@
         font-size: 16px;
         margin-bottom: 20px;
         font-weight: 500;
-
       }
       &__submit {
         width: 100%;

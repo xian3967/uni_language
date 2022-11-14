@@ -1,0 +1,290 @@
+.p-request-detail {
+  padding: 60px 0;
+  background: $lightgray;
+  position: relative;
+  overflow: hidden;
+  &__contents {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 4;
+    &.student-wrap {
+      flex-direction: row-reverse;
+    }
+  }
+  &__sidebar {
+    width: 350px;
+    margin-right: 30px;
+    position: relative;
+    overflow: visible;
+    @media (max-width: 1024px) {
+      width: 250px;
+      margin-right: 20px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+    &__fixed {
+      overflow: visible;
+    }
+    &__student {
+      -webkit-position: sticky;
+      position: sticky;
+      background: #FFF;
+      border-radius: 30px;
+      overflow: hidden;
+      top: 10px;
+      &__img {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      &__text-wrap {
+        width: 100%;
+        padding: 20px 30px;
+        &__name {
+          font-size: 2.4rem;
+          font-weight: bold;
+          color: $blacktext;
+          @media (max-width: 1024px) {
+            font-size: 2rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.6rem;
+          }
+        }
+        &__detail {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: $blacktext;
+        }
+        &__language {
+          width: 100%;
+          margin-top: 10px;
+          font-size: 1.4rem;
+          display: flex;
+          flex-wrap: wrap;
+          background: $lightgray;
+          border-radius: 20px;
+          padding: 10px;
+          p {
+            width: 50%;
+            padding: 5px 10px;
+            &.language {
+            }
+          }
+          span {
+            font-weight: bold;
+          }
+          .native-icon {
+            background: $maincolor;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            border-radius: 10px;
+            padding: 0 10px;
+            margin-right: 5px;
+            display: inline-block;
+            &.lv01 {
+              background: $green;
+            }
+            &.lv02 {
+              background: $lightblue;
+            }
+            &.lv03 {
+              background: $purple;
+            }
+            &.lv04 {
+              background: $pink;
+            }
+          }
+        }
+        &__introduce {
+          font-size: 1.2rem;
+          color: $blacktext;
+          margin-top: 10px;
+        }
+        &__lesson-btn {
+          width: 100%;
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+          background: $maincolor;
+          border-radius: 10px;
+          margin-top: 15px;
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: $blacktext;
+          span {
+            width: 170px;
+            display: inline-block;
+            text-align: left;
+          }
+          i {
+            margin-right: 10px;
+          }
+        }
+        &__message-btn {
+          width: 100%;
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+          border: 1px solid $maincolor;
+          border-radius: 10px;
+          margin-top: 10px;
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: $blacktext;
+          span {
+            width: 170px;
+            display: inline-block;
+            text-align: left;
+          }
+          i {
+            margin-right: 10px;
+          }
+        }
+        &__bookmark-btn {
+          width: 100%;
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+          border: 1px solid $maincolor;
+          border-radius: 10px;
+          margin-top: 10px;
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: $blacktext;
+          span {
+            width: 170px;
+            display: inline-block;
+            text-align: left;
+          }
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  &__heading {
+    width: 100%;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @media (max-width: 1024px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 767px) {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+  }
+  .c-calendar {
+    max-width: 100%;
+  }
+  &__sub-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__lesson-wrap {
+    width: calc(100% - 380px);
+    position: relative;
+    @media (max-width: 1024px) {
+      width: calc(100% - 270px);
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    z-index: 2;
+    &__lesson {
+      background: #FFF;
+      padding: 40px;
+      border-radius: 30px;
+      margin-bottom: 30px;
+      @media (max-width: 1024px) {
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 767px) {
+        padding: 18px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+      }
+    }
+    &__btn {
+      width: 100%;
+      &__link {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        background: $maincolor;
+        border-radius: 15px;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $blacktext;
+      }
+    }
+  }
+  &__lesson-info {
+    width: 100%;
+    margin-bottom: 30px;
+    dl {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #000;
+      dt {
+        width: 200px;
+        padding: 20px 15px;
+        background: $maincolor;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        font-weight: bold;
+        @media (max-width: 1024px) {
+          width: 180px;
+          padding: 15px 12px;
+        }
+        @media (max-width: 767px) {
+          width: 32%;
+          padding: 10px 8px;
+          font-size: 1.2rem;
+        }
+      }
+      dd {
+        width: calc(100% - 200px);
+        padding: 20px 15px;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        @media (max-width: 1024px) {
+          width: calc(100% - 180px);
+          padding: 15px 12px;
+        }
+        @media (max-width: 767px) {
+          width: 68%;
+          padding: 10px 8px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

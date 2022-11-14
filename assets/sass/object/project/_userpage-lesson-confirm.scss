@@ -1,0 +1,151 @@
+.p-userpage-lesson-confirm {
+  padding-bottom: 60px;
+  &__lesson-info {
+    width: 100%;
+    margin-bottom: 30px;
+    p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 16px;
+      padding-left: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    dl {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #000;
+      dt {
+        width: 200px;
+        padding: 5px 10px;
+        background: $lightgray;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        font-weight: bold;
+        @media (max-width: 1024px) {
+          width: 180px;
+          padding: 15px 12px;
+        }
+        @media (max-width: 767px) {
+          width: 32%;
+          padding: 10px 8px;
+          font-size: 1.2rem;
+        }
+      }
+      dd {
+        width: calc(100% - 200px);
+        padding: 5px 10px;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        @media (max-width: 1024px) {
+          width: calc(100% - 180px);
+          padding: 15px 12px;
+        }
+        @media (max-width: 767px) {
+          width: 68%;
+          padding: 10px 8px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  &__lesson-schedule {
+    width: 100%;
+    margin-bottom: 30px;
+    p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 16px;
+      padding-left: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    &__date {
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      span {
+        background: $maincolor;
+        display: block;
+        padding: 8px 10px;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        color: $blacktext;
+      }
+    }
+  }
+  &__ticket {
+    width: 100%;
+    margin-bottom: 30px;
+    p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 16px;
+      padding-left: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    dl {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #000;
+      dt {
+        width: calc(100% - 200px);
+        padding: 5px 10px;
+        background: $lightgray;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        font-weight: bold;
+        @media (max-width: 1024px) {
+          width: 180px;
+          padding: 15px 12px;
+        }
+        @media (max-width: 767px) {
+          width: 32%;
+          padding: 10px 8px;
+          font-size: 1.2rem;
+        }
+      }
+      dd {
+        width: 200px;
+        padding: 5px 10px;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        text-align: right;
+        @media (max-width: 1024px) {
+          width: calc(100% - 180px);
+          padding: 15px 12px;
+        }
+        @media (max-width: 767px) {
+          width: 68%;
+          padding: 10px 8px;
+          font-size: 1.2rem;
+        }
+        span {
+          background: $lightpink;
+          font-size: 1rem;
+          padding: 3px 10px;
+          margin-left: 5px;
+          color: $white;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
