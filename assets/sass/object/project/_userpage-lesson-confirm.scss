@@ -148,4 +148,73 @@
       }
     }
   }
+  &__ticket-buy {
+    width: 100%;
+    margin-bottom: 30px;
+    p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 16px;
+      padding-left: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    dl {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #000;
+      dt {
+        width: calc(100% - 300px);
+        padding: 5px 10px;
+        background: $lightgray;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        font-weight: bold;
+        @media (max-width: 1024px) {
+          width: 180px;
+          padding: 15px 12px;
+        }
+        @media (max-width: 767px) {
+          width: 32%;
+          padding: 10px 8px;
+          font-size: 1.2rem;
+        }
+        &.total {
+          background: $maincolor;
+        }
+      }
+      dd {
+        width: 150px;
+        padding: 5px 10px;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        font-size: 1.4rem;
+        text-align: right;
+        @media (max-width: 1024px) {
+          width: calc(100% - 180px);
+          padding: 15px 12px;
+        }
+        @media (max-width: 767px) {
+          width: 68%;
+          padding: 10px 8px;
+          font-size: 1.2rem;
+        }
+        span {
+          background: $lightpink;
+          font-size: 1rem;
+          padding: 3px 10px;
+          margin-left: 5px;
+          color: $white;
+          border-radius: 5px;
+        }
+        &.total {
+          background: $maincolor;
+        }
+      }
+    }
+  }
 }

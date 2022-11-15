@@ -100,7 +100,7 @@
         let lessonList = [
           '<li class="p-mypage-lesson__schedule__result__list__item">',
           '<div class="p-mypage-lesson__schedule__result__list__item__close" onClick="calendarRemoveEvent(this);"></div>',
-          '<h4 class="p-mypage-lesson__schedule__result__list__item__title"><span>レッスン</span></h3>',
+          '<h4 class="p-mypage-lesson__schedule__result__list__item__title"><span>レッスンチケット</span></h3>',
           '<p class="p-mypage-lesson__schedule__result__text schedule-result-plan">' + plan + '</p>',
           '<div class="p-mypage-lesson__schedule__result__list__item__ticket"></div>',
           '<p class="p-mypage-lesson__schedule__result__text-date schedule-result-date">' + date + '</p>',
