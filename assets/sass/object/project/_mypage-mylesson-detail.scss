@@ -3,6 +3,12 @@
   background: #FFF;
   border-radius: 30px;
   overflow: hidden;
+  @media (max-width: 1024px) {
+    border-radius: 20px;
+  }
+  @media (max-width: 767px) {
+    border-radius: 15px;
+  }
   &__section {
     width: 100%;
     padding: 0 30px;
@@ -55,7 +61,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 30px;
-    padding: 30px 15px;
+    padding: 30px 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -63,6 +69,14 @@
     overflow: hidden;
     position: relative;
     background: $blacktext;
+    @media (max-width: 1024px) {
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+      padding: 15px;
+    }
     &__wrap {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -71,22 +85,33 @@
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       width: 100%;
-      padding: 0 15px;
+      position: relative;
     }
     &__left {
-      width: calc(100% - 270px);
+      width: calc(100% - 240px);
+      @media (max-width: 1024px) {
+        width: calc(100% - 145px);
+      }
       @media (max-width: 767px) {
-        width: calc(100% - 120px);
+        width: 100%;
       }
     }
     &__right {
       margin-left: 20px;
       display: flex;
       flex-flow: row nowrap;
-      width: 250px;
+      width: 220px;
       align-items: flex-start;
+      @media (max-width: 1024px) {
+        width: 130px;
+        margin-left: 15px;
+      }
       @media (max-width: 767px) {
         width: 100px;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        margin-left: 0;
       }
     }
     &__label {
@@ -131,6 +156,10 @@
       font-size: 2rem;
       font-weight: bold;
       color: $white;
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+        padding-right: 110px;
+      }
     }
     &__name {
       font-size: 12px;
@@ -145,6 +174,10 @@
       font-weight: 400;
       color: $white;
       margin-bottom: 5px;
+      @media (max-width: 767px) {
+        font-size: 11px;
+        padding-right: 110px;
+      }
     }
     &__date {
       font-size: 12px;
@@ -152,41 +185,79 @@
       font-weight: 400;
       color: $white;
       margin-bottom: 15px;
+      @media (max-width: 767px) {
+        font-size: 11px;
+        padding-right: 110px;
+      }
     }
     &__user-info {
       width: 100%;
-      padding: 20px;
+      padding: 16px;
       display: flex;
       align-items: center;
       background: $maincolor;
       border-radius: 20px;
+      @media (max-width: 1024px) {
+        padding: 15px;
+      }
+      @media (max-width: 767px) {
+        padding: 12px;
+        border-radius: 15px;
+      }
       &__img {
-        width: 130px;
-        margin-right: 20px;
+        width: 120px;
+        margin-right: 15px;
         img {
           border-radius: 50%;
         }
+        @media (max-width: 1024px) {
+          width: 80px;
+          margin-right: 10px;
+        }
       }
       &__text {
-        width: calc(100% - 150px);
+        width: calc(100% - 135px);
+        @media (max-width: 1024px) {
+          width: calc(100% - 90px);
+        }
         &__name {
           color: $blacktext;
           font-size: 2rem;
           font-weight: bold;
+          @media (max-width: 1024px) {
+            font-size: 1.8rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.6rem;
+          }
         }
         &__detail {
           color: $blacktext;
           font-size: 1.4rem;
+          @media (max-width: 767px) {
+            font-size: 1.2rem;
+          }
         }
         &__link {
-          padding: 10px 25px;
+          padding: 10px 20px;
           display: inline-block;
           background: $blacktext;
           color: $white;
-          font-size: 1.4rem;
+          font-size: 1.3rem;
+          line-height: 1.7rem;
           font-weight: bold;
           border-radius: 15px;
           margin-top: 10px;
+          @media (max-width: 1024px) {
+            padding: 7px 15px;
+            font-size: 1.2rem;
+          }
+          @media (max-width: 767px) {
+            padding: 5px 12px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            margin-top: 7px;
+          }
         }
       }
     }

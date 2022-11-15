@@ -1,24 +1,38 @@
 .p-contact {
-  padding: 80px 0;
+  padding: 80px 10px;
   background: $lightgray;
   position: relative;
   overflow: hidden;
+  @media (max-width: 1024px) {
+    padding: 60px 2%;
+  }
+  @media (max-width: 767px) {
+    padding: 11% 4%;
+  }
   .c-title {
-    padding: 0 30px 0 30px;
+    padding: 0 30px;
+    @media (max-width: 1024px) {
+      padding: 0 3%;
+    }
+    @media (max-width: 767px) {
+      padding: 0 4%;
+    }
   }
   &__inner {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
-    padding: 30px 0 0 0;
+    padding: 30px 0 0;
     border-radius: 30px;
     background: $white;
     overflow: hidden;
     @media (max-width: 1024px) {
-      padding: 0 2%;
+      padding: 4% 0 0;
+      border-radius: 20px;
     }
     @media (max-width: 767px) {
-      padding: 0 4%;
+      padding: 6% 0 0;
+      border-radius: 15px;
     }
   }
   &__contents {
@@ -30,10 +44,23 @@
     line-height: 30px;
     margin-bottom: 40px;
     padding: 0 30px 0 30px;
+    @media (max-width: 1024px) {
+      padding: 0 20px 0 20px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+      padding: 0 4% 0 4%;
+      margin-bottom: 5%;
+      font-size: 14px;
+      line-height: 24px;
+    }
     span {
       color: $darkgray;
       font-weight: 400;
       font-size: 14px;
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
     }
   }
   &__form {
@@ -43,6 +70,12 @@
       flex-wrap: wrap;
       margin-bottom: 10px;
       padding: 0 30px 0 30px;
+      @media (max-width: 1024px) {
+        padding: 0 20px 0 20px;
+      }
+      @media (max-width: 767px) {
+        padding: 0 4% 0 4%;
+      }
       &__left {
         width: 170px;
         margin-right: 20px;
@@ -98,6 +131,28 @@
         @media (max-width: 767px) {
           width: 100%;
         }
+        .c-select {
+          width: 100% !important;
+          margin-bottom: 20px;
+          @media (max-width: 767px) {
+            margin-bottom: 10px;
+          }
+        }
+        .c-input__2col {
+          margin-bottom: 20px;
+          @media (max-width: 767px) {
+            margin-bottom: 10px;
+          }
+          .c-input {
+            margin-bottom: 0 !important;
+          }
+        }
+        .c-input {
+          margin-bottom: 20px;
+          @media (max-width: 767px) {
+            margin-bottom: 10px;
+          }
+        }
         select {
           border-radius: 5px !important;
           font-weight: 400 !important;
@@ -129,7 +184,6 @@
         @media (max-width: 767px) {
           width: 100%;
           height: 40px;
-          border-radius: 7px;
           font-size: 14px;
         }
         &:hover {

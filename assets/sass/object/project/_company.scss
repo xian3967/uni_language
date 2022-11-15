@@ -3,10 +3,17 @@
   background: $lightgray;
   position: relative;
   overflow: hidden;
+  @media (max-width: 1024px) {
+    padding: 60px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 11% 0;
+  }
   &__inner {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
     @media (max-width: 1024px) {
       padding: 0 2%;
     }
@@ -119,7 +126,7 @@
       @media (max-width: 767px) {
         font-size: 16px;
         line-height: 21px;
-        padding: 0 3%;
+        padding: 0 5%;
       }
     }
     &__text {
@@ -133,7 +140,7 @@
         font-size: 14px;
         line-height: 19px;
         margin-bottom: 15px;
-        padding: 0 3%;
+        padding: 0 5%;
       }
     }
     &__button {
@@ -154,9 +161,7 @@
         font-size: 1.4rem;
         font-weight: bold;
         @media (max-width: 767px) {
-          width: 180px;
           height: 40px;
-          border-radius: 7px;
           font-size: 14px;
         }
       }

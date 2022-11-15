@@ -2,7 +2,14 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 60px 0;
+  padding: 60px 10px;
+  @media (max-width: 1024px) {
+    padding: 50px 2%;
+  }
+  @media (max-width: 767px) {
+    padding: 8% 4%;
+  }
 }

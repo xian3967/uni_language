@@ -248,6 +248,9 @@
       display: -ms-flexbox;
       display: flex;
       justify-content: space-between;
+      @media (max-width: 767px) {
+        padding: 0 4%;
+      }
       h2 {
         font-size: 1.4rem;
         line-height: 2.8rem;
