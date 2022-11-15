@@ -7,10 +7,10 @@
     padding: 60px 0;
     background: $lightgray;
     @media (max-width: 1024px) {
-      padding: 4% 0;
+      padding: 4% 2%;
     }
     @media (max-width: 767px) {
-      padding: 6% 0;
+      padding: 6% 4%;
     }
     &__accordion {
       margin-bottom: 10px;
@@ -53,6 +53,10 @@
       display: -ms-flexbox;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 30px;
+      @media (max-width: 767px) {
+        margin-bottom: 5%;
+      }
       h2 {
         font-size: 2.8rem;
         font-weight: bold;
@@ -124,12 +128,17 @@
       display: -ms-flexbox;
       display: flex;
       flex-wrap: wrap;
+      @media (max-width: 1024px) {
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
       @media (max-width: 767px) {
         width: 100%;
         margin-top: 7%;
-        padding: 4%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        padding: 5%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
       }
       &::after {
         content: "";
@@ -287,7 +296,7 @@
       margin: 10px;
       @media (max-width: 1024px) {
         margin: 7px;
-        width: calc(33.3% - 14px);
+        width: calc(50% - 14px);
       }
       @media (max-width: 767px) {
         width: 96%;
@@ -307,7 +316,7 @@
       &__profile {
         padding: 20px;
         @media (max-width: 1024px) {
-          padding: 4%;
+          padding: 5%;
         }
         @media (max-width: 767px) {
           padding: 6%;

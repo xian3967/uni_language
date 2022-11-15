@@ -368,12 +368,17 @@
     border-bottom-left-radius: 30px;
     position: relative;
     z-index: 2;
+    @media (max-width: 1024px) {
+      padding: 30px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
     @media (max-width: 767px) {
       width: 100%;
       margin-top: 7%;
-      padding: 4%;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
+      padding: 5%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
     }
     &::after {
       content: "";
@@ -404,6 +409,10 @@
         &__profile-img {
           width: 100px;
           margin-right: 20px;
+          @media (max-width: 1024px) {
+            width:85px;
+            margin-right: 15px;
+          }
           @media (max-width: 767px) {
             width: 12vw;
             margin-right: 2vw;
@@ -414,6 +423,9 @@
         }
         &__profile-text {
           width: calc(100% - 120px);
+          @media (max-width: 1024px) {
+            width: calc(100% - 100px);
+          }
           @media (max-width: 767px) {
             width: calc(100% - 14vw);
           }
@@ -601,12 +613,17 @@
     border-bottom-right-radius: 30px;
     position: relative;
     z-index: 2;
+    @media (max-width: 1024px) {
+      padding: 30px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
     @media (max-width: 767px) {
       width: 100%;
       margin-top: 7%;
-      padding: 4%;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
+      padding: 5%;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
     }
     &::after {
       content: "";
@@ -637,6 +654,10 @@
         &__profile-img {
           width: 100px;
           margin-right: 20px;
+          @media (max-width: 1024px) {
+            width:85px;
+            margin-right: 15px;
+          }
           @media (max-width: 767px) {
             width: 12vw;
             margin-right: 2vw;
@@ -647,6 +668,9 @@
         }
         &__profile-text {
           width: calc(100% - 120px);
+          @media (max-width: 1024px) {
+            width: calc(100% - 100px);
+          }
           @media (max-width: 767px) {
             width: calc(100% - 14vw);
           }
