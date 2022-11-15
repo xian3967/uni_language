@@ -299,6 +299,27 @@
       }
     }
   }
+  .c-checkbox__flex__4col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: $lightgray;
+    border-radius: 15px;
+    padding: 10px 20px 0;
+    .c-checkbox__flex__contents {
+      margin: 0 0 5px;
+      width: 25%;
+      @media (max-width: 1024px) {
+        width: 25%;
+      }
+      @media (max-width: 767px) {
+        width: 33.333%;
+      }
+    }
+  }
   .c-checkbox__flex__3col {
     display: -webkit-box;
     display: -ms-flexbox;
