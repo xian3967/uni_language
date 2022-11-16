@@ -38,80 +38,117 @@
         <div class="l-aside__profile">
           <div class="l-aside__profile__img">
             <img src="assets/images/mypage/aside_img_01.png" alt="プロフィールイメージ">
-            <span class="l-aside__profile__img__label">의뢰인</span>
+            <span class="l-aside__profile__img__label"><i class="fa-sharp fa-solid fa-shield-check"></i>承認済み</span>
           </div>
           <p class="l-aside__profile__title">
-            제이비드 킴
+            Valeria Elsa
           </p>
           <div class="l-aside__profile__title__button">
-            <a href="#">
-              <img src="assets/images/mypage/aside_icon_01.png" alt="">전문가로 전환
+            <a href="mypage-profile.html">
+              <i class="fa-regular fa-id-card-clip"></i>プロフィール編集
             </a>
           </div>
         </div>
-        <h3 class="l-aside__title">
-          마이페이지
-        </h3>
-        <ul class="l-aside__nav">
+        <ul class="l-aside__nav">          
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage.html" class="l-aside__nav__link">
+                <i class="fa-regular fa-ballot-check"></i>ダッシュボード
+              </a>
+            </div>
+          </li>
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage-profile.html" class="l-aside__nav__link">
+                <i class="fa-regular fa-id-card-clip"></i>プロフィール管理
+              </a>
+            </div>
+          </li>
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage-link.html" class="l-aside__nav__link">
+                <i class="fa-regular fa-laptop"></i>Zoom/Googlemeet管理
+              </a>
+            </div>
+          </li>
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage-lesson.html" class="l-aside__nav__link">
+                <i class="fa-solid fa-chalkboard"></i>レッスン登録
+              </a>
+            </div>
+          </li>
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage-schedule.html" class="l-aside__nav__link">
+                <i class="fa-regular fa-calendar-lines-pen"></i>スケジュール管理
+              </a>
+            </div>
+          </li>
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage-offer.html" class="l-aside__nav__link">
+                <i class="fa-regular fa-hand"></i>オファーしたレッスン希望
+              </a>
+            </div>
+          </li> 
           <li class="l-aside__nav__item">
             <div class="l-aside__nav__link-wrap">
               <a href="" class="l-aside__nav__link">
-                プロフィール
+                <i class="fa-solid fa-person-chalkboard"></i>レッスン管理
               </a>
               <a href="javascript:void(0);" class="l-aside__nav__link__arrow js-aside-accordion"></a>
             </div>
-            <ul class="l-aside__nav__hide">
+            <ul class="l-aside__nav__hide" style="display: block;">
               <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  전체 (0)
+                <a href="mypage-lesson-list.html" class="">
+                  <i class="fa-solid fa-circle-dot yellow"></i>登録中 (0)
+                </a>
+              </li>         
+              <li class="l-aside__nav__hide__item">
+                <a href="mypage-lesson-mylesson.html" class="">
+                  <i class="fa-solid fa-circle-dot grren"></i>受講中 (0)
                 </a>
               </li>
               <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  승인대기중 (0)
+                <a href="mypage-lesson-mylesson-complete.html" class="">
+                  <i class="fa-solid fa-circle-dot blue"></i>受講完了 (0)
                 </a>
               </li>
               <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  요청중 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  마감 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  비승인 (0)
+                <a href="mypage-lesson-mylesson-cancel.html" class="">
+                  <i class="fa-regular fa-circle-xmark red"></i>キャンセル (0)
                 </a>
               </li>
             </ul>
+          </li>         
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage-message.html" class="l-aside__nav__link">
+                <i class="fa-regular fa-message"></i>メッセージ
+              </a>
+            </div>
+          </li>          
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage-wishlist.html" class="l-aside__nav__link">
+                <i class="fa-regular fa-heart"></i>お気に入り
+              </a>
+            </div>
+          </li>
+          <li class="l-aside__nav__item">
+            <div class="l-aside__nav__link-wrap">
+              <a href="mypage-payment.html" class="l-aside__nav__link">
+                <i class="fa-regular fa-credit-card"></i>売上管理
+              </a>
+            </div>
           </li>
           <li class="l-aside__nav__item">
             <div class="l-aside__nav__link-wrap">
               <a href="" class="l-aside__nav__link">
-                レッスン登録
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>ログアウト
               </a>
-              <a href="javascript:void(0);" class="l-aside__nav__link__arrow js-aside-accordion is-open"></a>
             </div>
-            <ul class="l-aside__nav__hide" style="display: block;">
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  登録中 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  受講中 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="" class="">
-                  受講完了 (0)
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
       </aside>

@@ -1,0 +1,273 @@
+.p-userpage-lesson-list {
+  padding-bottom: 60px;
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    &__item {
+      width: 100%;
+      margin-bottom: 30px;
+      background: $white;
+      border-radius: 20px;
+      border: 1px solid $lightgray;
+      box-shadow: 0px 1px 2px rgba(0,0,0,0.08), 0px 4px 12px rgba(0,0,0,0.05);
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+      @media (max-width: 1024px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+      &__wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        padding: 30px 30px 20px 30px;
+        @media (max-width: 1024px) {
+          padding: 20px 20px 15px 20px;
+        }
+        @media (max-width: 767px) {
+          padding: 4% 4% 3% 4%;
+          align-items: flex-start;
+        }
+      }
+      &__left {
+        width: calc(100% - 170px);
+        @media (max-width: 1024px) {
+          width: calc(100% - 135px);
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+      &__right {
+        width: 150px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        background: $maincolor;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        @media (max-width: 1024px) {
+          width: 120px;
+          margin-left: 15px;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+          margin-left: 0;
+        }
+        &.none {
+          background: $lightgray;
+          a {
+            display: none;
+          }
+        }
+        &__title {
+          width: 100%;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        &__offer {
+          width: 100%;
+          font-size: 1.6rem;
+          font-weight: bold;
+          span {
+            font-size: 3rem;
+            font-weight: bold;
+          }
+        }
+        a {
+          width: 100%;
+          text-align: center;
+          display: block;
+          background: $blacktext;
+          color: $white;
+          padding: 3px;
+          border-radius: 10px;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+      &__label {
+        display: block;
+        width: 100%;
+        max-width: fit-content;
+        background: $maincolor;
+        padding: 6px 12px;
+        font-size: 12px;
+        line-height: 12px;
+        color: $blacktext;
+        font-weight: bold;
+        border-radius: 50px;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 5px;
+        &.offer {
+          background: $student;
+        }
+        @media (max-width: 1024px) {
+          padding: 4px 10px;
+          font-size: 11px;
+          line-height: 11px;
+        }
+        @media (max-width: 767px) {
+          padding: 3px 7px;
+          font-size: 10px;
+          line-height: 10px;
+        }
+      }
+      &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $blacktext;
+        margin-top: 5px;
+        @media (max-width: 767px) {
+          font-size: 1.6rem;
+          letter-spacing: 0.5px;
+        }
+      }
+      &__tiems {
+        font-size: 1.2rem;
+        line-height: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: $blacktext;
+        margin-bottom: 5px;
+        @media (max-width: 767px) {
+          font-size: 1.2rem;
+          line-height: 16px;
+          letter-spacing: 0.5px;
+        }
+      }
+      &__button {
+        width: 100%;
+        display: flex;
+        a {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          background: $maincolor;
+          color: $blacktext;
+          font-size: 1.4rem;
+          font-weight: bold;
+          @media (max-width: 767px) {
+            height: 30px;
+            font-size: 1.2rem;
+          }
+          &.delete {
+            width: 150px;
+          }
+          &.green {
+            background: $green;
+          }
+          &.red {
+            background: $pink;
+          }
+          &.gray {
+            background: $lightgray;
+          }
+          &.blue {
+            background: $student;
+          }
+        }
+      }
+    }
+  }
+  &__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  &__search-select {
+    width: calc(22% - 20px);
+    margin-right: 20px;
+    @media (max-width: 767px) {
+      width: calc(28% - 10px);
+      margin-right: 10px;
+    }
+    .c-select {
+      width: 100% !important;
+      &:after {
+        @media (max-width: 767px) {
+          right: 10px !important;
+        }
+      }
+    }
+    select {
+      background: $lightgray !important;
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      border-radius: 20px !important;
+      border: none !important;
+    }
+  }
+  &__search-icon-box {
+    width: 78%;
+    @media (max-width: 767px) {
+      width: 72%;
+    }
+    &__btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      input {
+        height: 44px;
+        padding: 10px 60px 10px 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: #FFF;
+        background: $lightgray;
+        max-width: none;
+      }
+      &__btn {
+        background: $maincolor;
+        width: 52px;
+        height: 44px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        display: inline-block;
+        padding: 10px 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: $blacktext;
+        transition: all 0.2s ease;
+        position: relative;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 767px) {
+          font-size: 1.4rem;
+          width: 40px;
+        }
+        i {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
