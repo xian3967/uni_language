@@ -12,19 +12,20 @@
   border-radius: 10px;
   @media (max-width: 767px) {
     max-width: none;
-    left: 5px;
-    top: 50%;
+    left: 0;
+    top: 0;
     bottom: auto;
-    transform: translateY(-50%);
-    width: calc(100% - 10px);
+    width: 100%;
+    height: 100vh;
 
   }
   &__close {
     position: absolute;
-    top: 7px;
-    right: 7px;
+    top: 15px;
+    right: 15px;
     display: inline-block;
     cursor: pointer;
+    z-index: 100;
     &::after {
       content: "\f00d";
       font-family: "Font Awesome 6 Pro";
@@ -32,6 +33,7 @@
       position: relative;
       display: block;
       font-size: 20px;
+      font-weight: bold;
       line-height: 20px;
       color: $black;
     }
@@ -39,13 +41,20 @@
   &__slider {
     &__item {
       width: 100%;
-      margin: 0 10px;
       &__img {
         width: 100%;
         text-align: center;
         margin-bottom: 15px;
+        background: $white;
+        padding: 20px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
         @media (max-width: 767px) {
           margin-bottom: 10px;
+          padding: 15px 15px 15vw 15px;
+          height: 50vh;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
         }
         img {
           display: inline-block !important;
@@ -53,14 +62,24 @@
       }
       &__text {
         text-align: center;
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: bold;
         line-height: 22px;
         color: $blacktext;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 20px 20px 0 20px;
         @media (max-width: 767px) {
+          margin-top: 15px;
           margin-bottom: 15px;
           font-size: 14px;
+          padding: 15px;
+          height: 50vh;
+        }
+        span {
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 400;
+          margin-top: 10px;
         }
       }
     }
@@ -116,19 +135,29 @@
   }
   &__inner {
     width: 100%;
-    padding: 20px;
     background: $lightgray;
     @media (max-width: 767px) {
-      padding: 15px;
+      height: 100vh;
     }
   }
   &__button {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+    @media (max-width: 767px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 15px;
+    }
     &__left {
       width: calc(50% - 5px);
       margin-right: 10px;
+      @media (max-width: 767px) {
+        width: 50%;
+        margin-right: 0;
+      }
       a {
         display: flex;
         flex-wrap: wrap;
@@ -140,11 +169,19 @@
         background: $black;
         border-radius: 10px;
         text-align: center;
-        font-size: 14px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        @media (max-width: 767px) {
+          border-radius: 0;
+        }
       }
     }
     &__right {
       width: calc(50% - 5px);
+      @media (max-width: 767px) {
+        width: 50%;
+        margin-right: 0;
+      }
       a {
         display: flex;
         flex-wrap: wrap;
@@ -156,7 +193,11 @@
         background: $yellow;
         border-radius: 10px;
         text-align: center;
-        font-size: 14px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        @media (max-width: 767px) {
+          border-radius: 0;
+        }
       }
     }
   }
