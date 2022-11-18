@@ -107,7 +107,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -30px;
 
     display: block;
 
@@ -119,14 +119,18 @@
 
     text-align: center;
 }
+
+@media (max-width: 767px) {
+    .slick-dots
+    {
+        bottom: 100px;
+    }
+  }
 .slick-dots li
 {
     position: relative;
 
     display: inline-block;
-
-    width: 20px;
-    height: 20px;
     margin: 0 5px;
     padding: 0;
 
