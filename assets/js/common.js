@@ -41,10 +41,10 @@ $(function() {
     if ($('.c-popup__slider').length) {
       $('.c-popup__slider').slick({
         slidesToShow: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         arrows: true,
-        dots: false,
+        dots: true,
         loop: true,
         swipe: true,
         speed: 500,

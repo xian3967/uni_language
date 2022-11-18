@@ -46,7 +46,7 @@
         text-align: center;
         margin-bottom: 15px;
         background: $white;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
         @media (max-width: 767px) {
           margin-bottom: 10px;
@@ -66,8 +66,7 @@
         font-weight: bold;
         line-height: 22px;
         color: $blacktext;
-        margin-top: 20px;
-        padding: 20px 20px 0 20px;
+        padding: 10px 20px 0 20px;
         @media (max-width: 767px) {
           margin-top: 15px;
           margin-bottom: 15px;
@@ -132,6 +131,37 @@
         }
       }
     }
+    .slick-dots {
+      li {
+        width: 5px;
+        margin: 0 2px;
+      }
+      button {
+        width: 5px;
+        height: 5px;
+        &::before {
+          width: 5px;
+          height: 5px;
+          background: $blacktext;
+          content: '';
+          line-height: 5px;
+        }
+      } 
+      .slick-active {
+        width: 30px !important;
+        button {
+          &::before {
+            width: 30px;
+            height: 5px;
+            border-radius: 5px;
+            background: $maincolor;
+            content: '';
+            line-height: 5px;
+          }
+        }
+      }
+    }
+    
   }
   &__inner {
     width: 100%;
