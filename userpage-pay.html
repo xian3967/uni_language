@@ -297,207 +297,27 @@
         </ul>
       </aside>
       <div class="l-container main">
-        <div class="p-mypage-profile">
+        <div class="p-userpage">
           <section class="l-section">
-            <h2 class="c-title"><span>プロフィール写真</span></h2>
-            <!--<p class="c-calendar__alert">*カレンダーからご希望の日付を選択し、スケジュールを選択してください。</p>-->
-            <form class="" action="" method="post">
-              <div class="c-input__2col">
-                <div class="c-input__img">
-                  <img src="assets/images/top/sample-user.png" alt="profile-img">
-                </div>
-                <div class="c-input__img-upload">
-                  <p>
-                    他のユーザーから見れるプロフィールページ・リストページなどに表示されます。<br>
-                    最大サイズ：2MB
-                  </p>
-                  <label>
-                    <input class="absolute" type="file" style="display: none;">
-                    画像アップロード
-                  </label>
-                </div>
+            <div class="p-userpage__pay">
+              <h2 class="c-title"><span>U Payチャージ</span></h2>
+              <div class="p-userpage__pay__balance">
+                <p class="p-userpage__pay__balance__title">
+                  保有U Pay
+                </p>
+                <p class="p-userpage__pay__balance__text">
+                  1,000<span>U Pay</span>
+                </p>
               </div>
-            </form>
-          </section>
-          <section class="l-section">
-            <h2 class="c-title"><span>基本情報</span></h2>
-            <!--<p class="c-calendar__alert">*カレンダーからご希望の日付を選択し、スケジュールを選択してください。</p>-->
-            <form class="" action="" method="post">
-              <div class="c-input__2col">
-                <div class="c-input">
-                  <p class="c-input__title">メール</p>
-                  <input class="" type="mail" id="" placeholder="メール" value="ml@redwallet.jp" readonly/>
-                  <span class="c-input__cheack"><i class="fa-solid fa-circle-check"></i></span>
-                </div>
-                <div class="c-input">
-                  <p class="c-input__title">お名前</p>
-                  <input class="" type="text" id="" placeholder="お名前" >
-                </div>
-              </div>
-              <div class="c-select__wrapper">
-                <p class="c-select__title">生年月日</p>
-                <div class="c-select__3col">
-                  <div class="c-select">
-                    <select class=" selected__color" name="" id="js-select__year">
-                    </select>
-                  </div>
-                  <div class="c-select">
-                    <select class=" selected__color" name="" id="js-select__month">
-                    </select>
-                  </div>
-                  <div class="c-select">
-                    <select class=" selected__color" name="" id="js-select__day">
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="c-input__2col c-select__wrapper">
-                <div class="c-select">
-                  <p class="c-select__title">国籍</p>
-                  <select>
-                    <option>国籍</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                </div>
-                <div class="c-input">
-                  <p class="c-input__title">職業</p>
-                  <input class="" type="text" id="" placeholder="職業" >
-                </div>
-              </div>
-              <div class="c-checkbox">
-                <p class="c-checkbox__title">希望レッスンレベル<span>※重複選択可能</span></p>
-                <div class="c-checkbox__flex">
-                  <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="level_01" name="level" value="">
-                    <label for="level_01">初心者</label>
-                  </div>
-                  <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="level_02" name="level" value="">
-                    <label for="level_02">中級者</label>
-                  </div>
-                  <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="level_03" name="level" value="">
-                    <label for="level_03">上級者</label>
-                  </div>
-                  <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="level_04" name="level" value="">
-                    <label for="level_04">ビジネス</label>
-                  </div>
-                </div>
-              </div>
-              <!--
-              <div class="c-radio__wrapper">
-                <p class="c-radio__title">対応レッスンレベル<span>※重複選択可能</span></p>
-                <div class="c-radio">
-                  <input type="radio" id="01" name="1" value="">
-                  <label for="01">初心者</label>
-                  <input type="radio" id="02" name="1" value="">
-                  <label for="02">中級者</label>
-                  <input type="radio" id="03" name="1" value="">
-                  <label for="03">上級者</label>
-                  <input type="radio" id="04" name="1" value="">
-                  <label for="04">ビジネス</label>
-                </div>
-              </div>
-              -->
-              <div class="c-input__col">
-                <div class="c-input">
-                  <p class="c-input__title">話せる言語</p>
-                  <div class="c-input__select-language">
-                    <div class="c-input__select-language__select-warp">
-                      <div class="c-input__select-language__select-warp__select">
-                        <select>
-                          <option>言語</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-                      </div>
-                      <div class="c-input__select-language__select-warp__select">
-                        <select>
-                          <option>レベル</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="c-input__select-language__select-warp">
-                      <div class="c-input__select-language__select-warp__select">
-                        <select>
-                          <option>言語</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-                      </div>
-                      <div class="c-input__select-language__select-warp__select">
-                        <select>
-                          <option>レベル</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-                      </div>
-                    </div> 
-                    <div class="c-input__select-language__select-warp">
-                      <div class="c-input__select-language__select-warp__select">
-                        <select>
-                          <option>言語</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-                      </div>
-                      <div class="c-input__select-language__select-warp__select">
-                        <select>
-                          <option>レベル</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-                      </div>
-                    </div> 
-                    <div class="c-input__select-language__select-warp">
-                      <div class="c-input__select-language__select-warp__select">
-                        <select>
-                          <option>言語</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-                      </div>
-                      <div class="c-input__select-language__select-warp__select">
-                        <select>
-                          <option>レベル</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-                      </div>
-                    </div>                                                           
-                  </div>
-                </div>
-              </div>
-              <div class="c-textarea">
-                <p class="c-textarea__title">自己紹介</p>
-                <textarea class="textarea-160 textarea-resize" name="" placeholder="アピールポイントなど"></textarea><br>
-              </div>
-              <div class="p-mypage-profile__submit">
-                <button class="js-sumit">プロフィール編集</button>
-              </div>
-            </form>
+              <ul class="p-userpage__pay__buy">
+                <li class="p-userpage__pay__buy__item">
+                  <p class="p-userpage__pay__buy__item__text">10<span>U Pay</span></p>
+                  <a href="" class="p-userpage__pay__buy__item__link">
+                    ＄10
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
       </div>
