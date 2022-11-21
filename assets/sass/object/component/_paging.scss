@@ -1,0 +1,37 @@
+.c-paging {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  &__white {
+    text-align: center;
+    &__link {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      font-size: 1.2rem;
+      color: $blacktext;
+      padding-top: 4px;
+      &.active {
+        background: #FFF;
+        font-weight: bold;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__maincolor {
+    text-align: center;
+    &__link {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      font-size: 1.2rem;
+      color: $blacktext;
+      padding-top: 4px;
+      &.active {
+        background: $maincolor;
+        font-weight: bold;
+        border-radius: 50%;
+      }
+    }
+  }
+}

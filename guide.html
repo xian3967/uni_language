@@ -21,11 +21,16 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
+  <script type="text/javascript" src="assets/js/slick.min.js"></script>
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
   <script src="https://kit.fontawesome.com/9c4b4c7e12.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <title>U&I Language</title>
 </head>
 <body>
@@ -192,182 +197,30 @@
     </div>
   </header>
 
-  <main class="l-main">
-    <div class="l-content">
-      <aside class="l-aside">
-        <div class="l-aside__profile">
-          <div class="l-aside__profile__img">
-            <img src="assets/images/mypage/aside_img_01.png" alt="プロフィールイメージ">
-          </div>
-          <p class="l-aside__profile__title">
-            UserName
+  <main class="p-guide">
+    <section class="p-guide__mv">
+      <div class="p-guide__mv__content">
+        <div class="p-guide__mv__left">
+          <h3 class="p-guide__mv__left__heading">
+            <span>U&I Language</span>で<br>
+            <span>ネイティブ講師</span>と<br>
+            <span>楽しく</span>始まる。<br>
+          </h3>
+          <p class="p-guide__mv__left__text">
+            <span>高額なネイティブレッスンのイメージを変えます。</span><br>
+            リーズナブルな価格で、これまでなかった<br>
+            オンライン英語コミュニケーションプラットフォーム提供します。<br>
+            子供や学生から社会人まで、効率的な外国語学習のために、<br>
+            効果的な先生と受講者のマッチングとカスタマイズレッスンを提供します。<br>
           </p>
-          <div class="l-aside__profile__title__quickmenu">
-            <a href="userpage-ticket.html">
-              <p>保有チケット</p>
-                10<span>枚</span>
-            </a>
-            <a href="userpage-point.html">
-              <p>ポイント</p>
-                12<span>点</span>
-            </a>
-          </div>
-          <div class="l-aside__profile__title__button">
-            <a href="userpage-profile.html">
-              <i class="fa-regular fa-id-card-clip"></i>プロフィール編集
-            </a>
-            <a href="userpage-lesson.html">
-              <i class="fa-regular fa-circle-plus"></i>レッスン希望
-            </a>
-          </div>
         </div>
-        <ul class="l-aside__nav">
-          <li class="l-aside__nav__item">
-            <div class="l-aside__nav__link-wrap">
-              <a href="userpage-notice.html" class="l-aside__nav__link">
-                <i class="fa-regular fa-bullhorn"></i>お知らせ
-              </a>
-            </div>
-          </li>
-          <li class="l-aside__nav__item">
-            <div class="l-aside__nav__link-wrap">
-              <a href="userpage-ticket.html" class="l-aside__nav__link">
-                <i class="fa-solid fa-money-check-dollar"></i>チケット購入
-              </a>
-            </div>
-          </li>
-          <li class="l-aside__nav__item">
-            <div class="l-aside__nav__link-wrap">
-              <a href="" class="l-aside__nav__link">
-                <i class="fa-solid fa-person-chalkboard"></i>レッスン希望管理
-              </a>
-              <a href="javascript:void(0);" class="l-aside__nav__link__arrow js-aside-accordion"></a>
-            </div>
-            <ul class="l-aside__nav__hide" style="display: block;">
-              <li class="l-aside__nav__hide__item">
-                <a href="userpage-lesson-list.html" class="">
-                  <i class="fa-solid fa-circle-dot yellow"></i>登録中 (0)
-                </a>
-              </li>         
-              <li class="l-aside__nav__hide__item">
-                <a href="userpage-lesson-mylesson.html" class="">
-                  <i class="fa-solid fa-circle-dot grren"></i>受講中 (0)
-                </a>
-              </li>
-              <li class="l-aside__nav__hide__item">
-                <a href="userpage-lesson-mylesson-complete.html" class="">
-                  <i class="fa-solid fa-circle-dot blue"></i>受講完了 (0)
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="l-aside__nav__item">
-            <div class="l-aside__nav__link-wrap">
-              <a href="userpage-wishlist.html" class="l-aside__nav__link">
-                <i class="fa-regular fa-heart"></i>お気に入り
-              </a>
-            </div>
-          </li>
-          <li class="l-aside__nav__item">
-            <div class="l-aside__nav__link-wrap">
-              <a href="userpage-payment.html" class="l-aside__nav__link">
-                <i class="fa-regular fa-credit-card"></i>決済管理
-              </a>
-            </div>
-          </li>
-          <li class="l-aside__nav__item">
-            <div class="l-aside__nav__link-wrap">
-              <a href="userpage-payment.html" class="l-aside__nav__link">
-                <i class="fa-regular fa-user-group"></i>友達に紹介
-              </a>
-            </div>
-          </li>
-          <li class="l-aside__nav__item">
-            <div class="l-aside__nav__link-wrap">
-              <a href="" class="l-aside__nav__link">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>ログアウト
-              </a>
-            </div>
-          </li>
-        </ul>
-      </aside>
-      <div class="l-container main">
-        <div class="p-userpage-lesson-confirm">
-          <section class="l-section">
-            <h2 class="c-title"><span>レッスン希望内容確認</span></h2>
-            <!--<p class="c-calendar__alert">*カレンダーからご希望の日付を選択し、スケジュールを選択してください。</p>-->
-            <div class="p-userpage-lesson-confirm__lesson-info">
-              <p>登録情報確認</p>
-              <dl>
-                <dt>習いたい言語</dt>
-                <dd>英語</dd>                
-                <dt>レッスンタイトル</dt>
-                <dd>タイトルタイトルタイトルタイトルタイトル</dd>
-                <dt>レッスンのレベル</dt>
-                <dd>初心者</dd>
-                <dt>レッスンについて</dt>
-                <dd>
-                  Just like meeting a friend for a cup of coffee, this class is designed for us to get to know each other. I'm going to ask about your language level, goals, and preferred study methods, you can ask me anything related to my classes and teaching style. Looking forward to meeting you!
-                </dd>
-              </dl>
-            </div>
-            <div class="p-userpage-lesson-confirm__lesson-schedule">
-              <p>希望スケジュール - 4回</p>
-              <div class="p-userpage-lesson-confirm__lesson-schedule__date">
-                <span>20分 - 2022.11.15 15:00</span>
-                <span>20分 - 2022.11.16 15:00</span>
-                <span>20分 - 2022.11.16 15:00</span>
-                <span>45分 - 2022.11.16 15:00</span>
-              </div>
-            </div>
-            <div class="p-userpage-lesson-confirm__ticket">
-              <p>保有チケット</p>
-              <dl>
-                <dt>S Classチケット(20分用)</dt>
-                <dd>0枚<span>3枚必要</span></dd>                
-                <dt>M Classチケット(45分用)</dt>
-                <dd>0枚<span>1枚必要</span></dd>
-              </dl>
-            </div>
-            <div class="p-userpage-lesson-confirm__ticket-buy">
-              <p>足りないチケット購入</p>
-              <dl>
-                <dt>S Classチケット(20分用)</dt>
-                <dd>3枚</dd>
-                <dd>＄30</dd>                
-                <dt>M Classチケット(45分用)</dt>
-                <dd>1枚</dd>
-                <dd>＄20</dd>
-                <dt class="total">決済金額</dt>
-                <dd class="total">4枚</dd>
-                <dd class="total">＄50</dd> 
-              </dl>
-            </div>
-            <div class="p-mypage-profile__submit">
-              <button class="js-sumit" onclick="location.href='userpage-lesson-complete.html'">チケット購入して登録</button>
-            </div>
-          </section>
+        <div class="p-guide__mv__right">
+          <img src="assets/images/guide/guide_img01.png">
         </div>
       </div>
-    </div>
+    </section>
   </main>
-  <script src="./assets/js/calendar.js"></script>
   <script src="./assets/js/common.js"></script>
-  <script>
-  function calendarClickEvent(element) {
-    let elementId = $(element).attr('id');
-    let text = $('#modalYearMonth').text();
-    const textArray = text.split("月");
-    let newText = textArray[0];
-    $('#modalYearMonth').text(newText + '月 ' + elementId + '日');
-    $('.js-calendar__time').prop('checked', false );
-    $('.c-calendar__modal__submit').addClass('disabled');
-    $('.c-calendar__modal').fadeIn();
-  }
-  function calendarRemoveEvent(element) {
-    $(element).parent('li').remove();
-  }
-  </script>
 </body>
 
 </html>

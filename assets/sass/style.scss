@@ -36,11 +36,13 @@
 @import "object/component/radio";
 @import "object/component/textarea";
 @import "object/component/popup"; 
+@import "object/component/paging"; 
 
 // ==========================================================================
 // Project
 // ==========================================================================
 @import "object/project/main";
+@import "object/project/guide";
 @import "object/project/mypage-profile";
 @import "object/project/lesson";
 @import "object/project/lesson-detail";
@@ -56,6 +58,7 @@
 @import "object/project/contact";
 @import "object/project/userpage";
 @import "object/project/userpage-ticket";
+@import "object/project/userpage-notify";
 @import "object/project/userpage-pay";
 @import "object/project/userpage-lesson-list";
 @import "object/project/userpage-offer-list";
