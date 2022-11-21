@@ -1,0 +1,65 @@
+.p-userpage {
+  padding-bottom: 60px;
+  &__pay {
+    width: 100%;
+    margin-bottom: 30px;
+    &__balance {
+      background: $lightgray;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 20px;
+      &__title {
+        color: #999;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      &__text {
+        color: $blacktext;
+        font-size: 3.6rem;
+        font-weight: bold;
+        span {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-left: 5px;
+        }
+      }
+    }
+    &__buy {
+      width: 100%;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 20px 0;
+      &__item {
+        width: 33.3%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $lightgray;
+        padding: 10px;
+        border-radius: 15px;
+        &__text {
+          font-size: 1.6rem;
+          font-weight: bold;
+          span {
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+        &__link {
+          background: $maincolor;
+          color: $blacktext;
+          font-size: 1.4rem;
+          font-weight: bold;
+          padding: 5px 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
