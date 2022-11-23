@@ -1,5 +1,48 @@
 .p-userpage {
   padding-bottom: 60px;
+  &__have-ticket {
+    width: 100%;
+    margin-bottom: 30px;
+    &__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      &__item {
+        background: $lightgray;
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $blacktext;
+        padding: 15px 0;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        span {
+          color: #999;
+          font-size: 1rem;
+          font-weight: bold;
+          display: block;
+        }
+        p {
+          span {
+            color: $blacktext;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 5px;
+          }
+        }
+        &:nth-child(2) {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
+          border-bottom-right-radius: 20px;
+          border-top-right-radius: 20px;
+          border-left: 1px solid #e1e1e1;
+        }
+      }
+    }
+  }
   &__ticket-buy {
     width: 100%;
     margin-bottom: 30px;
@@ -41,7 +84,7 @@
           font-size: 2rem;
           font-weight: bold;
           color: $blacktext;
-          margin-top: 10px;
+          margin: 10px 0;
         }
         &__price {
           display: block;
@@ -82,6 +125,7 @@
         &__ticket {    
           height: 20px;
           background-size: 4px 2px;
+          background: url(../images/common/line.png);
           background-repeat: repeat-x;
           background-position: center;
           position: relative;
