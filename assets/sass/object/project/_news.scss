@@ -1,0 +1,263 @@
+.p-news {
+  padding: 80px 0;
+  background: $lightgray;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 1024px) {
+    padding: 60px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 11% 0;
+  }
+  &__inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    @media (max-width: 1024px) {
+      padding: 0 2%;
+    }
+    @media (max-width: 767px) {
+      padding: 0 4%;
+    }
+  }
+  &__heading {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-bottom: 5%;
+    }
+    h2 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      @media (max-width: 1024px) {
+        font-size: 1.28rem;
+        line-height: 2.6rem;
+        margin-bottom: 3%;
+      }
+      @media (max-width: 767px) {
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        margin-bottom: 4%;
+      }
+      p {
+        font-size: 2.4rem;
+        line-height: 4.8rem;
+        font-weight: bold;
+        @media (max-width: 1024px) {
+          font-size: 2rem;
+          line-height: 3.8rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.8rem;
+          line-height: 2.8rem;
+        }
+      }
+      span {
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-bottom: 3px solid $maincolor;
+        padding: 0 5px 5px 5px;
+        font-family: "Montserrat";
+        @media (max-width: 1024px) {
+          font-size: 1.4rem;
+          padding: 0 1% 1% 1%;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.3rem;
+          border-bottom: 2px solid $maincolor;
+        }
+      }
+    }
+  }
+  &__card {
+    width: 100%;
+    margin-top: 20px;
+    &__list {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      &__item {
+        width: calc(33.3% - 20px);
+        margin: 0 10px 20px 10px;
+        background: $white;
+        border-radius: 30px;
+        overflow: hidden;
+        @media (max-width: 1024px) {
+          width: 48.5%;
+          margin-right: 3%;
+          margin-bottom: 3%;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+          margin-bottom: 10%;
+        }
+      }
+    }
+    &__img {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      img {
+        display: inline-block;
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        @media (max-width: 1024px) {
+          height: 30vw;
+        }
+        @media (max-width: 767px) {
+          height: 45vw;
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        left: 0;
+        top: 0;
+      }
+    }
+    &__tag {
+      font-size: 12px;
+      color: $white;
+      line-height: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background: $blacktext;
+      margin: 0 30px;
+      padding: 3px 10px;
+      border-radius: 10px;
+      display: inline-block;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 21px;
+        margin: 0 5%;
+      }
+    }
+    &__title {
+      font-size: 18px;
+      color: $black;
+      line-height: 24px;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 0 30px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 21px;
+        padding: 0 5%;
+      }
+    }
+    &__date {
+      font-size: 12px;
+      color: $darkgray;
+      line-height: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      padding: 0 30px;
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 15px;
+        padding: 0 5%;
+      }
+    }
+    &__button {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      a {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: $yellow;
+        color: $black;
+        font-size: 1.4rem;
+        font-weight: bold;
+        @media (max-width: 767px) {
+          height: 40px;
+          font-size: 14px;
+        }
+      }
+    }
+    &__detail {
+      width: 100%;
+      &__wrap {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 10px;
+        background: $white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        &__date {
+          padding: 5px 10px;
+          border-radius: 10px;
+          color: #999;
+          font-weight: bold;
+        }
+        &__title {
+          padding: 5px 10px;
+          font-size: 1.4rem;
+          color: $blacktext;
+          font-weight: bold;
+          span {
+            font-size: 1rem;
+            background: $blacktext;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-right: 5px;
+            color: $white;
+            &.lesson {
+              background: $maincolor;
+              color: $blacktext;
+            }
+          }
+        }
+        &__text {
+          padding: 5px 10px;
+          font-size: 1.4rem;
+          color: $blacktext;
+          line-height: 3rem;
+        }
+      }
+      &__btn-wrap {
+        width: 100%;
+        text-align: right;
+        &__btn {
+          display: inline-block;
+          background: $maincolor;
+          font-size: 1.4rem;
+          color: $blacktext;
+          font-weight: bold;
+          padding: 5px 15px;
+          border-radius: 10px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

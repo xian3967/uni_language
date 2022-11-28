@@ -102,6 +102,69 @@
           color: #999;
         }
       }
+      &__tel {
+        position: relative;
+        &::before {
+          font: var(--fa-font-light);
+          content: "\f3ce";
+          position: absolute;
+          font-size: 1.4rem;
+          top: 14px;
+          left: 5px;
+          color: #999;
+        }
+      }
+      &__nationality {
+        position: relative;
+        &::before {
+          font: var(--fa-font-light);
+          content: "\f57d";
+          position: absolute;
+          font-size: 1.4rem;
+          top: 14px;
+          left: 5px;
+          color: #999;
+        }
+      }
+      &__language {
+        position: relative;
+        &::before {
+          font: var(--fa-font-light);
+          content: "\f086";
+          position: absolute;
+          font-size: 1.4rem;
+          top: 14px;
+          left: 5px;
+          color: #999;
+        }
+      }
+      &__graduation {
+        position: relative;
+        &::before {
+          font: var(--fa-font-light);
+          content: "\f19d";
+          position: absolute;
+          font-size: 1.4rem;
+          top: 14px;
+          left: 5px;
+          color: #999;
+        }
+      }
+      &__file {
+        position: relative;
+        &::before {
+          font: var(--fa-font-light);
+          content: "\e494";
+          position: absolute;
+          font-size: 1.4rem;
+          top: 14px;
+          left: 5px;
+          color: #999;
+        }
+      }
+      &__textarea {
+        position: relative;
+      }
       label {
         font-size: 1.1rem;
       }
