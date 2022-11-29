@@ -103,6 +103,15 @@ $(function() {
 })(jQuery);
 //
 
+//aside sp accordion
+(function($) {
+  $('.l-aside__button').on('click', function() {
+    $(this).next().slideToggle();
+    $(this).toggleClass('is-open');
+  });
+})(jQuery);
+//
+
 //include
 //$('#aside').load('/include/aside.html');
 //

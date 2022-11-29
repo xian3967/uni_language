@@ -14,13 +14,60 @@
     margin-bottom: 30px;
     border-radius: 15px;
   }
+  &__button {
+    display: none;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      display: block;
+    }
+    &:after {
+      content: "\f054";
+      position: absolute;
+      top: 0;
+      right: 15px;
+      display: block;
+      color: #000;
+      font-size: 1.2rem;
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 600;
+      transform: rotate(90deg);
+      transition: 0.3s;
+    }
+    &.is-open {
+      &:after {
+        transform: rotate(-90deg);
+      }
+    }
+  }
   &__nav {
     padding: 0 30px 30px 30px;
     @media (max-width: 1024px) {
       padding: 20px;
     }
     @media (max-width: 767px) {
-      padding: 15px;
+      padding: 15px 15px 15px;
+      display: none;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        width: calc(100% - 30px);
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        background-color: $gray;
+      }
+    }
+    @media (min-width: 768px) {
+      display: block !important;
     }
     &__item {
       margin-bottom: 15px;
@@ -113,6 +160,21 @@
   &__profile {
     padding-top: 30px;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    &__left {
+      width: 100%;
+      @media (max-width: 767px) {
+        width: 80px;
+        margin-right: 15px;
+      }
+    }
+    &__right {
+      width: 100%;
+      @media (max-width: 767px) {
+        width: calc(100% - 95px);
+      }
+    }
     &__img {
       width: 100%;
       text-align: center;
@@ -122,6 +184,11 @@
       img {
         display: inline-block;
         border-radius: 50%;
+      }
+      @media (max-width: 767px) {
+        margin: 0 auto 10px;
+        text-align: center;
+        padding-left: 15px;
       }
       &__label {
         padding: 4px 8px;
@@ -143,14 +210,27 @@
       margin-bottom: 20px;
       text-align: center;
       font-size: 2.4rem;
+      line-height: 3.1rem;
       font-weight: bold;
       color: #202020;
+      word-break: break-all;
+      @media (max-width: 767px) {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding-left: 15px;
+      }
       &__quickmenu {
         padding: 0 20px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         margin-bottom: 10px;
+        @media (max-width: 767px) {
+          padding: 0 15px 0 0;
+          margin-bottom: 15px;
+        }
         a {
           background: $lightgray;
           width: 100%;
@@ -162,6 +242,12 @@
           padding: 15px 0;
           border-bottom-left-radius: 20px;
           border-top-left-radius: 20px;
+          @media (max-width: 767px) {
+            font-size: 1.6rem;
+            padding: 8px 0;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+          }
           p {
             color: #999;
             font-size: 1rem;
@@ -179,15 +265,22 @@
           border-bottom-right-radius: 20px;
           border-top-right-radius: 20px;
           border-left: 1px solid #e1e1e1;
+          @media (max-width: 767px) {
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+          }
         }
       }
     }
     &__title__button {
       padding: 0 20px;
-      width: 100%;      
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      @media (max-width: 767px) {
+        padding: 0 15px 0 0;
+      }
       a {
         height: 40px;
         display: flex;
@@ -197,15 +290,26 @@
         padding: 2px;
         font-size: 1.2rem;
         font-weight: bold;
-        line-height: 2.77;
+        line-height: 1.5rem;
         background: $blacktext;
         color: $white;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
+        @media (max-width: 767px) {
+          height: 35px;
+          font-size: 1.0rem;
+          line-height: 1.3rem;
+          padding: 2px 5px;
+          letter-spacing: 0;
+        }
         i {
           margin-right: 5px;
           font-size: 1.4rem;
           margin-top: 2px;
+          @media (max-width: 767px) {
+            margin-right: 5px;
+            font-size: 1.2rem;
+          }
         }
       }
       a:nth-child(2) {
