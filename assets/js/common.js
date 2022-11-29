@@ -261,3 +261,9 @@ $('.js-copybtn').on('click', function() {
   });
 })(jQuery);
 //
+
+//alert message hide
+$(document).on('click', '.close', function () {
+  $(this).parents('.c-alert').fadeOut();
+});
+//

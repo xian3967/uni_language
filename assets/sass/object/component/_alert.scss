@@ -1,0 +1,44 @@
+.c-alert {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 15px 30px 15px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 15px;
+    position: relative;
+    &.alert-success {
+      background: $maincolor;
+    }
+    &.alert-info {
+      background: $green;
+    }
+    &.alert-warning {
+      background: $gold;
+    }
+    &.alert-danger {
+      background: $lightpink;
+    }
+    &__label {
+      background: $blacktext;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #FFF;
+      padding: 5px 15px;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    &__text {
+      display: inline-block;
+      @media (max-width: 767px) {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+    &__close {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      background: none;
+    }
+}
