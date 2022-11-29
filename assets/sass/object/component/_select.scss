@@ -88,6 +88,9 @@
         -ms-text-align-last: right;
         -moz-text-align-last: right;
       }
+      option:hover {
+        background-color: yellow;
+      }
     }
   }
   .c-select__3col {
@@ -204,5 +207,11 @@ select {
   }
   option {
     color: #000;
+    &:hover {
+      background: #ff0000;
+    }
   }
 }
+select {
+  font-size: 1.4rem;
+ }

@@ -248,7 +248,7 @@
                 <a href="userpage-lesson-list.html" class="">
                   <i class="fa-solid fa-circle-dot yellow"></i>登録中 (0)
                 </a>
-              </li>         
+              </li>
               <li class="l-aside__nav__hide__item">
                 <a href="userpage-lesson-mylesson.html" class="">
                   <i class="fa-solid fa-circle-dot grren"></i>受講中 (0)
@@ -318,28 +318,28 @@
                   20分 - 1枚 / 45分 - 2枚
                   <p class="p-userpage__ticket-buy__list__item__title">レッスン用チケット - ＄10</p>
                   <div class="p-userpage__ticket-buy__list__item__ticket"></div>
-                  <input type="number" class="p-userpage__ticket-buy__list__item__number" value="0"><span>枚</span>
+                  <input type="number" class="p-userpage__ticket-buy__list__item__number js-number-change-01" value="0"><span>枚</span>
                 </li>
                 <li class="p-userpage__ticket-buy__list__item">
                   20分 - 1枚 / 45分 - 2枚
                   <p class="p-userpage__ticket-buy__list__item__title">指名用チケット - ＄1</p>
                   <div class="p-userpage__ticket-buy__list__item__ticket"></div>
-                  <input type="number" class="p-userpage__ticket-buy__list__item__number" value="0"><span>枚</span>
+                  <input type="number" class="p-userpage__ticket-buy__list__item__number js-number-change-02" value="0"><span>枚</span>
                 </li>
               </ul>
             </div>
             <div class="p-userpage__ticket">
               <div class="p-userpage__ticket__content">
                 <dl>
-                  <dt>レッスン用チケット(20分用)</dt>
-                  <dd>3枚</dd>
-                  <dd>＄30</dd>
+                  <dt>レッスン用チケット</dt>
+                  <dd><span class="js-ticket-number-01">0</span>枚</dd>
+                  <dd>＄<span class="js-ticket-price-01">0</span></dd>
                   <dt>指名用チケット</dt>
-                  <dd>3枚</dd>
-                  <dd>＄3</dd> 
+                  <dd><span class="js-ticket-number-02">0</span>枚</dd>
+                  <dd>＄<span class="js-ticket-price-02">0</span></dd>
                   <dt class="total">決済金額</dt>
-                  <dd class="total">10枚</dd>
-                  <dd class="total">＄68</dd> 
+                  <dd class="total"><span class="js-ticket-total-01">0</span>枚</dd>
+                  <dd class="total">＄<span class="js-ticket-total-02">0</span></dd>
                 </dl>
                 <div class="p-userpage__ticket__link">
                   <a href="">チケット購入</a>
@@ -360,6 +360,20 @@
     </div>
   </main>
   <script src="./assets/js/common.js"></script>
+  <script>
+    (function($) {
+      $('.p-userpage__ticket-buy__list__item__number').on('input', function() {
+       let number01 = Number($('.js-number-change-01').val());
+       let number02 = Number($('.js-number-change-02').val());
+       $('.js-ticket-number-01').html(number01);
+       $('.js-ticket-number-02').html(number02);
+       $('.js-ticket-price-01').html(number01 * 10);
+       $('.js-ticket-price-02').html(number02);
+       $('.js-ticket-total-01').html(number01 + number02);
+       $('.js-ticket-total-02').html((number01 * 10) + number02);
+      });
+    })(jQuery);
+  </script>
 </body>
 
 </html>
