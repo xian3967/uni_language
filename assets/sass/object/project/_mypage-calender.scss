@@ -1,0 +1,83 @@
+.p-mypage-calendar {
+  padding-bottom: 60px;
+  background: $lightgray;
+  &__table {
+    width: 100%;
+    tr {
+      td {
+        width: 80px;
+        padding: 30px 0 0 0;
+        vertical-align: bottom;
+        &.days {
+          border: 1px solid #000000;
+          position: relative;
+          .day {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-weight: bold;
+          }
+          .schedule__list {
+            display: flex;
+            flex-wrap: wrap;
+            &__item {
+              font-size: 1rem;
+              font-weight: bold;
+              display: inline-block;
+              padding: 3px 2px;
+              background: #999;
+              color: $white;
+              margin: 1px;
+              border-radius: 3px;
+            }
+          }
+          .status-warp {
+            width: 100%;
+            display: flex;
+            margin-top: 10px;
+            &__contents {
+              width: 100%;
+              text-align: center;
+              &__number {
+                font-size: 1.4rem;
+                font-weight: bold;
+                display: block;
+                color: $blacktext;
+                padding: 3px 0;
+                span {
+                  font-size: 1rem;
+                }
+                &.offer {
+                  background: $maincolor;
+                }
+                &.nomination {
+                  background: $student;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__info {
+    width: 100%;
+    display: flex;
+    &__text {
+      margin-right: 10px;
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #999;
+        display: inline-block;
+        &.offer {
+          background: $maincolor;
+        }
+        &.nomination {
+          background: $student;
+        }
+      }
+    }
+  }
+}
