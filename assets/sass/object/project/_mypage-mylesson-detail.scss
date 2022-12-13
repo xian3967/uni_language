@@ -513,6 +513,44 @@
             word-break: break-all;
           }
         }
+        &__input {
+          width: 100%;
+          background: $lightgray;
+          height: 40px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          @media (max-width: 1024px) {
+            font-size: 12px;
+          }
+          input[type=text] {
+            max-width: 100%;
+          }
+          span {
+            font-size: 14px;
+            line-height: 14px;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            max-height: calc(1.4rem * 1);
+            color: $blue;
+            width: 100%;
+            word-break: break-all;
+          }
+          a {
+            font-size: 14px;
+            line-height: 14px;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            max-height: calc(1.4rem * 1);
+            color: $blue;
+            width: 100%;
+            word-break: break-all;
+          }
+        }
         &__right {
           width: 80px;
           color: $white;

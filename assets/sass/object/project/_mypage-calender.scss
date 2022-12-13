@@ -1,6 +1,13 @@
 .p-mypage-calendar {
   padding-bottom: 60px;
   background: $lightgray;
+  &__schedule {
+    padding: 15px;
+    border-radius: 20px;
+    background: $lightgray;
+    display: flex;
+    justify-content: space-between;
+  }
   &__month {
     width: 100%;
     font-size: 1.4rem;
