@@ -153,44 +153,373 @@
     </div>
   </header>
 
-  <main class="p-lesson">
-    <div class="p-lesson__position-tutor"></div>
-    <div class="p-lesson__position-student"></div>
-    <section class="p-lesson__contents">
-      <div class="p-lesson__card tutor">
-        <div class="p-lesson__card__img">
-          <img src="assets/images/lesson/sample02.svg">
-        </div>
-        <div class="p-lesson__card__text-wrap">
-          <h3 class="p-lesson__card__text-wrap__heading">
-            レッスン検索
-            <p>私は<span>生徒</span>として<span>講師のレッスン</span>を探してます。</p>
-          </h3>
-        </div>
-        <div class="p-lesson__card__btn">
-          <a href="lesson-tutor.html" class="p-lesson__card__btn__link tutor_link">
-            レッスン一覧
-          </a>
+  <main class="p-lesson list-page">
+    <div class="p-lesson__heading">
+      <h2>レッスン希望検索</h2>
+    </div>
+    <section class="p-lesson__contents student-wrap">
+      <div class="p-lesson__position-img-01">
+        <img src="assets/images/lesson/sample01.svg">
+      </div>
+      <div class="p-lesson__sidebar-student">
+        <h3 class="p-lesson__accordion js-sidebar-accordion">
+          詳細検索はこちら
+        </h3>
+        <div class="p-lesson__sidebar-student__fixed">
+          <div class="p-lesson__sidebar-student__search-box">
+            <div class="p-lesson__sidebar-student__search-box__input-text">
+              <input type="text" placeholder="keyword...">
+            </div>
+            <div class="p-lesson__sidebar-student__search-box__checkbox">
+              <h3>どんなコースを希望しますか？</h3>
+              <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
+                <input id="course01" type="checkbox" >
+                <label for="course01">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  20分
+                </label>
+                <input id="course02" type="checkbox" >
+                <label for="course02">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  45分
+                </label>
+              </div>
+            </div>
+            <div class="p-lesson__sidebar-student__search-box__checkbox">
+              <h3>習いたい言語を選んでください。</h3>
+              <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
+                <input id="language01" type="checkbox" >
+                <label for="language01">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  英語
+                </label>
+                <input id="language02" type="checkbox" >
+                <label for="language02">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  韓国語
+                </label>
+                <input id="language03" type="checkbox" >
+                <label for="language03">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  日本語
+                </label>
+                <input id="language04" type="checkbox" >
+                <label for="language04">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  中国語
+                </label>
+                <input id="language05" type="checkbox" >
+                <label for="language05">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  その他
+                </label>
+              </div>
+            </div>
+            <div class="p-lesson__sidebar-student__search-box__checkbox">
+              <h3>レベルはどのくらいですか？</h3>
+              <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
+                <input id="level01" type="checkbox" >
+                <label for="level01">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  初心者
+                </label>
+                <input id="level02" type="checkbox" >
+                <label for="level02">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  中級者
+                </label>
+                <input id="level03" type="checkbox" >
+                <label for="level03">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  上級者
+                </label>
+                <input id="level04" type="checkbox" >
+                <label for="level04">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  ビジネス
+                </label>
+              </div>
+            </div>
+            <div class="p-lesson__sidebar-student__search-box__checkbox">
+              <h3>スケジュールを選択してください。</h3>
+              <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
+                <input id="time01" type="checkbox" >
+                <label for="time01">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  朝時間
+                </label>
+                <input id="time02" type="checkbox" >
+                <label for="time02">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  昼時間
+                </label>
+                <input id="time03" type="checkbox" >
+                <label for="time03">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  夜時間
+                </label>
+                <input id="time04" type="checkbox" >
+                <label for="time04">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  平日
+                </label>
+                <input id="time05" type="checkbox" >
+                <label for="time05">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  週末
+                </label>
+              </div>
+            </div>
+            <a href="" class="p-lesson__sidebar-student__search-box__btn">
+              再検索
+            </a>
+          </div>
         </div>
       </div>
-      <div class="p-lesson__card student">
-        <div class="p-lesson__card__img">
-          <img src="assets/images/lesson/sample01.svg">
-        </div>
-        <div class="p-lesson__card__text-wrap">
-          <h3 class="p-lesson__card__text-wrap__heading student_text">
-            レッスン希望検索
-            <p>私は<span>講師</span>として<span>生徒のレッスン希望</span>を探してます。</p>
-          </h3>
-        </div>
-        <div class="p-lesson__card__btn">
-          <a href="lesson-student.html" class="p-lesson__card__btn__link student_link">
-            レッスン希望一覧
+      <ul class="p-lesson__student-list">
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
           </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="p-lesson__student-list__item">
+          <a href="lesson-request-detail.html" class="p-lesson__student-list__item__link">
+            <div class="p-lesson__student-list__item__link__profile-img">
+              <img src="assets/images/top/sample-user.png" alt="profile-img">
+            </div>
+            <div class="p-lesson__student-list__item__link__profile-text">
+              <div class="p-lesson__student-list__item__link__tag">
+                <span class="language">English</span>
+                <span>初心者向け</span>
+                <span>ビジネスレベル</span>
+              </div>
+              <div class="p-lesson__student-list__item__link__lesson-title">
+                ビジネスレベルビジネスレベル
+              </div>
+              <div class="p-lesson__student-list__item__link__name">
+                Valeria Elsa
+              </div>
+              <div class="p-lesson__student-list__item__link__detail-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+          </a>
+        </li>
+        <div class="c-paging">
+          <a href="" class="c-paging__white__link active">1</a>
+          <a href="" class="c-paging__white__link">2</a>
+          <a href="" class="c-paging__white__link">3</a>
+          <a href="" class="c-paging__white__link">4</a>
+          <a href="" class="c-paging__white__link">5</a>
+          <a href="" class="c-paging__white__link"><i class="fa-regular fa-angle-right"></i></a>
+          <a href="" class="c-paging__white__link"><i class="fa-solid fa-angles-right"></i></a>
         </div>
-      </div>
+      </ul>
     </section>
   </main>
+  <script src="./assets/js/common.js"></script>
 </body>
 
 </html>
