@@ -346,25 +346,11 @@
               </div>
               <div class="c-calendar">
                 <p class="c-calendar__title">希望スケジュール選択<span>※重複選択可能、希望日をクリックすると時間選択ボックスが表示されます。</span></p>
-                <div class="c-calendar__calendarYearMonth">
-                    <p class="c-calendar__left c-calendar__calBtn" id="js-calendarBtnPrev"> Prev </p>
-                    <p id="yearMonth"> Jan 2021 </p>
-                    <p class="c-calendar__right c-calendar__calBtn" id="js-calendarBtnNext"> Next </p>
-                </div>
-                <div>
-                    <ol class="c-calendar__calendarList1">
-                        <li class="day-name">Sat</li>
-                        <li class="day-name">Sun</li>
-                        <li class="day-name">Mon</li>
-                        <li class="day-name">Tue</li>
-                        <li class="day-name">Wed</li>
-                        <li class="day-name">Thu</li>
-                        <li class="day-name">Fri</li>
-                    </ol>
-                    <ol class="c-calendar__calendarList2" id="calendarList">
-    
-                    </ol>
-                </div>
+
+                <!-- calendar-->
+                <div id="js-container"></div>
+                <!-- calendar end-->
+
                 <div class="c-calendar__modal">
                   <div class="c-calendar__modal__close js-modal-close"></div>
                   <p id="modalYearMonth"><span>11</span></p>
@@ -603,15 +589,48 @@
       </div>
     </div>
   </main>
+  <script src="./assets/js/jquery.simple-calendar.js"></script>
   <script src="./assets/js/calendar.js"></script>
   <script src="./assets/js/common.js"></script>
   <script>
+
+  //calendar js
+  var $calendar;
+  $(document).ready(function () {
+    let container = $("#js-container").simpleCalendar({
+      fixedStartDay: 0, // begin weeks by sunday
+      disableEmptyDetails: true,
+      /*
+      events: [
+        // generate new event after tomorrow for one hour
+        {
+          startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
+          endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
+          summary: 'Visit of the Eiffel Tower'
+        },
+        // generate new event for yesterday at noon
+        {
+          startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
+          endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
+          summary: 'Restaurant'
+        },
+        // generate new event for the last two days
+        {
+          startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
+          endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
+          summary: 'Visit of the Louvre'
+        }
+      ],
+        */
+    });
+    $calendar = container.data('plugin_simpleCalendar')
+  });
   function calendarClickEvent(element) {
-    let elementId = $(element).attr('id');
-    let text = $('#modalYearMonth').text();
-    const textArray = text.split("月");
-    let newText = textArray[0];
-    $('#modalYearMonth').text(newText + '月 ' + elementId + '日');
+    let elementId = $(element).children().attr('id');
+    let text = $('.month').text();
+    //const textArray = text.split("月");
+    //let newText = textArray[0];
+    $('#modalYearMonth').text(text + elementId + '日');
     $('.js-calendar__time').prop('checked', false );
     $('.c-calendar__modal__submit').addClass('disabled');
     $('.c-calendar__modal').fadeIn();
@@ -619,6 +638,7 @@
   function calendarRemoveEvent(element) {
     $(element).parent('li').remove();
   }
+  //calendar js end
   </script>
 </body>
 
