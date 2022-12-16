@@ -47,4 +47,192 @@
       width: 50%;
     }
   }
+  &__point {
+    width: 100%;
+    padding: 150px 0;
+    background: #FFF;
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 6.2rem;
+      letter-spacing: 2px;
+      font-family: "Montserrat";
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: $maincolor;
+    }
+    &__content {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      margin-bottom: 100px;
+      &:nth-child(1) {
+        flex-direction: row-reverse;
+      }
+      &:nth-child(3) {
+        flex-direction: row-reverse;
+      }
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+    &__left {
+      width: 40%;
+      background: $maincolor;
+      padding: 50px;
+      border-radius: 50px;
+      &__num {
+        margin-bottom: 20px;
+        span {
+          font-size: 1.4rem;
+          font-weight: bold;
+          background: #FFF;
+          color: $blacktext;
+          padding: 5px 10px;
+          border-radius: 20px;
+        }
+      }
+      &__title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        span {
+          font-size: 1.4rem;
+          font-weight: bold;
+          display: block;
+        }
+      }
+      &__text {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+    &__right {
+      width: 60%;
+      text-align: center;
+      img {
+        max-width: 400px;
+        display: inline-block;
+      }
+    }
+  }
+  &__step {
+    width: 100%;
+    padding: 150px 0;
+    background: $lightgray;
+    &__content {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__list {
+      width: 100%;
+      display: flex;
+      &__item {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        &::before {
+          font: var(--fa-font-solid);
+          content: "\f0da";
+          position: absolute;
+          top: 115px;
+          right: 0;
+          font-size: 3.4rem;
+          font-weight: bold;
+          color: $blacktext;
+        }
+        &__img {
+          width: 250px;
+          height: 250px;
+          padding: 30px 30px 0 30px;
+          background: $maincolor;
+          border-radius: 50%;
+          overflow: hidden;
+          display: inline-block;
+          img {
+            display: inline-block;
+            margin-top: 40px;
+          }
+        }
+        &__title {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-top: 30px;
+        }
+        &__text {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__price {
+    width: 100%;
+    padding: 50px 0;
+    background: $maincolor;
+    &__content {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__sclass {
+      background: #FFF;
+      border-radius: 50px;
+      border: 2px solid $blacktext;
+      width: 100%;
+      padding: 30px 0;
+      text-align: center;
+      margin: 0 20px;
+      &__title {
+        span {
+          width: 100%;
+          display: block;
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        font-size: 2.8rem;
+        font-weight: bold;
+      }
+      &__price {
+        font-size: 3rem;
+        font-weight: bold;
+        color: $red;
+        .price01 {
+          text-decoration: line-through;
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: $blacktext;
+        }
+        .price02 {
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: $blacktext;
+          padding: 0 5px;
+        }
+      }
+    }
+    &__tester-wrap {
+      margin-top: 100px;
+      &__tester {
+        background: #FFF;
+        border-radius: 50px;
+        border: 2px solid $blacktext;
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+        margin: 0 20px;
+      }
+    }
+  }
 }

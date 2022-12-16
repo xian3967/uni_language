@@ -205,25 +205,11 @@
             </dl>
           </div>
           <div class="c-calendar">
-            <div class="c-calendar__calendarYearMonth">
-                <p class="c-calendar__left c-calendar__calBtn" id="js-calendarBtnPrev"> Prev </p>
-                <p id="yearMonth"> Jan 2021 </p>
-                <p class="c-calendar__right c-calendar__calBtn" id="js-calendarBtnNext"> Next </p>
-            </div>
-            <div>
-                <ol class="c-calendar__calendarList1">
-                    <li class="day-name">Sat</li>
-                    <li class="day-name">Sun</li>
-                    <li class="day-name">Mon</li>
-                    <li class="day-name">Tue</li>
-                    <li class="day-name">Wed</li>
-                    <li class="day-name">Thu</li>
-                    <li class="day-name">Fri</li>
-                </ol>
-                <ol class="c-calendar__calendarList2" id="calendarList">
 
-                </ol>
-            </div>
+            <!-- calendar-->
+            <div id="js-container"></div>
+            <!-- calendar end-->
+
             <div class="c-calendar__modal">
               <div class="c-calendar__modal__close js-modal-close"></div>
               <p id="modalYearMonth"><span>11</span></p>
@@ -242,30 +228,198 @@
               </div>
               <div class="c-checkbox">
                 <p class="c-checkbox__title">時間</p>
-                <div class="c-checkbox__flex__3col">
+                <div class="c-checkbox__flex__4col">
                   <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="time_01" name="time" value="02:00" class="js-calendar__time">
-                    <label for="time_01">02:00</label>
+                    <input type="checkbox" id="time_01" name="time" value="00:00" class="js-calendar__time">
+                    <label for="time_01">00:00</label>
                   </div>
                   <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="time_02" name="time" value="02:30" class="js-calendar__time">
-                    <label for="time_02">02:30</label>
+                    <input type="checkbox" id="time_02" name="time" value="00:30" class="js-calendar__time">
+                    <label for="time_02">00:30</label>
                   </div>
                   <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="time_03" name="time" value="03:00" class="js-calendar__time">
-                    <label for="time_03">03:00</label>
+                    <input type="checkbox" id="time_03" name="time" value="01:00" class="js-calendar__time">
+                    <label for="time_03">01:00</label>
                   </div>
                   <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="time_04" name="time" value="03:30" class="js-calendar__time">
-                    <label for="time_04">03:30</label>
+                    <input type="checkbox" id="time_04" name="time" value="01:30" class="js-calendar__time">
+                    <label for="time_04">01:30</label>
                   </div>
                   <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="time_05" name="time" value="11:00" class="js-calendar__time">
-                    <label for="time_05">11:00</label>
+                    <input type="checkbox" id="time_05" name="time" value="02:00" class="js-calendar__time">
+                    <label for="time_05">02:00</label>
                   </div>
                   <div class="c-checkbox__flex__contents">
-                    <input type="checkbox" id="time_06" name="time" value="12:00" class="js-calendar__time">
-                    <label for="time_06">12:00</label>
+                    <input type="checkbox" id="time_06" name="time" value="02:30" class="js-calendar__time">
+                    <label for="time_06">02:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_07" name="time" value="03:00" class="js-calendar__time">
+                    <label for="time_07">03:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_08" name="time" value="03:30" class="js-calendar__time">
+                    <label for="time_08">03:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_09" name="time" value="04:00" class="js-calendar__time">
+                    <label for="time_09">04:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_10" name="time" value="04:30" class="js-calendar__time">
+                    <label for="time_10">04:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_11" name="time" value="05:00" class="js-calendar__time">
+                    <label for="time_11">05:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_12" name="time" value="05:30" class="js-calendar__time">
+                    <label for="time_12">05:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_13" name="time" value="06:00" class="js-calendar__time">
+                    <label for="time_13">06:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_14" name="time" value="06:30" class="js-calendar__time">
+                    <label for="time_14">06:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_15" name="time" value="07:00" class="js-calendar__time">
+                    <label for="time_15">07:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_16" name="time" value="07:30" class="js-calendar__time">
+                    <label for="time_16">07:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_17" name="time" value="08:00" class="js-calendar__time">
+                    <label for="time_17">08:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_18" name="time" value="08:30" class="js-calendar__time">
+                    <label for="time_18">08:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_19" name="time" value="09:00" class="js-calendar__time">
+                    <label for="time_19">09:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_20" name="time" value="09:30" class="js-calendar__time">
+                    <label for="time_20">09:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_21" name="time" value="10:00" class="js-calendar__time">
+                    <label for="time_21">10:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_22" name="time" value="10:30" class="js-calendar__time">
+                    <label for="time_22">10:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_23" name="time" value="11:00" class="js-calendar__time">
+                    <label for="time_23">11:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_24" name="time" value="11:30" class="js-calendar__time">
+                    <label for="time_24">11:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_25" name="time" value="12:00" class="js-calendar__time">
+                    <label for="time_25">12:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_26" name="time" value="12:30" class="js-calendar__time">
+                    <label for="time_26">12:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_27" name="time" value="13:00" class="js-calendar__time">
+                    <label for="time_27">13:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_28" name="time" value="13:30" class="js-calendar__time">
+                    <label for="time_28">13:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_29" name="time" value="14:00" class="js-calendar__time">
+                    <label for="time_29">14:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_30" name="time" value="14:30" class="js-calendar__time">
+                    <label for="time_30">14:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_31" name="time" value="15:00" class="js-calendar__time">
+                    <label for="time_31">15:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_32" name="time" value="15:30" class="js-calendar__time">
+                    <label for="time_32">15:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_33" name="time" value="16:00" class="js-calendar__time">
+                    <label for="time_33">16:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_34" name="time" value="16:30" class="js-calendar__time">
+                    <label for="time_34">16:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_35" name="time" value="17:00" class="js-calendar__time">
+                    <label for="time_35">17:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_36" name="time" value="17:30" class="js-calendar__time">
+                    <label for="time_36">17:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_37" name="time" value="18:00" class="js-calendar__time">
+                    <label for="time_37">18:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_38" name="time" value="18:30" class="js-calendar__time">
+                    <label for="time_38">18:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_39" name="time" value="19:00" class="js-calendar__time">
+                    <label for="time_39">19:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_40" name="time" value="19:30" class="js-calendar__time">
+                    <label for="time_40">19:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_41" name="time" value="20:00" class="js-calendar__time">
+                    <label for="time_41">20:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_42" name="time" value="20:30" class="js-calendar__time">
+                    <label for="time_42">20:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_43" name="time" value="21:00" class="js-calendar__time">
+                    <label for="time_43">21:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_44" name="time" value="21:30" class="js-calendar__time">
+                    <label for="time_44">21:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_45" name="time" value="22:00" class="js-calendar__time">
+                    <label for="time_45">22:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_46" name="time" value="22:30" class="js-calendar__time">
+                    <label for="time_46">22:30</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_47" name="time" value="23:00" class="js-calendar__time">
+                    <label for="time_47">23:00</label>
+                  </div>
+                  <div class="c-checkbox__flex__contents">
+                    <input type="checkbox" id="time_48" name="time" value="23:30" class="js-calendar__time">
+                    <label for="time_48">23:30</label>
                   </div>
                 </div>
               </div>
@@ -290,23 +444,57 @@
       </div>
     </section>
   </main>
+  <script src="./assets/js/jquery.simple-calendar.js"></script>
   <script src="./assets/js/calendar.js"></script>
   <script src="./assets/js/common.js"></script>
   <script>
-  function calendarClickEvent(element) {
-    let elementId = $(element).attr('id');
-    let text = $('#modalYearMonth').text();
-    const textArray = text.split("月");
-    let newText = textArray[0];
-    $('#modalYearMonth').text(newText + '月 ' + elementId + '日');
-    $('.js-calendar__time').prop('checked', false );
-    $('.c-calendar__modal__submit').addClass('disabled');
-    $('.c-calendar__modal').fadeIn();
-  }
-  function calendarRemoveEvent(element) {
-    $(element).parent('li').remove();
-  }
-  </script>
+
+    //calendar js
+    var $calendar;
+    $(document).ready(function () {
+      let container = $("#js-container").simpleCalendar({
+        fixedStartDay: 0, // begin weeks by sunday
+        disableEmptyDetails: true,
+        /*
+        events: [
+          // generate new event after tomorrow for one hour
+          {
+            startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
+            endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
+            summary: 'Visit of the Eiffel Tower'
+          },
+          // generate new event for yesterday at noon
+          {
+            startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
+            endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
+            summary: 'Restaurant'
+          },
+          // generate new event for the last two days
+          {
+            startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
+            endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
+            summary: 'Visit of the Louvre'
+          }
+        ],
+          */
+      });
+      $calendar = container.data('plugin_simpleCalendar')
+    });
+    function calendarClickEvent(element) {
+      let elementId = $(element).children().attr('id');
+      let text = $('.month').text();
+      //const textArray = text.split("月");
+      //let newText = textArray[0];
+      $('#modalYearMonth').text(text + elementId + '日');
+      $('.js-calendar__time').prop('checked', false );
+      $('.c-calendar__modal__submit').addClass('disabled');
+      $('.c-calendar__modal').fadeIn();
+    }
+    function calendarRemoveEvent(element) {
+      $(element).parent('li').remove();
+    }
+    //calendar js end
+    </script>
 </body>
 
 </html>
