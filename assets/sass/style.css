@@ -13985,12 +13985,6 @@ readers do not read off random characters that represent icons */
     display: none;
   }
 }
-.l-header__logo-wrap__btns__text {
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
-  font-weight: bold;
-}
 .l-header__logo-wrap__btns__link {
   display: inline-block;
   padding: 10px 30px;
@@ -22342,53 +22336,38 @@ select {
   }
 }
 
-.p-mypage {
+.p-userpage {
   padding-bottom: 60px;
 }
-.p-mypage__payment {
+.p-userpage__dashboard {
   width: 100%;
   margin-bottom: 30px;
 }
-.p-mypage__payment__link {
-  width: 100%;
-  padding: 0 10px;
-}
-.p-mypage__payment__link a {
-  width: 100%;
-  display: block;
-  background: #ffcc00;
-  padding: 10px 0;
-  text-align: center;
-  border-radius: 15px;
-  color: #202020;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-.p-mypage__payment__list {
+.p-userpage__dashboard__list {
   width: 100%;
   flex-wrap: wrap;
   display: flex;
 }
-.p-mypage__payment__list__item {
+.p-userpage__dashboard__list__item {
   width: calc(50% - 20px);
   margin: 0 10px 10px 10px;
   background: #f2f2f2;
   border: 1px solid #999;
   border-radius: 20px;
-  padding: 30px 10px 20px 10px;
+  padding: 20px 10px 10px 10px;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   color: #999;
 }
-.p-mypage__payment__list__item span {
+.p-userpage__dashboard__list__item span {
   display: block;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #202020;
-  margin: 10px 0;
+  margin-top: 10px;
 }
-.p-mypage__payment__list__item a {
+.p-userpage__dashboard__list__item a {
   display: block;
   width: 100%;
   background: #ffcc00;
@@ -22398,99 +22377,72 @@ select {
   border-radius: 15px;
   margin-top: 15px;
 }
-.p-mypage__payment__list__item input {
-  width: 100%;
-  max-width: 450px;
-  height: 40px;
-  padding: 10px;
-  background: #e6e6e6;
-}
-.p-mypage__payment__ticket {
+.p-userpage__ticket {
   width: 100%;
   margin-bottom: 30px;
 }
-.p-mypage__payment__ticket dl {
+.p-userpage__ticket dl {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   border: 1px solid #000;
 }
-.p-mypage__payment__ticket dl:last-child {
-  border-bottom: 1px solid #000;
-}
-.p-mypage__payment__ticket dl.penalty dt {
-  background: #ff6a6a;
-}
-.p-mypage__payment__ticket dl.withdrawal dt {
-  background: #4fe592;
-}
-.p-mypage__payment__ticket dl dt {
-  width: 100%;
+.p-userpage__ticket dl dt {
+  width: calc(100% - 200px);
   padding: 5px 10px;
   background: #f2f2f2;
+  border-bottom: 1px solid #000;
   border-right: 1px solid #000;
   font-size: 1.4rem;
   font-weight: bold;
 }
 @media (max-width: 1024px) {
-  .p-mypage__payment__ticket dl dt {
+  .p-userpage__ticket dl dt {
     width: 180px;
     padding: 15px 12px;
   }
 }
 @media (max-width: 767px) {
-  .p-mypage__payment__ticket dl dt {
+  .p-userpage__ticket dl dt {
     width: 32%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
 }
-.p-mypage__payment__ticket dl dd {
-  width: 50%;
+.p-userpage__ticket dl dd {
+  width: 200px;
   padding: 5px 10px;
+  border-bottom: 1px solid #000;
   border-right: 1px solid #000;
   font-size: 1.4rem;
-  line-height: 2.6rem;
   text-align: right;
 }
 @media (max-width: 1024px) {
-  .p-mypage__payment__ticket dl dd {
+  .p-userpage__ticket dl dd {
     width: calc(100% - 180px);
     padding: 15px 12px;
   }
 }
 @media (max-width: 767px) {
-  .p-mypage__payment__ticket dl dd {
+  .p-userpage__ticket dl dd {
     width: 68%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
 }
-.p-mypage__payment__ticket dl dd.plus {
-  padding: 3px 10px;
-  color: #00baff;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-.p-mypage__payment__ticket dl dd.minus {
-  padding: 3px 10px;
-  color: #ff0000;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-.p-mypage__payment__ticket dl dd.withdrawal {
-  padding: 3px 10px;
-  color: #19bea1;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-.p-mypage__payment__ticket dl dd.date {
+.p-userpage__ticket dl dd span {
+  background: #f35555;
   font-size: 1rem;
+  padding: 3px 10px;
+  margin-left: 5px;
+  color: #fff;
+  border-radius: 5px;
 }
-.p-mypage__payment__ticket__link {
+.p-userpage__ticket__link {
   width: 100%;
   text-align: right;
 }
-.p-mypage__payment__ticket__link a {
+.p-userpage__ticket__link a {
   display: inline-block;
   padding: 10px 25px;
   color: #202020;
@@ -22500,163 +22452,123 @@ select {
   font-weight: bold;
   margin-top: 10px;
 }
-.p-mypage__withdrawal {
+.p-userpage__next-lesson__contents {
   width: 100%;
+  background: #f2f2f2;
+  padding: 30px;
+  border-radius: 20px;
   margin-bottom: 30px;
 }
-.p-mypage__withdrawal__link {
-  width: 100%;
-  padding: 0 10px;
+.p-userpage__next-lesson__none {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
-.p-mypage__withdrawal__link a {
-  width: 100%;
-  display: block;
+.p-userpage__next-lesson__none a {
+  display: inline-block;
+  padding: 8px 15px;
   background: #ffcc00;
-  padding: 10px 0;
-  text-align: center;
-  border-radius: 15px;
   color: #202020;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.p-userpage__next-lesson__list {
+  width: 100%;
+}
+.p-userpage__next-lesson__list__item {
+  width: 100%;
+}
+.p-userpage__next-lesson__list__item a {
+  display: flex;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.p-userpage__next-lesson__list__item__date {
+  background: #202020;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.p-userpage__next-lesson__list__item__title {
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  color: #202020;
+  font-weight: bold;
+}
+.p-userpage__next-lesson__list__item:last-child a {
+  margin-bottom: 0;
+}
+.p-userpage__next-lesson__list ~ .p-userpage__next-lesson__none {
+  display: none;
+}
+.p-userpage__notice {
+  width: 100%;
+  text-align: center;
   font-size: 1.6rem;
   font-weight: bold;
 }
-.p-mypage__withdrawal__list {
+.p-userpage__list {
   width: 100%;
   flex-wrap: wrap;
   display: flex;
+  padding: 20px 0;
 }
-.p-mypage__withdrawal__list__item {
-  width: 100%;
-  background: #f2f2f2;
+.p-userpage__list__item {
+  width: 49%;
+  margin-bottom: 20px;
   border: 1px solid #999;
   border-radius: 20px;
-  padding: 30px 10px 20px 10px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-align: center;
-  color: #202020;
-  margin-bottom: 15px;
+  padding: 30px;
 }
-.p-mypage__withdrawal__list__item span {
-  display: block;
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: #202020;
-  margin: 10px 0;
+.p-userpage__list__item:nth-child(2n) {
+  margin-left: 2%;
 }
-.p-mypage__withdrawal__list__item a {
-  display: block;
+@media (max-width: 475px) {
+  .p-userpage__list__item {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 0 !important;
+  }
+}
+.p-userpage__list__item__icon {
   width: 100%;
-  background: #ffcc00;
-  color: #202020;
-  padding: 10px 0;
   text-align: center;
-  border-radius: 15px;
+}
+.p-userpage__list__item__icon img {
+  width: 150px;
+}
+.p-userpage__list__item__title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
   margin-top: 15px;
 }
-.p-mypage__withdrawal__list__item input {
-  width: 100%;
-  max-width: 100%;
-  height: 40px;
-  padding: 10px;
-  background: #FFF;
-  border: 1px solid #e6e6e6;
+.p-userpage__list__item__title span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.p-userpage__list__item__text {
   margin-top: 10px;
-  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #999;
 }
-.p-mypage__withdrawal__ticket {
+.p-userpage__list__item__link {
   width: 100%;
-  margin-bottom: 30px;
-}
-.p-mypage__withdrawal__ticket dl {
-  width: 100%;
-  display: flex;
-  border: 1px solid #000;
-}
-.p-mypage__withdrawal__ticket dl:last-child {
-  border-bottom: 1px solid #000;
-}
-.p-mypage__withdrawal__ticket dl.penalty dt {
-  background: #ff6a6a;
-}
-.p-mypage__withdrawal__ticket dl.withdrawal dt {
-  background: #4fe592;
-}
-.p-mypage__withdrawal__ticket dl dt {
-  width: 100%;
-  padding: 5px 10px;
-  background: #f2f2f2;
-  border-right: 1px solid #000;
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-@media (max-width: 1024px) {
-  .p-mypage__withdrawal__ticket dl dt {
-    width: 180px;
-    padding: 15px 12px;
-  }
-}
-@media (max-width: 767px) {
-  .p-mypage__withdrawal__ticket dl dt {
-    width: 32%;
-    padding: 10px 8px;
-    font-size: 1.2rem;
-  }
-}
-.p-mypage__withdrawal__ticket dl dd {
-  width: 50%;
-  padding: 5px 10px;
-  border-right: 1px solid #000;
-  font-size: 1.4rem;
-  line-height: 2.6rem;
-  text-align: right;
-}
-@media (max-width: 1024px) {
-  .p-mypage__withdrawal__ticket dl dd {
-    width: calc(100% - 180px);
-    padding: 15px 12px;
-  }
-}
-@media (max-width: 767px) {
-  .p-mypage__withdrawal__ticket dl dd {
-    width: 68%;
-    padding: 10px 8px;
-    font-size: 1.2rem;
-  }
-}
-.p-mypage__withdrawal__ticket dl dd.plus {
-  padding: 3px 10px;
-  color: #00baff;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-.p-mypage__withdrawal__ticket dl dd.minus {
-  padding: 3px 10px;
-  color: #ff0000;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-.p-mypage__withdrawal__ticket dl dd.withdrawal {
-  padding: 3px 10px;
-  color: #19bea1;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-.p-mypage__withdrawal__ticket dl dd.date {
-  font-size: 1rem;
-}
-.p-mypage__withdrawal__ticket__link {
-  width: 100%;
-  text-align: right;
-}
-.p-mypage__withdrawal__ticket__link a {
-  display: inline-block;
-  padding: 10px 25px;
-  color: #202020;
-  background: #ffcc00;
+  display: block;
+  padding: 8px 0;
+  margin-top: 10px;
   border-radius: 15px;
+  text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
-  margin-top: 10px;
+  background: #ffcc00;
+  color: #202020;
 }
 
 .p-mypage-lesson {
