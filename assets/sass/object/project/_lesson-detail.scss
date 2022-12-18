@@ -153,6 +153,11 @@
     font-size: 2.4rem;
     font-weight: bold;
     margin-bottom: 20px;
+    span {
+      font-size: 1.4rem;
+      font-weight: bold;
+      display: block;
+    }
     @media (max-width: 1024px) {
       font-size: 2rem;
     }
@@ -457,6 +462,12 @@
           &.lv04 {
             background: $pink;
           }
+          &.license {
+            background: $maincolor;
+            i {
+              margin-right: 2px;
+            }
+          }
         }
       }
     }
@@ -605,6 +616,180 @@
           }
           .minus {
             color: #999;
+          }
+        }
+      }
+    }
+  }
+  &__calendar {
+    &__schedule {
+      padding: 15px;
+      border-radius: 20px;
+      background: $lightgray;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__month {
+      width: 100%;
+      font-size: 1.4rem;
+      color: $blacktext;
+      font-weight: bold;
+      text-align: center;
+      margin: 25px 0 10px 0;
+    }
+    &__table {
+      width: 100%;
+      margin-bottom: 10px;
+      tr {
+        td {
+          width: 80px;
+          padding: 30px 0 0 0;
+          &.week {
+            text-align: center;
+            font-size: 1.4rem;
+            color: #707070;
+            padding: 5px 0;
+            background: #f2f2f2;
+            border: 1px solid #999;
+            border-bottom: none;
+          }
+          &.days {
+            border: 1px solid #999;
+            position: relative;
+            vertical-align: bottom;
+            .day {
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              font-weight: bold;
+            }
+            .schedule__list {
+              display: flex;
+              flex-wrap: wrap;
+              &__item {
+                font-size: 1rem;
+                font-weight: bold;
+                display: inline-block;
+                padding: 3px 2px;
+                background: #999;
+                color: $white;
+                margin: 1px;
+                border-radius: 3px;
+              }
+            }
+            .c-checkbox {
+              margin-bottom: 0;
+              input[type=checkbox] + label {
+                padding-left: 0;
+                font-size: 1rem;
+                line-height: 1rem;
+                padding-top: 2px;
+                margin: 0;
+                &::after {
+                  position: absolute;
+                  top: -5px;
+                  left: -10px;
+                  font-size: 1.2rem;
+                }
+                &::before {
+                  left: -10px;
+                  top: -5px;
+                  width: 10px;
+                  height: 10px;
+                  border: 1px solid #202020;
+                  border-radius: 3px;
+                }
+              }
+              &__flex {
+                padding: 5px 2px;
+                background: none;
+                height: 90px;
+                overflow: hidden;
+                &__contents {
+                  width: calc(50% - 4px);
+                  text-align: center;
+                  background: #f2f2f2;
+                  margin: 2px 2px 9px 2px;
+                  border-radius: 5px;
+                }
+              }
+              &.more {
+                .c-checkbox__flex {
+                  height: 100%;
+                  overflow: visible;
+                }
+                .schedule_moreview {
+                  .plus {
+                    display: none;
+                  }
+                  .minus {
+                    display: block;
+                  }
+                }
+              }
+              .schedule_moreview {
+                width: 100%;
+                background: $maincolor;
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 5px 0;
+                .plus {
+                  display: block;
+                }
+                .minus {
+                  display: none;
+                }
+                i {
+                  margin-right: 5px;
+                }
+              }
+            }
+            .status-warp {
+              width: 100%;
+              display: flex;
+              margin-top: 10px;
+              &__contents {
+                width: 100%;
+                text-align: center;
+                &__number {
+                  font-size: 1.4rem;
+                  font-weight: bold;
+                  display: block;
+                  color: $blacktext;
+                  padding: 3px 0;
+                  span {
+                    font-size: 1rem;
+                  }
+                  &.offer {
+                    background: $maincolor;
+                  }
+                  &.nomination {
+                    background: $student;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &__info {
+      width: 100%;
+      display: flex;
+      &__text {
+        margin-right: 10px;
+        span {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #999;
+          display: inline-block;
+          &.offer {
+            background: $maincolor;
+          }
+          &.nomination {
+            background: $student;
           }
         }
       }

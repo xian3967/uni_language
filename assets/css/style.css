@@ -14804,6 +14804,9 @@ readers do not read off random characters that represent icons */
   right: 10px;
   color: #19bea1;
 }
+.c-input__2col .c-input .c-input__select-language__select-warp {
+  width: 100% !important;
+}
 
 .c-input__col {
   align-items: center;
@@ -14851,7 +14854,6 @@ readers do not read off random characters that represent icons */
 }
 .c-input__select-language__select-warp {
   width: 49%;
-  margin-bottom: 20px;
   display: flex;
 }
 .c-input__select-language__select-warp:nth-child(2n) {
@@ -18785,6 +18787,11 @@ select {
   font-weight: bold;
   margin-bottom: 20px;
 }
+.p-lesson-detail__heading span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: block;
+}
 @media (max-width: 1024px) {
   .p-lesson-detail__heading {
     font-size: 2rem;
@@ -19136,6 +19143,12 @@ select {
 .p-lesson-detail__tutor-info__profile-text__detail-info .native-icon.lv04 {
   background: #ff5d5d;
 }
+.p-lesson-detail__tutor-info__profile-text__detail-info .native-icon.license {
+  background: #ffcc00;
+}
+.p-lesson-detail__tutor-info__profile-text__detail-info .native-icon.license i {
+  margin-right: 2px;
+}
 .p-lesson-detail__tutor-info__tabs {
   width: 100%;
   margin-top: 30px;
@@ -19286,6 +19299,172 @@ select {
 }
 .p-lesson-detail__review__item__profile__star .minus {
   color: #999;
+}
+.p-lesson-detail__calendar__schedule {
+  padding: 15px;
+  border-radius: 20px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+.p-lesson-detail__calendar__month {
+  width: 100%;
+  font-size: 1.4rem;
+  color: #202020;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0 10px 0;
+}
+.p-lesson-detail__calendar__table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.p-lesson-detail__calendar__table tr td {
+  width: 80px;
+  padding: 30px 0 0 0;
+}
+.p-lesson-detail__calendar__table tr td.week {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #707070;
+  padding: 5px 0;
+  background: #f2f2f2;
+  border: 1px solid #999;
+  border-bottom: none;
+}
+.p-lesson-detail__calendar__table tr td.days {
+  border: 1px solid #999;
+  position: relative;
+  vertical-align: bottom;
+}
+.p-lesson-detail__calendar__table tr td.days .day {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: bold;
+}
+.p-lesson-detail__calendar__table tr td.days .schedule__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.p-lesson-detail__calendar__table tr td.days .schedule__list__item {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 3px 2px;
+  background: #999;
+  color: #fff;
+  margin: 1px;
+  border-radius: 3px;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox {
+  margin-bottom: 0;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox input[type=checkbox] + label {
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 2px;
+  margin: 0;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox input[type=checkbox] + label::after {
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  font-size: 1.2rem;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox input[type=checkbox] + label::before {
+  left: -10px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #202020;
+  border-radius: 3px;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox__flex {
+  padding: 5px 2px;
+  background: none;
+  height: 90px;
+  overflow: hidden;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox__flex__contents {
+  width: calc(50% - 4px);
+  text-align: center;
+  background: #f2f2f2;
+  margin: 2px 2px 9px 2px;
+  border-radius: 5px;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox.more .c-checkbox__flex {
+  height: 100%;
+  overflow: visible;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox.more .schedule_moreview .plus {
+  display: none;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox.more .schedule_moreview .minus {
+  display: block;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox .schedule_moreview {
+  width: 100%;
+  background: #ffcc00;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox .schedule_moreview .plus {
+  display: block;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox .schedule_moreview .minus {
+  display: none;
+}
+.p-lesson-detail__calendar__table tr td.days .c-checkbox .schedule_moreview i {
+  margin-right: 5px;
+}
+.p-lesson-detail__calendar__table tr td.days .status-warp {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+.p-lesson-detail__calendar__table tr td.days .status-warp__contents {
+  width: 100%;
+  text-align: center;
+}
+.p-lesson-detail__calendar__table tr td.days .status-warp__contents__number {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: block;
+  color: #202020;
+  padding: 3px 0;
+}
+.p-lesson-detail__calendar__table tr td.days .status-warp__contents__number span {
+  font-size: 1rem;
+}
+.p-lesson-detail__calendar__table tr td.days .status-warp__contents__number.offer {
+  background: #ffcc00;
+}
+.p-lesson-detail__calendar__table tr td.days .status-warp__contents__number.nomination {
+  background: #00baff;
+}
+.p-lesson-detail__calendar__info {
+  width: 100%;
+  display: flex;
+}
+.p-lesson-detail__calendar__info__text {
+  margin-right: 10px;
+}
+.p-lesson-detail__calendar__info__text span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #999;
+  display: inline-block;
+}
+.p-lesson-detail__calendar__info__text span.offer {
+  background: #ffcc00;
+}
+.p-lesson-detail__calendar__info__text span.nomination {
+  background: #00baff;
 }
 
 .p-request-detail {

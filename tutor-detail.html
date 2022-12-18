@@ -27,6 +27,7 @@
   <script src="assets/js/owl.carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
   <script src="https://kit.fontawesome.com/9c4b4c7e12.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="./assets/js/common.js"></script>  
   <title>U&I Language</title>
 </head>
@@ -199,15 +200,19 @@
               先生のキャッチコピー先生のキャッチコピー先生のキャッチコピー
             </div>
             <div class="p-lesson-detail__tutor-info__profile-text__detail-info">
-              <p class="language"><span>教える言語 : </span>英語 <span class="native-icon">Naitve</span></p>
+              <p class="language"><span>第1母国語 : </span>英語 <span class="native-icon">American English</span></p>
               <p class="language">
                 <span>話せる言語 : </span>
                 韓国語 <span class="native-icon lv01">初級</span>
                 日本語 <span class="native-icon lv02">中級</span>
-                中国語 <span class="native-icon lv03">上級</span>
-                スペイン語 <span class="native-icon lv04">ビジネス</span>
               </p>
-              <p><span>国籍 : </span>アメリカ</p>
+              <p class="language">
+                <span>保有資格証 : </span>
+                TESOL <span class="native-icon license"><i class="fa-sharp fa-solid fa-shield-check"></i>検証済み</span>
+                TEFLE <span class="native-icon license"><i class="fa-sharp fa-solid fa-shield-check"></i>検証済み</span>
+                TESL <span class="native-icon license"><i class="fa-sharp fa-solid fa-shield-check"></i>検証済み</span>
+              </p>
+              <p><span>対応可能時間帯 : </span>朝時間、平日</p>
               <p><span>在住 : </span>日本-東京都台東区</p>
             </div>
           </div>
@@ -225,27 +230,621 @@
           </div>
         </div>
         <div class="p-lesson-detail__lesson-wrap__lesson">
-          <div class="c-calendar">
-            <p class="p-lesson-detail__sub-title">授業スケジュール</p>
-            <div class="c-calendar__calendarYearMonth">
-                <p class="c-calendar__left c-calendar__calBtn" id="js-calendarBtnPrev"> Prev </p>
-                <p id="yearMonth"> Jan 2021 </p>
-                <p class="c-calendar__right c-calendar__calBtn" id="js-calendarBtnNext"> Next </p>
-            </div>
-            <div>
-                <ol class="c-calendar__calendarList1">
-                    <li class="day-name">Sat</li>
-                    <li class="day-name">Sun</li>
-                    <li class="day-name">Mon</li>
-                    <li class="day-name">Tue</li>
-                    <li class="day-name">Wed</li>
-                    <li class="day-name">Thu</li>
-                    <li class="day-name">Fri</li>
-                </ol>
-                <ol class="c-calendar__calendarList2" id="calendarList">
+          <h2 class="p-lesson-detail__heading">
+            現在講師のスケジュール
+            <span>
+              現在この講師のレッスンのスケジュールです。この時間以外を選択して指名すると講師が指名を受けるのが可能になる可能性が高くなります。
+            </span>
+          </h2>
+          <div class="p-lesson-detail__calendar">
+            <div class="p-lesson-detail__calendar__month">2022年 12月</div>
+            <table class="p-lesson-detail__calendar__table" cellspacing="5" cellpadding="0">
+              <tr>
+                <td class="week">Sun</td>
+                <td class="week">Mon</td>
+                <td class="week">Tue</td>
+                <td class="week">Wed</td>
+                <td class="week">Thu</td>
+                <td class="week">Fri</td>
+                <td class="week">Sat</td>
+              </tr>
+              <tr>
+                <td class="days"></td>
+                <td class="days"></td>
+                <td class="days"></td>
+                <td class="days"></td>
+                <td class="days">
+                  <div class="day">1</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">2</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">3</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                </td>
+              </tr>
+              <tr>
+                <td class="days">
+                  <div class="day">4</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">5</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">6</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">7</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">8</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">9</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">10</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="days">
+                  <div class="day">11</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">12</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">13</div>
+                  <ul class="schedule__list">
+                    
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">14</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">15</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">16</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">17</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="days">
+                  <div class="day">18</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">19</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">20</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">21</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">22</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">23</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">24</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="days">
+                  <div class="day">25</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">26</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">27</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">28</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">29</div>
+                  <ul class="schedule__list">
 
-                </ol>
-            </div>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">30</div>
+                  <ul class="schedule__list">
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                    <li class="schedule__list__item">
+                      12:00
+                    </li>
+                    <li class="schedule__list__item">
+                      13:00
+                    </li>
+                    <li class="schedule__list__item">
+                      12:30
+                    </li>
+                  </ul>
+                </td>
+                <td class="days">
+                  <div class="day">31</div>
+                  <ul class="schedule__list">
+
+                  </ul>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
         <ul class="p-lesson-detail__review">
@@ -359,15 +958,10 @@
   <script src="./assets/js/calendar.js"></script>
   <script src="./assets/js/common.js"></script>
   <script>
-  function calendarClickEvent(element) {
-    let elementId = $(element).attr('id');
-    let text = $('#modalYearMonth').text();
-    const textArray = text.split("月");
-    let newText = textArray[0];
-    $('#modalYearMonth').text(newText + '月 ' + elementId + '日')
-    $('.c-calendar__modal').fadeIn();
-  }
-  </script>
+    $( function() {
+      $( "#tabs" ).tabs();
+    } );
+    </script>
 </body>
 
 </html>
