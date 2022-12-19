@@ -72,6 +72,9 @@
         display: -ms-flexbox;
         display: flex;
         border: 1px solid #000;
+        @media (max-width: 767px) {
+          flex-wrap: wrap;
+        }
         &:last-child {
           border-bottom: 1px solid #000;
         }
@@ -87,19 +90,20 @@
         }
         dt {
           width: 100%;
-          padding: 5px 10px;
+          padding: 10px 10px 5px 10px;
           background: $lightgray;
           border-right: 1px solid #000;
           font-size: 1.4rem;
           font-weight: bold;
           @media (max-width: 1024px) {
-            width: 180px;
+            width: 50%;
             padding: 15px 12px;
           }
           @media (max-width: 767px) {
-            width: 32%;
+            width: 50%;
             padding: 10px 8px;
             font-size: 1.2rem;
+            border-bottom: 1px solid #000;
           }
         }
         dd {
@@ -110,30 +114,32 @@
           line-height: 2.6rem;
           text-align: right;
           @media (max-width: 1024px) {
-            width: calc(100% - 180px);
-            padding: 15px 12px;
           }
           @media (max-width: 767px) {
-            width: 68%;
+            width: 50%;
             padding: 10px 8px;
             font-size: 1.2rem;
+            border-bottom: 1px solid #000;
           }
           &.plus {
             padding: 3px 10px;
             color: $student;
             font-size: 1.8rem;
+            line-height: 4rem;
             font-weight: bold;
           }
           &.minus {
             padding: 3px 10px;
             color: $red;
             font-size: 1.8rem;
+            line-height: 4rem;
             font-weight: bold;
           }
           &.withdrawal {
             padding: 3px 10px;
             color: $green;
             font-size: 1.8rem;
+            line-height: 4rem;
             font-weight: bold;
           }
           &.date {
