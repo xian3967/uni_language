@@ -239,34 +239,54 @@
     </div>
     <div class="l-header__nav-sp__wrapper">
       <div class="l-header__nav-sp y-scroll">
+        <div class="l-header__nav-sp__sp-nav-btn js-hambugermenu__button">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="l-header__nav-sp__btns">
+          <p class="l-header__nav-sp__btns__text">ようこそ、<?php echo $user->first_name;?> 様</p>
+          <a href="<?php echo esc_url( home_url( ($user->tutor) ? '/mypage' : '/userpage' ) ); ?>" class="l-header__nav-sp__btns__link signup" title="マイページ">
+            マイページ
+          </a>
+          <a href="<?php echo esc_url( home_url( '/login?logout='.date("Ymdhis") ) ); ?>" class="l-header__nav-sp__btns__link" title="ログアウト">
+            ログアウト
+          </a>
+        </div>
+        <div class="l-header__nav-sp__btns">
+          <a href="<?php echo esc_url( home_url( '/login' ) ); ?>" class="l-header__nav-sp__btns__link" title="ログイン">
+            ログイン
+          </a>
+          <a href="<?php echo esc_url( home_url( '/signup?type=tutor' ) ); ?>" class="l-header__nav-sp__btns__link signup" title="無料登録">
+            会員登録
+          </a>
+        </div>
         <ul class="l-header__nav-sp__list">
           <li class="l-header__nav-sp__list__item">
-            <a href="/" class="l-header__nav-sp__list__item__link" titie>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header__nav-sp__list__item__link" titie>
               Home
             </a>
           </li>
           <li class="l-header__nav-sp__list__item">
-            <a href="lesson-list.html" class="l-header__nav-sp__list__item__link" titie>
+            <a href="#" onClick="alert('This page is getting ready for service.')" class="l-header__nav-sp__list__item__link" titie>
               Lesson
             </a>
           </li>
           <li class="l-header__nav-sp__list__item">
-            <a href="tutor.html" class="l-header__nav-sp__list__item__link" titie>
+            <a href="#" onClick="alert('This page is getting ready for service.')" class="l-header__nav-sp__list__item__link" titie>
               Tutor
             </a>
           </li>
           <li class="l-header__nav-sp__list__item">
-            <a href="news.html" class="l-header__nav-sp__list__item__link" titie>
+            <a href="#" onClick="alert('This page is getting ready for service.')" class="l-header__nav-sp__list__item__link" titie>
               News
             </a>
           </li>
           <li class="l-header__nav-sp__list__item">
-            <a href="company.html" class="l-header__nav-sp__list__item__link" titie>
+            <a href="<?php echo esc_url( home_url( '/company' ) ); ?>" class="l-header__nav-sp__list__item__link" titie>
               Company
             </a>
           </li>
           <li class="l-header__nav-sp__list__item">
-            <a href="contact.html" class="l-header__nav-sp__list__item__link" titie>
+            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="l-header__nav-sp__list__item__link" titie>
               Contact
             </a>
           </li>
