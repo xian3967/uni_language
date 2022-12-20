@@ -217,6 +217,9 @@
           border: 2px solid transparent;
         }
       }
+      .active {
+        background: $maincolor;
+      }
       .event-container {
         display: none;
         position: absolute;
