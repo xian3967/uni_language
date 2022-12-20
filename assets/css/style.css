@@ -14184,6 +14184,57 @@ readers do not read off random characters that represent icons */
   overflow-y: auto;
   background: #fff;
   z-index: 10000;
+  padding: 0 10px;
+}
+.l-header__nav-sp__wrapper .l-header__nav-sp__btns {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.l-header__nav-sp__wrapper .l-header__nav-sp__btns__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.l-header__nav-sp__wrapper .l-header__nav-sp__btns__link {
+  width: calc(50% - 10px);
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: #f2f2f2;
+  margin: 0 5px;
+  font-size: 1.4rem;
+  color: #202020;
+  text-align: center;
+}
+.l-header__nav-sp__wrapper .l-header__nav-sp__btns__link.signup {
+  background: #ffcc00;
+  font-weight: bold;
+}
+.l-header__nav-sp__wrapper .l-header__nav-sp__list {
+  width: 100%;
+  margin-top: 15px;
+}
+.l-header__nav-sp__wrapper .l-header__nav-sp__list__item {
+  width: 100%;
+}
+.l-header__nav-sp__wrapper .l-header__nav-sp__list__item a {
+  display: block;
+  padding: 20px 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #202020;
+  border-bottom: 1px solid #999;
+}
+.l-header__nav-sp__wrapper .l-header__nav-sp__sp-nav-btn {
+  width: 100%;
+  text-align: right;
+  font-size: 3rem;
 }
 .l-header__nav-sp__wrapper .l-header__nav-sp__bg {
   background-color: rgba(0, 0, 0, 0.7);
@@ -27651,7 +27702,7 @@ select {
   display: flex;
 }
 .p-userpage__ticket-buy__list__item {
-  width: calc(50% - 20px);
+  width: 100%;
   margin: 0 10px 20px 10px;
   background: #f2f2f2;
   border-radius: 20px;
@@ -27675,6 +27726,13 @@ select {
   color: #fff;
   padding: 5px 10px;
   border-radius: 10px;
+}
+.p-userpage__ticket-buy__list__item .c-input__col {
+  width: 100%;
+  padding: 0 20px;
+}
+.p-userpage__ticket-buy__list__item .c-input__col .c-select {
+  width: 100%;
 }
 .p-userpage__ticket-buy__list__item__title {
   display: block;
