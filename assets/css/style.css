@@ -15331,6 +15331,9 @@ input::-ms-input-placeholder {
 .c-calendar .c-calendar__box .day.disabled:hover {
   border: 2px solid transparent;
 }
+.c-calendar .c-calendar__box .active {
+  background: #ffcc00;
+}
 .c-calendar .c-calendar__box .event-container {
   display: none;
   position: absolute;

@@ -7,7 +7,7 @@
   // Create the defaults once
   var pluginName = "simpleCalendar",
     defaults = {
-      months: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'], //string of months starting from january
+      months: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'], //string of months starting from january
       days: ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'], //string of days starting from sunday
       displayYear: true, // display year in header
       fixedStartDay: true, // Week begin always by monday or by day set by number 0 = sunday, 7 = saturday, false = month always begin by first day of the month
@@ -59,7 +59,7 @@
     //Update the current month header
     updateHeader: function (date, header) {
       var monthText = this.settings.months[date.getMonth()];
-      var yearText = this.settings.displayYear ? ' <span class="year">' + date.getFullYear() + '年' : '</span>';
+      var yearText = this.settings.displayYear ? ' <span class="year">' + date.getFullYear() + '/' : '</span>';
       var totalText = yearText + monthText;
       header.find('.month').html(totalText);
     },
@@ -108,7 +108,7 @@
         var tr = $('<tr></tr>');
         //For each row
         for (var i = 0; i < 7; i++) {
-          var td = $('<td onClick="calendarClickEvent(this);"><div class="day" data-date="' + day.toISOString() + '" id="' +day.getDate() +'">' + day.getDate() + '</div></td>');
+          var td = $('<td onClick="calendarClickEvent(this);"><div class="day" data-date="' + day.toDateString() + '" id="' +day.getDate() +'">' + day.getDate() + '</div></td>');
 
           var $day = td.find('.day');
 
