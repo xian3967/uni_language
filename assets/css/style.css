@@ -17820,9 +17820,10 @@ select {
   border-radius: 20px;
 }
 .p-main__point__left__title {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 10px;
+  letter-spacing: -1px;
 }
 .p-main__point__left__title span {
   font-size: 1.4rem;
@@ -27596,4 +27597,366 @@ select {
 }
 .p-userpage-lesson-confirm__ticket-buy dl dd.total {
   background: #ffcc00;
+}
+
+.p-userpage {
+  padding-bottom: 60px;
+}
+.p-userpage__have-ticket {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.p-userpage__have-ticket__list {
+  display: flex;
+}
+.p-userpage__have-ticket__list__item {
+  background: #f2f2f2;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #202020;
+  padding: 15px 0;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.p-userpage__have-ticket__list__item span {
+  color: #999;
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+}
+.p-userpage__have-ticket__list__item p span {
+  color: #202020;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 5px;
+}
+.p-userpage__have-ticket__list__item:nth-child(2) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-left: 1px solid #e1e1e1;
+}
+.p-userpage__ticket-buy {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.p-userpage__ticket-buy__list {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.p-userpage__ticket-buy__list__item {
+  width: calc(50% - 20px);
+  margin: 0 10px 20px 10px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #999;
+}
+.p-userpage__ticket-buy__list__item.osusume {
+  background: #ffcc00;
+  color: #202020;
+  position: relative;
+}
+.p-userpage__ticket-buy__list__item.osusume::after {
+  content: "おすすめ！";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.p-userpage__ticket-buy__list__item__title {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #202020;
+  margin: 10px 0;
+}
+.p-userpage__ticket-buy__list__item__price {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #202020;
+  margin-top: 10px;
+}
+.p-userpage__ticket-buy__list__item a {
+  display: block;
+  width: 100%;
+  background: #ffcc00;
+  color: #202020;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+.p-userpage__ticket-buy__list__item__number {
+  padding: 5px 10px;
+  margin-top: 15px;
+  display: inline-block;
+  text-align: right;
+  border-radius: 10px;
+  font-size: 1.4em;
+  border: 1px solid #999;
+}
+.p-userpage__ticket-buy__list__item__number:focus {
+  border: 1px solid #ffcc00;
+}
+.p-userpage__ticket-buy__list__item span {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #202020;
+  margin-left: 10px;
+}
+.p-userpage__ticket-buy__list__item__ticket {
+  height: 20px;
+  background-size: 4px 2px;
+  background: url(../images/common/line.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.p-userpage__ticket-buy__list__item__ticket::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: -10px;
+  transform: rotate(45deg);
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.p-userpage__ticket-buy__list__item__ticket::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: -10px;
+  transform: rotate(45deg);
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.p-userpage__ticket {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.p-userpage__ticket dl {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+}
+.p-userpage__ticket dl dt {
+  width: calc(100% - 300px);
+  padding: 5px 10px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+@media (max-width: 1024px) {
+  .p-userpage__ticket dl dt {
+    width: 180px;
+    padding: 15px 12px;
+  }
+}
+@media (max-width: 767px) {
+  .p-userpage__ticket dl dt {
+    width: 32%;
+    padding: 10px 8px;
+    font-size: 1.2rem;
+  }
+}
+.p-userpage__ticket dl dt.total {
+  background: #ffcc00;
+  font-size: 1.6rem;
+}
+.p-userpage__ticket dl dd {
+  width: 150px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  font-size: 1.4rem;
+  text-align: right;
+}
+@media (max-width: 1024px) {
+  .p-userpage__ticket dl dd {
+    width: calc(100% - 180px);
+    padding: 15px 12px;
+  }
+}
+@media (max-width: 767px) {
+  .p-userpage__ticket dl dd {
+    width: 68%;
+    padding: 10px 8px;
+    font-size: 1.2rem;
+  }
+}
+.p-userpage__ticket dl dd span {
+  background: none;
+  font-size: inherit;
+  padding: 0;
+  margin-left: 0;
+  color: inherit;
+  border-radius: 0;
+}
+.p-userpage__ticket dl dd.total {
+  background: #ffcc00;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.p-userpage__ticket__link {
+  width: 100%;
+  text-align: center;
+}
+.p-userpage__ticket__link a {
+  display: block;
+  padding: 10px 25px;
+  color: #202020;
+  background: #ffcc00;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.p-userpage__ticket__add-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff0000;
+  margin-top: 10px;
+}
+.p-userpage__next-lesson__contents {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.p-userpage__next-lesson__none {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.p-userpage__next-lesson__none a {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #ffcc00;
+  color: #202020;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.p-userpage__next-lesson__list {
+  width: 100%;
+}
+.p-userpage__next-lesson__list__item {
+  width: 100%;
+}
+.p-userpage__next-lesson__list__item a {
+  display: flex;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.p-userpage__next-lesson__list__item__date {
+  background: #202020;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.p-userpage__next-lesson__list__item__title {
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  color: #202020;
+  font-weight: bold;
+}
+.p-userpage__next-lesson__list__item:last-child a {
+  margin-bottom: 0;
+}
+.p-userpage__next-lesson__list ~ .p-userpage__next-lesson__none {
+  display: none;
+}
+.p-userpage__notice {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.p-userpage__list {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 20px 0;
+}
+.p-userpage__list__item {
+  width: 49%;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  padding: 30px;
+}
+.p-userpage__list__item:nth-child(2n) {
+  margin-left: 2%;
+}
+@media (max-width: 475px) {
+  .p-userpage__list__item {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 0 !important;
+  }
+}
+.p-userpage__list__item__icon {
+  width: 100%;
+  text-align: center;
+}
+.p-userpage__list__item__icon img {
+  width: 150px;
+}
+.p-userpage__list__item__title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.p-userpage__list__item__title span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.p-userpage__list__item__text {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #999;
+}
+.p-userpage__list__item__link {
+  width: 100%;
+  display: block;
+  padding: 8px 0;
+  margin-top: 10px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: #ffcc00;
+  color: #202020;
 }/*# sourceMappingURL=style.css.map */
