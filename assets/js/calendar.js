@@ -22,6 +22,9 @@
           '<div class="p-mypage-lesson__schedule__result__list__item__ticket"></div>',
           '<p class="p-mypage-lesson__schedule__result__text-date schedule-result-date">' + date + '</p>',
           '<p class="p-mypage-lesson__schedule__result__text-time schedule-result-time">' + time + '</p>',
+          '<input type="hidden" name="cal_plan[]" value="' + plan + '">',
+          '<input type="hidden" name="cal_date[]" value="' + date + '">',
+          '<input type="hidden" name="cal_time[]" value="' + time + '">',
           '</li>'
         ].join("");
         $('.p-mypage-lesson__schedule__result__list').append(lessonList);
