@@ -55,7 +55,7 @@
       display: -ms-flexbox;
       display: flex;
       &__item {
-        width: 100%;
+        width: calc(50% - 20px);
         margin: 0 10px 20px 10px;
         background: $lightgray;
         border-radius: 20px;
@@ -77,13 +77,6 @@
             color: $white;
             padding: 5px 10px;
             border-radius: 10px;
-          }
-        }
-        .c-input__col {
-          width: 100%;
-          padding: 0 20px;
-          .c-select {
-            width: 100%;
           }
         }
         &__title {

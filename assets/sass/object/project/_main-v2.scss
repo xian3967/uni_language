@@ -43,7 +43,7 @@
     background: #f2f2f2 url(../images/top/service_img02.png) top center no-repeat;
     @media (max-width: 767px) {
       background: #f2f2f2;
-      padding: 50px 0 0 0;
+      padding: 15% 0 0 0;
     }
     &__contents {
       width: 100%;
@@ -100,7 +100,7 @@
       padding-bottom: 150px;
       background: url(../images/top/service_img03.png) bottom center no-repeat;
       @media (max-width: 767px) {
-        padding-bottom: 50vw;
+        padding-bottom: 280px;
         background: url(../images/top/service_img03.png) bottom left no-repeat;
       }
     }
@@ -385,6 +385,9 @@
     width: 100%;
     padding: 100px 0;
     background: $maincolor;
+    @media (max-width: 767px) {
+      padding: 10% 0;
+    }
     &__heading {
       width: 100%;
       text-align: center;
@@ -414,6 +417,9 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+      }
     }
     &__sclass {
       background: #FFF;
@@ -423,6 +429,10 @@
       padding: 30px 0;
       text-align: center;
       margin: 0 20px;
+      @media (max-width: 767px) {
+        padding: 10px 0;
+        margin: 0 20px 20px 20px;
+      }
       &__title {
         span {
           width: 100%;
@@ -468,6 +478,9 @@
     width: 100%;
     padding: 150px 0;
     background: $lightgray;
+    @media (max-width: 767px) {
+      padding: 10% 0 30% 0;
+    }
     &__heading {
       width: 100%;
       text-align: center;
@@ -513,10 +526,16 @@
     &__list {
       width: 100%;
       display: flex;
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+      }
       &__item {
         width: 100%;
         text-align: center;
         position: relative;
+        @media (max-width: 767px) {
+          padding: 0 0 20% 0;
+        }
         &::before {
           font: var(--fa-font-solid);
           content: "\f0da";
@@ -526,6 +545,12 @@
           font-size: 3.4rem;
           font-weight: bold;
           color: $blacktext;
+          @media (max-width: 767px) {
+            top: auto;
+            bottom: 10%;
+            width: 100%;
+            transform: rotate(90deg);
+          }
         }
         &__img {
           width: 250px;
