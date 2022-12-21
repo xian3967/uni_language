@@ -20548,6 +20548,51 @@ select {
     font-size: 1.2rem;
   }
 }
+.p-request-detail__lesson-date {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.p-request-detail__lesson-date__item {
+  width: 25%;
+  padding: 10px;
+}
+.p-request-detail__lesson-date__item__class {
+  width: 100%;
+  display: block;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.p-request-detail__lesson-date__item__class span {
+  color: #ff0000;
+}
+.p-request-detail__lesson-date__item__class .check-icon {
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+}
+.p-request-detail__lesson-date__item__class .check-icon i {
+  font-size: 4rem;
+  color: #f2f2f2;
+}
+.p-request-detail__lesson-date__item__time {
+  margin-top: 10px;
+}
+.p-request-detail__lesson-date__item input:checked + label {
+  background: #ffcc00;
+}
+.p-request-detail__lesson-date__item input:checked + label .check-icon i {
+  color: #202020;
+}
 
 .p-info-tutor {
   width: 100%;
