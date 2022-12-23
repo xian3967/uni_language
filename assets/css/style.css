@@ -14212,6 +14212,11 @@ readers do not read off random characters that represent icons */
   color: #202020;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .l-header__nav-sp__wrapper .l-header__nav-sp__btns__link {
+    padding: 10px 10px;
+  }
+}
 .l-header__nav-sp__wrapper .l-header__nav-sp__btns__link.signup {
   background: #ffcc00;
   font-weight: bold;
@@ -14441,6 +14446,7 @@ readers do not read off random characters that represent icons */
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .l-aside__profile__left {
   width: 100%;
@@ -14463,7 +14469,6 @@ readers do not read off random characters that represent icons */
   width: 100%;
   text-align: center;
   margin: 0 auto 20px;
-  position: relative;
   max-width: 150px;
 }
 .l-aside__profile__img img {
@@ -14484,8 +14489,8 @@ readers do not read off random characters that represent icons */
   font-weight: bold;
   color: #202020;
   position: absolute;
-  right: 0;
-  top: 0;
+  left: -5px;
+  top: -5px;
   background-color: #ffcc00;
 }
 .l-aside__profile__img__label i {
@@ -17517,7 +17522,6 @@ select {
 }
 @media (max-width: 767px) {
   .p-main__service {
-    background: #f2f2f2;
     padding: 15% 0 0 0;
   }
 }
@@ -17588,6 +17592,8 @@ select {
 @media (max-width: 767px) {
   .p-main__service__text {
     padding-bottom: 280px;
+    padding-left: 15px;
+    padding-right: 15px;
     background: url(../images/top/service_img03.png) bottom left no-repeat;
   }
 }
@@ -17860,6 +17866,7 @@ select {
 @media (max-width: 767px) {
   .p-main__point__left {
     width: 100%;
+    padding: 7%;
   }
 }
 .p-main__point__left__num {
@@ -17874,10 +17881,11 @@ select {
   border-radius: 20px;
 }
 .p-main__point__left__title {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  letter-spacing: -1px;
+  margin-bottom: 30px;
+  letter-spacing: 0;
 }
 .p-main__point__left__title span {
   font-size: 1.4rem;
@@ -20557,6 +20565,14 @@ select {
 .p-request-detail__lesson-date__item {
   width: 25%;
   padding: 10px;
+}
+@media (max-width: 767px) {
+  .p-request-detail__lesson-date__item {
+    width: 50%;
+  }
+}
+.p-request-detail__lesson-date__item input {
+  display: none;
 }
 .p-request-detail__lesson-date__item__class {
   width: 100%;
@@ -24909,6 +24925,41 @@ select {
   background: #f2f2f2;
   display: flex;
   justify-content: space-between;
+}
+.p-mypage-calendar__header {
+  position: relative;
+}
+.p-mypage-calendar__header .calendar-btn {
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #ffcc00;
+  border-radius: 50%;
+  border: 2px solid #ffcc00;
+}
+.p-mypage-calendar__header .calendar-btn:before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  transform: rotate(45deg);
+  transform-origin: center center;
+}
+.p-mypage-calendar__header .calendar-btn.btn-next {
+  top: 0;
+  right: 10px;
+}
+.p-mypage-calendar__header .calendar-btn.btn-prev {
+  top: 0;
+  left: 10px;
+  transform: rotate(-180deg);
 }
 .p-mypage-calendar__month {
   width: 100%;
