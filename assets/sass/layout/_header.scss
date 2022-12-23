@@ -341,6 +341,9 @@
           font-size: 1.4rem;
           color: $blacktext;
           text-align: center;
+          @media (max-width: 767px) {
+            padding: 10px 10px;
+          }
           &.signup {
             background: $maincolor;
             font-weight: bold; 

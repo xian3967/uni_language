@@ -42,7 +42,6 @@
     position: relative;
     background: #f2f2f2 url(../images/top/service_img02.png) top center no-repeat;
     @media (max-width: 767px) {
-      background: #f2f2f2;
       padding: 15% 0 0 0;
     }
     &__contents {
@@ -101,6 +100,8 @@
       background: url(../images/top/service_img03.png) bottom center no-repeat;
       @media (max-width: 767px) {
         padding-bottom: 280px;
+        padding-left: 15px;
+        padding-right: 15px;
         background: url(../images/top/service_img03.png) bottom left no-repeat;
       }
     }
@@ -341,6 +342,7 @@
       border-radius: 50px;
       @media (max-width: 767px) {
         width: 100%;
+        padding: 7%;
       }
       &__num {
         margin-bottom: 20px;
@@ -354,10 +356,11 @@
         }
       }
       &__title {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
         font-weight: bold;
-        margin-bottom: 10px;
-        letter-spacing: -1px;
+        margin-bottom: 30px;
+        letter-spacing: 0;
         span {
           font-size: 1.4rem;
           font-weight: bold;

@@ -295,6 +295,12 @@
     &__item {
       width: 25%;
       padding: 10px;
+      @media (max-width: 767px) {
+        width: 50%;
+      }
+      input {
+        display: none;
+      }
       &__class {
         width: 100%;
         display: block;

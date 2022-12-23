@@ -266,7 +266,8 @@ $('.js-copybtn').on('click', function() {
 //lesson accordion
 (function($) {
   $('.js-sidebar-accordion').on('click', function() {
-    $(this).toggleClass('is-open').next().slideToggle();
+    $(this).next().slideToggle();
+    $(this).toggleClass('is-open');
   });
 })(jQuery);
 //
