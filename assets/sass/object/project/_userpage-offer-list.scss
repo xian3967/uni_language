@@ -204,16 +204,29 @@
         }
         @media (max-width: 767px) {
           padding: 6%;
+          flex-wrap: wrap;
         }
         &__img {
           width: 150px;
           margin-right: 20px;
+          @media (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
           img {
             border-radius: 50%;
+            @media (max-width: 767px) {
+              max-width: 150px;
+            }
           }
         }
         &__text {
           width: calc(100% - 170px);
+          @media (max-width: 767px) {
+            width: 100%;
+          }
           &__link {
             display: inline-block;
             padding: 3px 15px;
