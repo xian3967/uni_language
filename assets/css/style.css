@@ -27422,17 +27422,36 @@ select {
 @media (max-width: 767px) {
   .p-userpage-offer-list__list__item__profile {
     padding: 6%;
+    flex-wrap: wrap;
   }
 }
 .p-userpage-offer-list__list__item__profile__img {
   width: 150px;
   margin-right: 20px;
 }
+@media (max-width: 767px) {
+  .p-userpage-offer-list__list__item__profile__img {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
 .p-userpage-offer-list__list__item__profile__img img {
   border-radius: 50%;
 }
+@media (max-width: 767px) {
+  .p-userpage-offer-list__list__item__profile__img img {
+    max-width: 150px;
+  }
+}
 .p-userpage-offer-list__list__item__profile__text {
   width: calc(100% - 170px);
+}
+@media (max-width: 767px) {
+  .p-userpage-offer-list__list__item__profile__text {
+    width: 100%;
+  }
 }
 .p-userpage-offer-list__list__item__profile__text__link {
   display: inline-block;
