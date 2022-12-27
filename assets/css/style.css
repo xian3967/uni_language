@@ -13698,147 +13698,16 @@ readers do not read off random characters that represent icons */
 
 .l-footer {
   width: 100%;
-  background: #000;
-  padding-bottom: 30px;
-  position: relative;
-  z-index: 75;
-}
-@media (max-width: 1280px) {
-  .l-footer {
-    padding-bottom: 100px;
-  }
+  padding: 20px 0;
+  background: #202020;
+  text-align: center;
+  color: #FFF;
 }
 @media (max-width: 767px) {
   .l-footer {
-    padding-bottom: 60px;
-  }
-}
-.l-footer .l-footer__content {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  font-size: 14px;
-  color: #fff;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 767px) {
-  .l-footer .l-footer__content {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-}
-.l-footer .l-footer__content .l-footer__content__item {
-  text-align: center;
-}
-.l-footer .l-footer__content .l-footer__content__item .l-footer__content__item__logo {
-  width: 250px;
-  display: inline-block;
-}
-@media (max-width: 950px) {
-  .l-footer .l-footer__content .l-footer__content__item .l-footer__content__item__logo {
-    width: 200px;
-  }
-}
-@media (max-width: 767px) {
-  .l-footer .l-footer__content .l-footer__content__nav {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-.l-footer .l-footer__content .l-footer__content__nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-@media (max-width: 767px) {
-  .l-footer .l-footer__content .l-footer__content__nav ul {
-    flex-wrap: wrap;
-  }
-}
-.l-footer .l-footer__content .l-footer__content__nav ul li {
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 2;
-  letter-spacing: -0.15px;
-}
-.l-footer .l-footer__content .l-footer__content__nav ul li a {
-  color: #fff;
-  position: relative;
-  padding: 0 40px;
-  font-size: 14px;
-  display: inline-block;
-}
-@media (max-width: 1024px) {
-  .l-footer .l-footer__content .l-footer__content__nav ul li a {
-    font-size: 13px;
-    padding: 0 25px;
-  }
-}
-@media (max-width: 767px) {
-  .l-footer .l-footer__content .l-footer__content__nav ul li a {
-    padding: 0 15px;
-  }
-}
-@media (max-width: 450px) {
-  .l-footer .l-footer__content .l-footer__content__nav ul li a {
-    font-size: 12px;
-  }
-}
-.l-footer .l-footer__content .l-footer__content__nav ul li a:before {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  content: "";
-  display: block;
-  height: 80%;
-  width: 1px;
-  background: #fff;
-}
-.l-footer .l-footer__content .l-footer__content__nav ul li a:hover {
-  opacity: 1 !important;
-  transition: 0.3s;
-  color: #e562ac;
-}
-.l-footer .l-footer__content .l-footer__content__nav ul li i {
-  margin-left: 5px;
-}
-.l-footer .l-footer__content .l-footer__content__nav ul li:first-child a:before {
-  display: none;
-}
-.l-footer .l-footer__copy {
-  width: 100%;
-  color: #aaa;
-  text-align: center;
-  font-weight: 500;
-}
-@media (max-width: 767px) {
-  .l-footer .l-footer__copy {
-    padding: 0 10px;
-  }
-}
-.l-footer .l-footer__copy p {
-  color: #aaa;
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-@media (max-width: 375px) {
-  .l-footer .l-footer__copy p {
-    font-size: 12px;
-  }
-}
-.l-footer .l-footer__copy small {
-  font-size: 12px;
-}
-@media (max-width: 375px) {
-  .l-footer .l-footer__copy small {
-    font-size: 10px;
+    padding: 20px 0 120px 0;
+    background: #f2f2f2;
+    color: #202020;
   }
 }
 
@@ -13954,11 +13823,18 @@ readers do not read off random characters that represent icons */
   .l-header__logo-wrap__sp-nav-btn {
     display: block;
     position: absolute;
-    top: -10px;
+    top: -15px;
     right: 20px;
     font-size: 2.6rem;
     font-weight: bold;
   }
+}
+.l-header__logo-wrap__sp-nav-btn span {
+  position: absolute;
+  bottom: -5px;
+  font-size: 1rem;
+  left: 0;
+  color: #FF0000;
 }
 .l-header__logo-wrap__logo {
   width: 250px;
@@ -14090,7 +13966,7 @@ readers do not read off random characters that represent icons */
   bottom: 50%;
   right: 10px;
   transform: translateY(50%);
-  z-index: 10;
+  z-index: 1000;
 }
 @media (max-width: 1300px) {
   .l-header__fixed-nav {
@@ -14300,8 +14176,10 @@ readers do not read off random characters that represent icons */
   color: #000;
   font-weight: 500;
   position: relative;
-  margin-bottom: 10px;
-  padding: 0 15px;
+  padding: 7px 15px;
+  background: #ffcc00;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   cursor: pointer;
 }
 @media (max-width: 767px) {
@@ -14312,7 +14190,7 @@ readers do not read off random characters that represent icons */
 .l-aside__button:after {
   content: "\f054";
   position: absolute;
-  top: 0;
+  top: 8px;
   right: 15px;
   display: block;
   color: #000;
@@ -14912,8 +14790,19 @@ readers do not read off random characters that represent icons */
   width: 49%;
   display: flex;
 }
+@media (max-width: 767px) {
+  .c-input__select-language__select-warp {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 .c-input__select-language__select-warp:nth-child(2n) {
   margin-left: 2%;
+}
+@media (max-width: 767px) {
+  .c-input__select-language__select-warp:nth-child(2n) {
+    margin-left: 0;
+  }
 }
 .c-input__select-language__select-warp__select {
   width: 100%;
@@ -15061,6 +14950,11 @@ readers do not read off random characters that represent icons */
   padding-left: 30px;
   margin-right: 10px;
 }
+@media (max-width: 767px) {
+  .c-checkbox input[type=checkbox] + label, .c-checkbox input[type=radio] + label {
+    font-size: 1.1rem;
+  }
+}
 .c-checkbox input[type=checkbox] + label::before, .c-checkbox input[type=radio] + label::before {
   content: "";
   position: absolute;
@@ -15072,6 +14966,11 @@ readers do not read off random characters that represent icons */
   height: 15px;
   border: 1px solid #202020;
   border-radius: 3px;
+}
+@media (max-width: 767px) {
+  .c-checkbox input[type=checkbox] + label::before, .c-checkbox input[type=radio] + label::before {
+    top: 1px;
+  }
 }
 .c-checkbox input[type=checkbox]:checked + label::after, .c-checkbox input[type=radio]:checked + label::after {
   position: absolute;
@@ -15141,6 +15040,14 @@ input::-ms-input-placeholder {
   font-size: 1.2rem;
   color: #ff0000;
 }
+.c-calendar__title.schedule {
+  font-size: 2rem;
+}
+@media (max-width: 767px) {
+  .c-calendar__title.schedule {
+    font-size: 1.6rem;
+  }
+}
 .c-calendar #modalYearMonth {
   font-size: 1.4rem;
   font-weight: bold;
@@ -15198,8 +15105,8 @@ input::-ms-input-placeholder {
   width: 100%;
   max-width: 250px;
   padding: 10px;
-  background: #202020;
-  color: #fff;
+  background: #ffcc00;
+  color: #202020;
   text-align: center;
   font-size: 1.4rem;
   border-radius: 15px;
@@ -15318,7 +15225,7 @@ input::-ms-input-placeholder {
   border: 2px solid #ffcc00;
 }
 .c-calendar .c-calendar__box .day.wrong-month {
-  color: #CBD1D2;
+  display: none;
 }
 .c-calendar .c-calendar__box .day.wrong-month:hover {
   border: 2px solid transparent;
@@ -15783,6 +15690,7 @@ select {
 .c-textarea .c-textarea__title {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 16px;
@@ -16116,6 +16024,7 @@ select {
   font-weight: bold;
   border-radius: 15px;
   position: relative;
+  z-index: 10;
 }
 .c-alert.alert-success {
   background: #ffcc00;
@@ -18723,9 +18632,20 @@ select {
   font-size: 2.8rem;
   font-weight: bold;
 }
+.p-lesson__heading h2 span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .p-lesson__heading h2 span br {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .p-lesson__heading h2 {
     font-size: 1.8rem;
+    width: calc(100% - 30vw);
   }
 }
 .p-lesson__sidebar-tutor {
@@ -18872,7 +18792,6 @@ select {
 @media (max-width: 767px) {
   .p-lesson__tutor-list {
     width: 100%;
-    margin-top: 7%;
     margin-bottom: 10%;
     padding: 5%;
     border-top-left-radius: 15px;
@@ -19144,10 +19063,23 @@ select {
 @media (max-width: 767px) {
   .p-lesson__student-list {
     width: 100%;
-    margin-top: 7%;
     padding: 5%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+  }
+}
+.p-lesson__student-list .p-lesson__student-list-notice br {
+  display: none;
+}
+@media (max-width: 767px) {
+  .p-lesson__student-list .p-lesson__student-list-notice {
+    width: 100%;
+  }
+  .p-lesson__student-list .p-lesson__student-list-notice span {
+    display: block;
+  }
+  .p-lesson__student-list .p-lesson__student-list-notice span br {
+    display: block;
   }
 }
 .p-lesson__student-list::after {
@@ -20336,11 +20268,12 @@ select {
   padding: 10px;
 }
 .p-request-detail__sidebar__student__text-wrap__language p {
-  width: 50%;
+  width: 100%;
   padding: 5px 10px;
 }
 .p-request-detail__sidebar__student__text-wrap__language span {
   font-weight: bold;
+  margin-left: 5px;
 }
 .p-request-detail__sidebar__student__text-wrap__language .native-icon {
   background: #ffcc00;
@@ -20607,6 +20540,49 @@ select {
   background: #ffcc00;
 }
 .p-request-detail__lesson-date__item input:checked + label .check-icon i {
+  color: #202020;
+}
+.p-request-detail__lesson-date-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.p-request-detail__lesson-date-list__item {
+  width: 25%;
+  padding: 4px;
+}
+@media (max-width: 767px) {
+  .p-request-detail__lesson-date-list__item {
+    width: 50%;
+  }
+}
+.p-request-detail__lesson-date-list__item input {
+  display: none;
+}
+.p-request-detail__lesson-date-list__item__class {
+  width: 100%;
+  display: block;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+.p-request-detail__lesson-date-list__item__class span {
+  color: #ff0000;
+}
+.p-request-detail__lesson-date-list__item__time {
+  margin-top: 10px;
+}
+.p-request-detail__lesson-date-list__item input:checked + label {
+  background: #ffcc00;
+}
+.p-request-detail__lesson-date-list__item input:checked + label .check-icon i {
   color: #202020;
 }
 
@@ -27343,7 +27319,7 @@ select {
   text-decoration: line-through;
 }
 .p-userpage-offer-list__header__date span.complete::after {
-  content: "予約済み";
+  content: "confirmed";
   position: absolute;
   top: -12px;
   right: 10px;
@@ -27609,7 +27585,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-userpage-lesson-confirm__lesson-info dl dt {
-    width: 32%;
+    width: 100%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
@@ -27629,7 +27605,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-userpage-lesson-confirm__lesson-info dl dd {
-    width: 68%;
+    width: 100%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
@@ -27697,7 +27673,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-userpage-lesson-confirm__ticket dl dt {
-    width: 32%;
+    width: 100%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
@@ -27718,7 +27694,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-userpage-lesson-confirm__ticket dl dd {
-    width: 68%;
+    width: 100%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
@@ -27766,7 +27742,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-userpage-lesson-confirm__ticket-buy dl dt {
-    width: 32%;
+    width: 100%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
@@ -27790,7 +27766,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-userpage-lesson-confirm__ticket-buy dl dd {
-    width: 68%;
+    width: 100%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
@@ -27869,13 +27845,18 @@ select {
   text-align: center;
   color: #999;
 }
+@media (max-width: 767px) {
+  .p-userpage__ticket-buy__list__item {
+    width: 100%;
+  }
+}
 .p-userpage__ticket-buy__list__item.osusume {
   background: #ffcc00;
   color: #202020;
   position: relative;
 }
 .p-userpage__ticket-buy__list__item.osusume::after {
-  content: "おすすめ！";
+  content: "Recommend!";
   position: absolute;
   top: -10px;
   right: 10px;
@@ -27916,6 +27897,12 @@ select {
   border-radius: 10px;
   font-size: 1.4em;
   border: 1px solid #999;
+  width: 60%;
+}
+@media (max-width: 767px) {
+  .p-userpage__ticket-buy__list__item__number {
+    text-align: center;
+  }
 }
 .p-userpage__ticket-buy__list__item__number:focus {
   border: 1px solid #ffcc00;
@@ -27987,7 +27974,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-userpage__ticket dl dt {
-    width: 32%;
+    width: 100%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }
@@ -28012,7 +27999,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-userpage__ticket dl dd {
-    width: 68%;
+    width: 50%;
     padding: 10px 8px;
     font-size: 1.2rem;
   }

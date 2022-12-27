@@ -236,8 +236,15 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
     &:nth-child(2n) {
       margin-left: 2%;
+      @media (max-width: 767px) {
+        margin-left: 0;
+      }
     }
     &__select {
       width: 100%;
@@ -391,6 +398,9 @@
     cursor: pointer;
     padding-left: 30px;
     margin-right: 10px;
+    @media (max-width: 767px) {
+      font-size: 1.1rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -402,6 +412,9 @@
       height: 15px;
       border: 1px solid $blacktext;
       border-radius: 3px;
+      @media (max-width: 767px) {
+        top: 1px;
+      }
     }
   }
   input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {

@@ -20,6 +20,12 @@
         font-size: 1.2rem;
         color: $red;
       }
+      &.schedule {
+        font-size: 2rem;
+        @media (max-width: 767px) {
+          font-size: 1.6rem;
+        }
+      }
     }
     #modalYearMonth {
       font-size: 1.4rem;
@@ -69,8 +75,8 @@
         width: 100%;
         max-width: 250px;
         padding: 10px;
-        background: $blacktext;
-        color: $white;
+        background: $maincolor;
+        color: $blacktext;
         text-align: center;
         font-size: 1.4rem;
         border-radius: 15px;
@@ -198,7 +204,7 @@
           }
         }
         &.wrong-month {
-          color: #CBD1D2;
+          display: none;
           &:hover {
             border: 2px solid transparent;
           }

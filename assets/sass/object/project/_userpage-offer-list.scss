@@ -119,7 +119,7 @@
         &.complete {
           text-decoration: line-through;
           &::after {
-            content: "予約済み";
+            content: "confirmed";
             position: absolute;
             top: -12px;
             right: 10px;

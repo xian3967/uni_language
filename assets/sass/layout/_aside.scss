@@ -20,8 +20,10 @@
     color: #000;
     font-weight: 500;
     position: relative;
-    margin-bottom: 10px;
-    padding: 0 15px;
+    padding: 7px 15px;
+    background: $maincolor;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     cursor: pointer;
     @media (max-width: 767px) {
       display: block;
@@ -29,7 +31,7 @@
     &:after {
       content: "\f054";
       position: absolute;
-      top: 0;
+      top: 8px;
       right: 15px;
       display: block;
       color: #000;
