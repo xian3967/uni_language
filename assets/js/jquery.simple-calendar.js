@@ -58,8 +58,8 @@
 
     //Update the current month header
     updateHeader: function (date, header) {
-      var monthText = this.settings.months[date.getMonth()];
-      var yearText = this.settings.displayYear ? ' <span class="year">' + date.getFullYear() + '/' : '</span>';
+      var monthText = this.settings.months[date.getMonth()] + "月";
+      var yearText = this.settings.displayYear ? ' <span class="year">' + date.getFullYear() + '年' : '</span>';
       var totalText = yearText + monthText;
       header.find('.month').html(totalText);
     },
@@ -108,7 +108,7 @@
         var tr = $('<tr></tr>');
         //For each row
         for (var i = 0; i < 7; i++) {
-          var td = $('<td onClick="calendarClickEvent(this);"><div class="day" data-date="' + day.toDateString() + '" id="' +day.getDate() +'">' + day.getDate() + '</div></td>');
+          var td = $('<td><div onClick="calendarClickEvent(this);" class="day" data-date="' + day.toDateString() + '" id="' +day.getDate() +'">' + day.getDate() + '</div></td>');
 
           var $day = td.find('.day');
 
