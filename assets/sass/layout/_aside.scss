@@ -17,11 +17,11 @@
   &__button {
     display: none;
     font-size: 14px;
-    color: #000;
+    color: #FFF;
     font-weight: 500;
     position: relative;
     padding: 7px 15px;
-    background: $maincolor;
+    background: #FF0000;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     cursor: pointer;
@@ -34,7 +34,7 @@
       top: 8px;
       right: 15px;
       display: block;
-      color: #000;
+      color: #FFF;
       font-size: 1.2rem;
       font-family: "Font Awesome 6 Pro";
       font-weight: 600;
