@@ -88,13 +88,7 @@
       position: relative;
     }
     &__left {
-      width: calc(100% - 240px);
-      @media (max-width: 1024px) {
-        width: calc(100% - 145px);
-      }
-      @media (max-width: 767px) {
-        width: 100%;
-      }
+      width: 100%;
     }
     &__right {
       margin-left: 20px;
@@ -112,6 +106,29 @@
         top: -10px;
         right: 0;
         margin-left: 0;
+      }
+    }
+    &__class {
+      width: 100%;
+      &__date {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background: $maincolor;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        &.student {
+          background: $student;
+        }
+        span {
+          color: #FFF;
+          background: $blacktext;
+          padding: 2px 10px;
+          border-radius: 10px;
+          margin-left: 10px;
+        }
       }
     }
     &__label {
@@ -160,13 +177,6 @@
         font-size: 1.6rem;
         padding-right: 110px;
       }
-    }
-    &__name {
-      font-size: 12px;
-      line-height: 18px;
-      font-weight: 400;
-      color: $black;
-      margin-bottom: 15px;
     }
     &__tiems {
       font-size: 12px;

@@ -14173,11 +14173,11 @@ readers do not read off random characters that represent icons */
 .l-aside__button {
   display: none;
   font-size: 14px;
-  color: #000;
+  color: #FFF;
   font-weight: 500;
   position: relative;
   padding: 7px 15px;
-  background: #ffcc00;
+  background: #FF0000;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   cursor: pointer;
@@ -14193,7 +14193,7 @@ readers do not read off random characters that represent icons */
   top: 8px;
   right: 15px;
   display: block;
-  color: #000;
+  color: #FFF;
   font-size: 1.2rem;
   font-family: "Font Awesome 6 Pro";
   font-weight: 600;
@@ -22421,6 +22421,7 @@ select {
   border-radius: 10px;
   padding: 0 10px;
   margin-right: 5px;
+  display: none;
 }
 .p-tutor__tutor-list__item__profile__detail-info .native-icon.lv01 {
   background: #f2f2f2;
@@ -22433,6 +22434,9 @@ select {
 }
 .p-tutor__tutor-list__item__profile__detail-info .native-icon.lv04 {
   background: #f2f2f2;
+}
+.p-tutor__tutor-list__item__profile__detail-info .native-text + .native-icon {
+  display: inline-block;
 }
 .p-tutor__tutor-list__more-view {
   width: 100%;
@@ -23800,15 +23804,18 @@ select {
   }
 }
 .p-mypage-mylesson__list__item__left {
+  width: 100%;
+}
+.p-mypage-mylesson__list__item__left.userpage {
   width: calc(100% - 170px);
 }
 @media (max-width: 1024px) {
-  .p-mypage-mylesson__list__item__left {
+  .p-mypage-mylesson__list__item__left.userpage {
     width: calc(100% - 135px);
   }
 }
 @media (max-width: 767px) {
-  .p-mypage-mylesson__list__item__left {
+  .p-mypage-mylesson__list__item__left.userpage {
     width: calc(100% - 110px);
   }
 }
@@ -23923,6 +23930,7 @@ select {
   }
 }
 .p-mypage-mylesson__list__item__name {
+  width: 100%;
   font-size: 1.4rem;
   line-height: 18px;
   font-weight: 500;
@@ -23936,6 +23944,45 @@ select {
     margin-bottom: 8px;
     letter-spacing: 0.5px;
   }
+}
+.p-mypage-mylesson__list__item__name a {
+  display: block;
+  text-align: center;
+  color: #202020;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.p-mypage-mylesson__list__item__name a img {
+  max-width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.p-mypage-mylesson__list__item__name a span {
+  display: block;
+  margin-top: 10px;
+}
+.p-mypage-mylesson__list__item__class {
+  width: 100%;
+}
+.p-mypage-mylesson__list__item__class__date {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #ffcc00;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.p-mypage-mylesson__list__item__class__date.student {
+  background: #00baff;
+}
+.p-mypage-mylesson__list__item__class__date span {
+  color: #FFF;
+  background: #202020;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 .p-mypage-mylesson__list__item__tiems {
   font-size: 1.4rem;
@@ -24283,17 +24330,7 @@ select {
   position: relative;
 }
 .p-mypage-mylesson-detail__header__left {
-  width: calc(100% - 240px);
-}
-@media (max-width: 1024px) {
-  .p-mypage-mylesson-detail__header__left {
-    width: calc(100% - 145px);
-  }
-}
-@media (max-width: 767px) {
-  .p-mypage-mylesson-detail__header__left {
-    width: 100%;
-  }
+  width: 100%;
 }
 .p-mypage-mylesson-detail__header__right {
   margin-left: 20px;
@@ -24316,6 +24353,29 @@ select {
     right: 0;
     margin-left: 0;
   }
+}
+.p-mypage-mylesson-detail__header__class {
+  width: 100%;
+}
+.p-mypage-mylesson-detail__header__class__date {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #ffcc00;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.p-mypage-mylesson-detail__header__class__date.student {
+  background: #00baff;
+}
+.p-mypage-mylesson-detail__header__class__date span {
+  color: #FFF;
+  background: #202020;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 .p-mypage-mylesson-detail__header__label {
   display: block;
@@ -24369,13 +24429,6 @@ select {
     font-size: 1.6rem;
     padding-right: 110px;
   }
-}
-.p-mypage-mylesson-detail__header__name {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000;
-  margin-bottom: 15px;
 }
 .p-mypage-mylesson-detail__header__tiems {
   font-size: 12px;

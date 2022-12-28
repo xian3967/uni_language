@@ -384,6 +384,7 @@
             border-radius: 10px;
             padding: 0 10px;
             margin-right: 5px;
+            display: none;
             &.lv01 {
               background: $lightgray;
             }
@@ -396,6 +397,9 @@
             &.lv04 {
               background: $lightgray;
             }
+          }
+          .native-text + .native-icon {
+            display: inline-block;
           }
         }
       }
