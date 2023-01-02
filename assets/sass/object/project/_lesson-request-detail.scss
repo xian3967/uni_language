@@ -296,11 +296,25 @@
     &__item {
       width: 25%;
       padding: 10px;
+      position: relative;
       @media (max-width: 767px) {
         width: 50%;
       }
       input {
         display: none;
+      }
+      .offered {
+        position: absolute;
+        z-index: 3;
+        top: 5px;
+        background: #FF0000;
+        padding: 2px 10px;
+        color: #FFF;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+      .offered + .p-request-detail__lesson-date__item__class {
+        opacity: 0.5;
       }
       &__class {
         width: 100%;

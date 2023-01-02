@@ -193,13 +193,11 @@
                     <p class="p-mypage-mylesson-detail__list__item__code__title">参加コード</p>
                     <div class="p-mypage-mylesson-detail__list__item__code">
                       <p class="p-mypage-mylesson-detail__list__item__code__left">
-                        <a href="zoom.com/dfsdfdsfdsfdsfdsfdsfdshfjdks" class="js-copytext">zoom.com/dfsdfdsfdsfdsfdsfdsfdshfjdks</a>
+                        <a href="https://meet.google.com/xfg-nues-zyw" target="_blank" class="js-copytext">meet.google.com/xfg-nues-zyw</a>
                       </p>
-                      <p class="p-mypage-mylesson-detail__list__item__code__right js-copybtn">
+                      <p class="js-copybtn"><i class="fa-solid fa-copy"></i></p>
+                      <p class="p-mypage-mylesson-detail__list__item__code__right">
                         コピー
-                      </p>
-                      <p class="p-mypage-mylesson-detail__list__item__code__alert js-copyalert">
-                        コピーしました
                       </p>
                     </div>
                   </div>
@@ -219,9 +217,10 @@
                     <p class="p-mypage-mylesson-detail__list__item__code__title">参加コード</p>
                     <div class="p-mypage-mylesson-detail__list__item__code">
                       <p class="p-mypage-mylesson-detail__list__item__code__left">
-                        <a href="zoom.com/dfsdfdsfdsfdsfdsfdsfdshfjdks" class="js-copytext">zoom.com/dfsdfdsfdsfdsfdshfjdks</a>
+                        <a href="../../meet.google.com/xfg-nues-zyw" class="js-copytext">zoom.com/dfsdfdsfdsfdsfdshfjdks</a>
                       </p>
-                      <p class="p-mypage-mylesson-detail__list__item__code__right js-copybtn">
+                      <p class="js-copybtn"><i class="fa-solid fa-copy"></i></p>
+                      <p class="p-mypage-mylesson-detail__list__item__code__right">
                         コピー
                       </p>
                       <p class="p-mypage-mylesson-detail__list__item__code__alert js-copyalert">
@@ -296,6 +295,12 @@
   function calendarRemoveEvent(element) {
     $(element).parent('li').remove();
   }
+  $('a[target="_blank"]').click(function(e){
+
+e.preventDefault();
+window.location = /^(http|https):/.test(this.href) ? this.href : 'http://' + this.href;
+
+});
   </script>
 </body>
 

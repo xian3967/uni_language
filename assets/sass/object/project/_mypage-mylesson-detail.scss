@@ -426,7 +426,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 60px;
+        padding: 2px 5px;
         height: 25px;
         cursor: pointer;
         &:before {
@@ -465,8 +465,20 @@
       &__code {
         display: flex;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         position: relative;
+        &__copy {
+          background: #f2f2f2;
+          text-align: center;
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+          padding: 8px 15px 0 10px;
+          cursor: pointer;
+          span {
+            font-size: 1rem;
+            font-weight: bold;
+          }
+        }
         &__alert {
           position: absolute;
           top: -32px;
@@ -490,21 +502,13 @@
         &__left {
           width: 100%;
           background: $lightgray;
-          height: 40px;
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          padding: 0 15px;
+          padding: 15px 15px;
           @media (max-width: 1024px) {
             font-size: 12px;
           }
           span {
             font-size: 14px;
             line-height: 14px;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
             max-height: calc(1.4rem * 1);
             color: $blue;
             width: 100%;
@@ -513,10 +517,6 @@
           a {
             font-size: 14px;
             line-height: 14px;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
             max-height: calc(1.4rem * 1);
             color: $blue;
             width: 100%;
@@ -526,7 +526,6 @@
         &__input {
           width: 100%;
           background: $lightgray;
-          height: 40px;
           display: flex;
           flex-wrap: wrap;
           align-items: center;
@@ -539,10 +538,6 @@
           span {
             font-size: 14px;
             line-height: 14px;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
             max-height: calc(1.4rem * 1);
             color: $blue;
             width: 100%;
@@ -552,7 +547,7 @@
             font-size: 14px;
             line-height: 14px;
             -webkit-box-orient: vertical;
-            overflow: hidden;
+            overflow: hidden; 
             display: -webkit-box;
             -webkit-line-clamp: 1;
             max-height: calc(1.4rem * 1);
@@ -563,10 +558,7 @@
         }
         &__right {
           width: 80px;
-          color: $white;
           font-size: 14px;
-          background: $darkblue;
-          height: 40px;
           display: flex;
           flex-wrap: wrap;
           align-items: center;
@@ -575,6 +567,12 @@
           font-size: 14px;
           border-bottom-right-radius: 10px;
           border-top-right-radius: 10px;
+          padding: 8px 0;
+          text-align: center;
+          line-height: 1.6rem;
+          background: #ffcc00;
+          font-weight: bold;
+          color: #FF0000;
           @media (max-width: 1024px) {
             font-size: 12px;
             width: 70px;

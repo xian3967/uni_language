@@ -34,11 +34,11 @@
     <div class="l-header__top-wrap">
       <div class="l-header__contents">
         <div class="l-header__top-wrap__language-select">
-          <select>
-            <option>Japanese</option>
-            <option>Enlish</option>
-            <option>Korea</option>
-          </select>
+          <div id="google_translate_element"></div>
+          <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <script type="text/javascript">
+            function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+          </script>
         </div>
         <div class="l-header__top-wrap__icon-wrap">
           <ul class="l-header__top-wrap__icon-wrap__list">
