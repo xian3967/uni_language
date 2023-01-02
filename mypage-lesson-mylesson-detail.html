@@ -217,7 +217,7 @@
                     <p class="p-mypage-mylesson-detail__list__item__code__title">参加コード</p>
                     <div class="p-mypage-mylesson-detail__list__item__code">
                       <p class="p-mypage-mylesson-detail__list__item__code__input">
-                        <input type="text" value="googlemeetttttttttttttt">
+                        <a href="meet.google.com/aob-gpes-ref" id="url">meet.google.com/aob-gpes-ref</a>
                       </p>
                       <p class="p-mypage-mylesson-detail__list__item__code__right">
                         修正
@@ -306,20 +306,14 @@
   <script src="./assets/js/calendar.js"></script>
   <script src="./assets/js/common.js"></script>
   <script>
-  function calendarClickEvent(element) {
-    let elementId = $(element).attr('id');
-    let text = $('#modalYearMonth').text();
-    const textArray = text.split("月");
-    let newText = textArray[0];
-    $('#modalYearMonth').text(newText + '月 ' + elementId + '日');
-    $('.calendar-select option:selected').prop('selected', false);
-    $('.calendar-select option:first').prop('selected', 'selected');
-    $('.c-calendar__modal__submit').addClass('disabled');
-    $('.c-calendar__modal').fadeIn();
-  }
-  function calendarRemoveEvent(element) {
-    $(element).parent('li').remove();
-  }
+function formatUrl(url)
+{
+    var httpString = "http://";
+    var httpsString = "https://";
+    if (url.substr(0, httpString.length).toLowerCase() !== httpString && url.substr(0, httpsString.length).toLowerCase() !== httpsString)
+                url = httpString + url;
+    return url;
+}
   </script>
 </body>
 

@@ -231,38 +231,6 @@ $('.js-copybtn').on('click', function() {
 //
 
 
-//popup localStorage
-(function($) {
-  var nowDate = new Date();
-  if (localStorage.getItem('saveEventTimePopup')) {
-    var saveDate = localStorage.getItem('saveEventTimePopup', saveDate);
-    var savedDate = new Date(saveDate);
-    var msecPerMinute = 1000 * 60;
-    var msecPerHour = msecPerMinute * 60;
-    var msecPerDay = msecPerHour * 24;
-    var interval = nowDate.getTime() - savedDate.getTime();
-    var days = Math.floor(interval / msecPerDay);
-    var hours = Math.floor(interval / msecPerHour);
-    var minutes = Math.floor(interval / msecPerMinute);
-    var seconds = Math.floor(interval / 1000);
-    if (days >= 7) {
-      document.querySelector('.c-popup__localstorage').style.display = 'block';
-      localStorage.removeItem('saveEventTimePopup');
-    } else {
-      document.querySelector('.c-popup__localstorage').style.display = 'none';
-    }
-  }
-  $('.js-popuop-close').on('click', function() {
-    $('.c-popup__localstorage').fadeOut();
-  });
-  $('.js-popup-localstorage').on('click', function() {
-    $('.c-popup__localstorage').fadeOut();
-    var saveDate = new Date();
-    localStorage.setItem('saveEventTimePopup', saveDate);
-  });
-})(jQuery);
-//
-
 //lesson accordion
 (function($) {
   $('.js-sidebar-accordion').on('click', function() {
