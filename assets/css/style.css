@@ -14034,10 +14034,12 @@ readers do not read off random characters that represent icons */
 }
 .l-header__fixed-nav__list__item__link.search {
   background: #ffcc00;
+  border: 2px solid #FFF;
 }
 @media (max-width: 767px) {
   .l-header__fixed-nav__list__item__link.search {
     background: none;
+    border: none;
   }
 }
 .l-header__fixed-nav__list__item__link span {
@@ -14447,6 +14449,58 @@ readers do not read off random characters that represent icons */
     border-top-right-radius: 10px;
   }
 }
+.l-aside__profile__title__lessonmenu {
+  padding: 0 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .l-aside__profile__title__lessonmenu {
+    padding: 0 15px 0 0;
+    margin-bottom: 15px;
+  }
+}
+.l-aside__profile__title__lessonmenu a {
+  background: #f2f2f2;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #202020;
+  padding: 8px 0;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .l-aside__profile__title__lessonmenu a {
+    font-size: 1.4rem;
+    padding: 3px 0;
+  }
+}
+.l-aside__profile__title__lessonmenu a p {
+  color: #999;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.l-aside__profile__title__lessonmenu a span {
+  -webkit-animation: lessontext 1.2s ease infinite;
+          animation: lessontext 1.2s ease infinite;
+}
+.l-aside__profile__title__lessonmenu a:nth-child(2) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-left: 1px solid #e1e1e1;
+}
+@media (max-width: 767px) {
+  .l-aside__profile__title__lessonmenu a:nth-child(2) {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
 .l-aside__profile__title__button {
   padding: 0 20px;
   width: 100%;
@@ -14511,6 +14565,17 @@ readers do not read off random characters that represent icons */
   padding-left: 5px;
 }
 
+@-webkit-keyframes lessontext {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes lessontext {
+  50% {
+    opacity: 0;
+  }
+}
 .l-content {
   width: 100%;
   display: flex;
@@ -18216,15 +18281,16 @@ select {
 .p-lesson__accordion {
   margin-bottom: 10px;
   width: 100%;
-  background: #fff;
+  background: #ffcc00;
   padding: 10px 15px;
   font-size: 1.4rem;
   font-weight: bold;
-  color: #202020;
+  color: #FF0000;
   border-radius: 20px;
   cursor: pointer;
   display: none;
   position: relative;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .p-lesson__accordion {
@@ -18235,7 +18301,7 @@ select {
   content: "\f054";
   position: absolute;
   display: inline-block;
-  color: #000;
+  color: #FF0000;
   top: 30%;
   font-size: 1.2rem;
   font-family: "Font Awesome 6 Pro";
@@ -21859,13 +21925,15 @@ select {
 .p-tutor__tutor-list__accordion {
   margin-bottom: 10px;
   width: 100%;
-  background: #fff;
+  background: #ffcc00;
   padding: 10px 15px;
   font-size: 14px;
-  color: #202020;
+  color: #FF0000;
+  font-weight: bold;
   cursor: pointer;
   display: none;
   position: relative;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .p-tutor__tutor-list__accordion {
@@ -21876,7 +21944,7 @@ select {
   content: "\f054";
   position: absolute;
   display: inline-block;
-  color: #000;
+  color: #FF0000;
   top: 30%;
   font-size: 1.2rem;
   font-family: "Font Awesome 6 Pro";
@@ -23602,6 +23670,9 @@ select {
   flex-wrap: wrap;
   margin-top: 20px;
   position: relative;
+}
+.p-mypage-mylesson__list form {
+  width: 100%;
 }
 .p-mypage-mylesson__list__item {
   width: 100%;
@@ -27390,6 +27461,9 @@ select {
   display: flex;
   flex-wrap: wrap;
 }
+.p-userpage-offer-list__list form {
+  width: 100%;
+}
 .p-userpage-offer-list__list__item {
   width: 100%;
   margin-bottom: 30px;
@@ -27546,6 +27620,9 @@ select {
   display: flex;
   margin-top: 10px;
 }
+.p-userpage-offer-list__list__item__link-wrap a {
+  width: 100%;
+}
 .p-userpage-offer-list__list__item__link-wrap .btn {
   width: 100%;
   text-align: center;
@@ -27565,6 +27642,23 @@ select {
 }
 .p-userpage-offer-list__list__item__link-wrap .btn.gray {
   background: #999;
+}
+.p-userpage-offer-list__list__item__link-wrap .btn.btn-confirmed {
+  background: #FF0000;
+  color: #FFF;
+}
+.p-userpage-offer-list__list__item__link-wrap .btn.btn-confirmed::after {
+  content: "Confirmed!";
+  font-family: "Montserrat";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #FF0000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 3px solid #FF0000;
+  transform: rotate(10deg);
 }
 
 .p-userpage-lesson-confirm {

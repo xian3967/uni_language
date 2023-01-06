@@ -294,8 +294,10 @@
           }
           &.search {
             background: $maincolor;
+            border: 2px solid #FFF;
             @media (max-width: 767px) {
               background: none;
+              border: none;
             }
           }
           span {
