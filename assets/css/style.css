@@ -13732,11 +13732,11 @@ readers do not read off random characters that represent icons */
 .l-header__top-wrap {
   width: 100%;
   background: #ffcc00;
-  padding: 10px 0;
+  padding: 25px 0;
 }
 @media (max-width: 767px) {
   .l-header__top-wrap {
-    padding: 0;
+    padding: 25px 0;
   }
 }
 .l-header__top-wrap .l-header__contents {
@@ -14128,6 +14128,21 @@ readers do not read off random characters that represent icons */
   top: 0;
   z-index: 9999;
   display: none;
+}
+
+#gtranslate_wrapper {
+  position: absolute !important;
+  top: 10px !important;
+  right: 50%;
+  left: auto !important;
+  z-index: 999999;
+  transform: translateX(600px);
+}
+@media (max-width: 1024px) {
+  #gtranslate_wrapper {
+    right: 6%;
+    transform: translateX(0);
+  }
 }
 
 .l-container {
@@ -16120,6 +16135,9 @@ select {
     display: block;
     margin-top: 10px;
   }
+}
+.c-alert__text a {
+  color: #202020;
 }
 .c-alert__close {
   position: absolute;
@@ -27077,6 +27095,24 @@ select {
 .p-userpage-lesson-list__list__item__right.none a {
   display: none;
 }
+.p-userpage-lesson-list__list__item__right.done {
+  background: #FFF;
+  border: 3px solid #FF0000;
+  transform: rotate(10deg);
+  font-family: "Montserrat";
+  color: #FF0000;
+}
+@media (max-width: 767px) {
+  .p-userpage-lesson-list__list__item__right.done {
+    transform: rotate(0);
+  }
+}
+.p-userpage-lesson-list__list__item__right.done .confirmed {
+  width: 100%;
+}
+.p-userpage-lesson-list__list__item__right.done .confirmed-text {
+  font-size: 1.8rem;
+}
 .p-userpage-lesson-list__list__item__right__title {
   width: 100%;
   font-size: 1.2rem;
@@ -27152,9 +27188,9 @@ select {
   font-size: 1.2rem;
   line-height: 18px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
   color: #202020;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .p-userpage-lesson-list__list__item__tiems {
@@ -27162,6 +27198,28 @@ select {
     line-height: 16px;
     letter-spacing: 0.5px;
   }
+}
+.p-userpage-lesson-list__list__item__tiems span {
+  margin-right: 5px;
+  padding: 5px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  display: inline-block;
+}
+.p-userpage-lesson-list__list__item__tiems span.complete {
+  position: relative;
+  text-decoration: line-through;
+}
+.p-userpage-lesson-list__list__item__tiems span.complete::after {
+  content: "confirmed";
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background: #ff0000;
+  padding: 0 5px;
+  border-radius: 5px;
 }
 .p-userpage-lesson-list__list__item__button {
   width: 100%;
