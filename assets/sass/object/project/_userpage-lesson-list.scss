@@ -79,6 +79,22 @@
             display: none;
           }
         }
+        &.done {
+          background: #FFF;
+          border: 3px solid #FF0000;
+          transform: rotate(10deg);
+          font-family: "Montserrat";
+          color: #FF0000;
+          @media (max-width: 767px) {
+            transform: rotate(0);
+          }
+          .confirmed {
+            width: 100%;
+          }
+          .confirmed-text {
+            font-size: 1.8rem;
+          }
+        }
         &__title {
           width: 100%;
           font-size: 1.2rem;
@@ -147,13 +163,35 @@
         font-size: 1.2rem;
         line-height: 18px;
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 20px;
         color: $blacktext;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         @media (max-width: 767px) {
           font-size: 1.2rem;
           line-height: 16px;
           letter-spacing: 0.5px;
+        }
+        span {
+          margin-right: 5px;
+          padding: 5px;
+          background: $lightgray;
+          border-radius: 5px;
+          display: inline-block;
+          &.complete {
+            position: relative;
+            text-decoration: line-through;
+            &::after {
+              content: "confirmed";
+              position: absolute;
+              top: -12px;
+              right: 10px;
+              font-size: 1rem;
+              color: #fff;
+              background: #ff0000;
+              padding: 0 5px;
+              border-radius: 5px;
+            }
+          }
         }
       }
       &__button {

@@ -18,9 +18,9 @@
   &__top-wrap {
     width: 100%;
     background: $maincolor;
-    padding: 10px 0;
+    padding: 25px 0;
     @media (max-width: 767px) {
-      padding: 0;
+      padding: 25px 0;
     }
     .l-header__contents {
       justify-content: flex-end;
@@ -391,5 +391,18 @@
       z-index: 9999;
       display: none;
     }
+  }
+}
+
+#gtranslate_wrapper {
+  position: absolute !important;
+  top: 10px !important;
+  right: 50%;
+  left: auto !important;
+  z-index: 999999;
+  transform: translateX(600px);
+  @media (max-width: 1024px) {
+    right: 6%;
+    transform: translateX(0);
   }
 }
