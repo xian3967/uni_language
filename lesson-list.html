@@ -21,11 +21,14 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/jquery.datetimepicker.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
   <script src="https://kit.fontawesome.com/9c4b4c7e12.js" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
   <script src="./assets/js/common.js"></script>
   <title>U&I Language</title>
 </head>
@@ -171,7 +174,28 @@
               <input type="text" placeholder="keyword...">
             </div>
             <div class="p-lesson__sidebar-student__search-box__checkbox">
-              <h3>どんなコースを希望しますか？</h3>
+              <h3>Quick Select</h3>
+              <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
+                <input id="course01" type="checkbox" >
+                <label for="course01">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  Today
+                </label>
+                <input id="course02" type="checkbox" >
+                <label for="course02">
+                  <span><i class="fa-solid fa-check"></i></span>
+                  Tomorrow
+                </label>
+              </div>
+            </div>
+            <div class="p-lesson__sidebar-student__search-box__date">
+              <h3>Select date</h3>
+              <div class="p-lesson__sidebar-student__search-box__date__wrap">
+                  <input id="datetimepicker01" type="text" placeholder="Select"><span>~</span><input id="datetimepicker02" type="text" placeholder="Select">
+              </div>
+            </div>
+            <div class="p-lesson__sidebar-student__search-box__checkbox">
+              <h3>Course</h3>
               <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
                 <input id="course01" type="checkbox" >
                 <label for="course01">
@@ -186,87 +210,27 @@
               </div>
             </div>
             <div class="p-lesson__sidebar-student__search-box__checkbox">
-              <h3>習いたい言語を選んでください。</h3>
-              <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
-                <input id="language01" type="checkbox" >
-                <label for="language01">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  英語
-                </label>
-                <input id="language02" type="checkbox" >
-                <label for="language02">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  韓国語
-                </label>
-                <input id="language03" type="checkbox" >
-                <label for="language03">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  日本語
-                </label>
-                <input id="language04" type="checkbox" >
-                <label for="language04">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  中国語
-                </label>
-                <input id="language05" type="checkbox" >
-                <label for="language05">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  その他
-                </label>
-              </div>
-            </div>
-            <div class="p-lesson__sidebar-student__search-box__checkbox">
-              <h3>レベルはどのくらいですか？</h3>
+              <h3>Lesson level</h3>
               <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
                 <input id="level01" type="checkbox" >
                 <label for="level01">
                   <span><i class="fa-solid fa-check"></i></span>
-                  初心者
+                  Beginner
                 </label>
                 <input id="level02" type="checkbox" >
                 <label for="level02">
                   <span><i class="fa-solid fa-check"></i></span>
-                  中級者
+                  Intermediate
                 </label>
                 <input id="level03" type="checkbox" >
                 <label for="level03">
                   <span><i class="fa-solid fa-check"></i></span>
-                  上級者
+                  Advanced
                 </label>
                 <input id="level04" type="checkbox" >
                 <label for="level04">
                   <span><i class="fa-solid fa-check"></i></span>
-                  ビジネス
-                </label>
-              </div>
-            </div>
-            <div class="p-lesson__sidebar-student__search-box__checkbox">
-              <h3>スケジュールを選択してください。</h3>
-              <div class="p-lesson__sidebar-student__search-box__checkbox__wrap">
-                <input id="time01" type="checkbox" >
-                <label for="time01">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  朝時間
-                </label>
-                <input id="time02" type="checkbox" >
-                <label for="time02">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  昼時間
-                </label>
-                <input id="time03" type="checkbox" >
-                <label for="time03">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  夜時間
-                </label>
-                <input id="time04" type="checkbox" >
-                <label for="time04">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  平日
-                </label>
-                <input id="time05" type="checkbox" >
-                <label for="time05">
-                  <span><i class="fa-solid fa-check"></i></span>
-                  週末
+                  Native
                 </label>
               </div>
             </div>
@@ -520,6 +484,10 @@
     </section>
   </main>
   <script src="./assets/js/common.js"></script>
+  <script type="text/javascript">
+jQuery('#datetimepicker01').datetimepicker();
+jQuery('#datetimepicker02').datetimepicker();
+    </script>
 </body>
 
 </html>

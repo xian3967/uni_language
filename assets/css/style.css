@@ -18939,6 +18939,80 @@ select {
 .p-lesson__sidebar-student__search-box__checkbox__wrap input:checked + label span i {
   opacity: 1;
 }
+.p-lesson__sidebar-student__search-box__date {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.p-lesson__sidebar-student__search-box__date h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.p-lesson__sidebar-student__search-box__date__wrap {
+  padding: 10px;
+  border-radius: 20px;
+  background: #f2f2f2;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .p-lesson__sidebar-student__search-box__date__wrap {
+    border-radius: 12px;
+  }
+}
+.p-lesson__sidebar-student__search-box__date__wrap input {
+  background: #FFF;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.p-lesson__sidebar-student__search-box__date__wrap span {
+  padding: 0 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+.p-lesson__sidebar-student__search-box__date__wrap label {
+  width: calc(50% - 15px);
+  height: 40px;
+  display: block;
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: #FFF;
+  margin-left: 10px;
+}
+.p-lesson__sidebar-student__search-box__date__wrap label span {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #ffcc00;
+  display: block;
+  margin-top: 4px;
+  margin-right: 8px;
+  position: relative;
+}
+.p-lesson__sidebar-student__search-box__date__wrap label span i {
+  left: -1px;
+  bottom: -2px;
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: bold;
+  opacity: 0;
+  color: #FFF;
+}
+.p-lesson__sidebar-student__search-box__date__wrap input:checked + label {
+  background: #ffcc00;
+  transition: all 0.2s ease;
+}
+.p-lesson__sidebar-student__search-box__date__wrap input:checked + label span {
+  border: 2px solid #202020;
+  background: #202020;
+}
+.p-lesson__sidebar-student__search-box__date__wrap input:checked + label span i {
+  opacity: 1;
+}
 .p-lesson__sidebar-student__search-box__btn {
   width: 100%;
   display: block;

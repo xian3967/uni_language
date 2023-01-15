@@ -602,6 +602,82 @@
           }
         }
       }
+      &__date {
+        width: 100%;
+        margin-bottom: 20px;
+        h3 {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        &__wrap {
+          padding: 10px;
+          border-radius: 20px;
+          background: $lightgray;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          @media (max-width: 767px) {
+            border-radius: 12px;
+          }
+          input {
+            background: #FFF;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+          span {
+            padding: 0 5px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 4rem;
+          }
+          label {
+            width: calc(50% - 15px);
+            height: 40px;
+            display: block;
+            cursor: pointer;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: #FFF;
+            margin-left: 10px;
+            span {
+              width: 13px;
+              height: 13px;
+              border: 2px solid $maincolor;
+              display: block;
+              margin-top: 4px;
+              margin-right: 8px;
+              position: relative;
+              i {
+                left: -1px;
+                bottom: -2px;
+                position: absolute;
+                font-size: 1.6rem;
+                font-weight: bold;
+                opacity: 0;
+                color: #FFF;
+              }
+            }
+          }
+          input:checked + label {
+            background: $maincolor;
+            transition: all 0.2s ease;
+            span {
+              border: 2px solid $blacktext;
+              background: $blacktext;
+              i {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
       &__btn {
         width: 100%;
         display: block;
