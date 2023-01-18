@@ -87,7 +87,12 @@ $(function() {
     $('body, html').toggleClass('isFixed');
   });
   $('.l-header__nav-sp__bg').click(function() {
-    $('.js-hambugermenu__button').click();
+      $('.l-header__nav-sp').animate({
+        right: '-300px'
+      }, 400);
+      $('.l-header__nav-sp__bg').hide();
+    $('.l-header__logo-wrap__sp-nav-btn').removeClass('is-openMenu');
+    $('body, html').removeClass('isFixed');
   });
 });
 
