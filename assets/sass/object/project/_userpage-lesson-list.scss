@@ -231,6 +231,12 @@
         }
       }
     }
+    &__none {
+
+    }
+    .p-userpage-lesson-list__list__item ~ .p-userpage-lesson-list__list__none {
+      display: none;
+    }
   }
   &__search {
     display: -webkit-box;
