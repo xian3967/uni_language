@@ -14140,7 +14140,7 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 1024px) {
   #gtranslate_wrapper {
-    right: 6%;
+    right: 45px;
     transform: translateX(0);
   }
 }
@@ -14617,6 +14617,7 @@ readers do not read off random characters that represent icons */
   padding: 40px;
   border-radius: 30px;
   margin-bottom: 30px;
+  position: relative;
 }
 .l-section.minHeight100 {
   min-height: 100%;
@@ -15153,7 +15154,7 @@ input::-ms-input-placeholder {
   border: 2px solid #202020;
   padding: 20px;
   display: none;
-  z-index: 2;
+  z-index: 10;
 }
 @media (max-width: 1024px) {
   .c-calendar__modal {
@@ -18254,6 +18255,7 @@ select {
 .p-mypage-profile {
   padding-bottom: 60px;
   background: #f2f2f2;
+  position: relative;
 }
 .p-mypage-profile__submit {
   width: 100%;
@@ -18278,6 +18280,87 @@ select {
     margin-left: 0px;
     font-size: 14px;
   }
+}
+
+.modal {
+  max-width: 900px !important;
+  padding: 0 !important;
+}
+
+.guide-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .guide-icon {
+    top: -5px;
+    right: -5px;
+  }
+}
+.guide-icon__title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2px 5px;
+  background: #FF0000;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.guide-icon img {
+  width: 120px;
+}
+@media (max-width: 767px) {
+  .guide-icon img {
+    width: 100px;
+  }
+}
+
+.guide_modal__contents {
+  max-height: 600px;
+  overflow-y: scroll;
+  padding: 15px 30px;
+}
+@media (max-width: 767px) {
+  .guide_modal__contents {
+    padding: 10px;
+    max-height: 400px;
+  }
+}
+.guide_modal__contents .modal__title {
+  font-size: 1.6rem;
+}
+@media (max-width: 767px) {
+  .guide_modal__contents .modal__title {
+    font-size: 1.4rem;
+  }
+}
+.guide_modal__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.guide_modal__list__item {
+  width: 50%;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .guide_modal__list__item {
+    width: 100%;
+  }
+}
+.guide_modal__list__item img {
+  border-radius: 20px;
+  border: 5px solid #f2f2f2;
+  border-bottom: 10px solid #f2f2f2;
+}
+.guide_modal__list__item__text {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .p-lesson {
@@ -27332,6 +27415,9 @@ select {
 }
 .p-userpage-lesson-list__list__item__button a.blue {
   background: #00baff;
+}
+.p-userpage-lesson-list__list .p-userpage-lesson-list__list__item ~ .p-userpage-lesson-list__list__none {
+  display: none;
 }
 .p-userpage-lesson-list__search {
   display: flex;

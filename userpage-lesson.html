@@ -21,14 +21,53 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
   <script src="https://kit.fontawesome.com/9c4b4c7e12.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <title>U&I Language</title>
 </head>
 <body>
+  <div id="guide_modal" class="modal">
+    <div class="guide_modal__contents">
+      <div class="modal__title">
+        원하는 수업내용을 입력해서 강사에게 요청해보세요.<br>
+        원하는 내용을 상세히 입력할수록 당신에게 맞는 강사가 당신에게 제안을 해올것입니다.
+      </div>
+      <p class="modal__text">
+        <span class="modal__text__sub-title">레슨요청 이후의 흐름 : </span>
+      </p>
+      <ul class="guide_modal__list">
+        <li class="guide_modal__list__item">
+          <img src="assets/images/guide/guide_request01.png">
+          <div class="guide_modal__list__item__text">
+            1.요청한 수업 페이지에서 강사에게 온 제안을 확인할 수 있습니다.
+          </div>
+        </li>
+        <li class="guide_modal__list__item">
+          <img src="assets/images/guide/guide_request01.png">
+          <div class="guide_modal__list__item__text">
+            2. 여러명이 제안을 해온 경우, 프로필/샘플영상등을 확인하여 자신에게 맞는 강사를 고를수 있습니다.
+          </div>
+        </li>
+        <li class="guide_modal__list__item">
+          <img src="assets/images/guide/guide_request01.png">
+          <div class="guide_modal__list__item__text">
+            3. 프로필을 살펴보고 자신에게 맞는 강사를 찾았다면, [선택하고 확인] 버튼을 클릭해주세요.
+          </div>
+        </li>
+        <li class="guide_modal__list__item">
+          <img src="assets/images/guide/guide_request01.png">
+          <div class="guide_modal__list__item__text">
+            4. 확정된 레슨은 수업일정 페이지에서 확인 할수 있습니다.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
   <header class="l-header" id="header">
     <!--event-warp-->
     <div class="l-header__top-wrap">
@@ -300,6 +339,10 @@
       </aside>
       <div class="l-container main">
         <div class="p-mypage-profile">
+          <a href="#guide_modal" rel="modal:open" class="guide-icon">
+            <img src="assets/images/guide/icon.png" width="120px">
+            <div class="guide-icon__title">레슨안내</div>
+          </a>
           <section class="l-section">
             <h2 class="c-title"><span>レッスン希望登録</span></h2>
             <!--<p class="c-calendar__alert">*カレンダーからご希望の日付を選択し、スケジュールを選択してください。</p>-->
