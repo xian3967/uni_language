@@ -14348,8 +14348,8 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 767px) {
   .l-aside__profile__left {
-    width: 80px;
-    margin-right: 15px;
+    width: 90px;
+    margin-right: 5px;
   }
 }
 .l-aside__profile__right {
@@ -14405,8 +14405,8 @@ readers do not read off random characters that represent icons */
   .l-aside__profile__title {
     margin-bottom: 0;
     text-align: center;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
     padding-left: 15px;
   }
 }
@@ -14536,8 +14536,8 @@ readers do not read off random characters that represent icons */
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.5rem;
-  background: #202020;
-  color: #fff;
+  background: #ffcc00;
+  color: #202020;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -14566,8 +14566,8 @@ readers do not read off random characters that represent icons */
   border-top-left-radius: 0;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  background: #ffcc00;
-  color: #202020;
+  background: #FF0000;
+  color: #FFF;
 }
 .l-aside__title {
   color: #000;
