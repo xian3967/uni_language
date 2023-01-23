@@ -28135,8 +28135,6 @@ select {
   font-weight: bold;
   color: #202020;
   padding: 15px 0;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
 }
 .p-userpage__have-ticket__list__item span {
   color: #999;
@@ -28151,7 +28149,12 @@ select {
   display: inline-block;
   margin-left: 5px;
 }
-.p-userpage__have-ticket__list__item:nth-child(2) {
+.p-userpage__have-ticket__list__item:first-child {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-right: 1px solid #e1e1e1;
+}
+.p-userpage__have-ticket__list__item:last-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border-bottom-right-radius: 20px;
@@ -28183,13 +28186,7 @@ select {
     width: 100%;
   }
 }
-.p-userpage__ticket-buy__list__item.osusume {
-  background: #ffcc00;
-  color: #202020;
-  position: relative;
-}
-.p-userpage__ticket-buy__list__item.osusume::after {
-  content: "Recommend!";
+.p-userpage__ticket-buy__list__item__label {
   position: absolute;
   top: -10px;
   right: 10px;
@@ -28197,6 +28194,23 @@ select {
   color: #fff;
   padding: 5px 10px;
   border-radius: 10px;
+}
+.p-userpage__ticket-buy__list__item.osusume {
+  background: #ffcc00;
+  color: #202020;
+  position: relative;
+  /*****
+  &::after {
+    content: "Recommend!";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: $red;
+    color: $white;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  *****/
 }
 .p-userpage__ticket-buy__list__item__title {
   display: block;
