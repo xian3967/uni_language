@@ -23479,6 +23479,44 @@ select {
   padding: 10px;
   background: #e6e6e6;
 }
+.p-mypage__payment__tutorlevel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.p-mypage__payment__tutorlevel a {
+  padding: 5px;
+  background: #ffcc00;
+  color: #202020;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.p-mypage__payment__header {
+  width: 100%;
+  display: flex;
+}
+.p-mypage__payment__header a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  background: #ffcc00;
+  padding: 15px 0;
+  color: #202020;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.p-mypage__payment__header a:first-child {
+  background: #999;
+}
+.p-mypage__payment__header a.none {
+  background: #f2f2f2;
+  pointer-events: none;
+}
 .p-mypage__payment__ticket {
   width: 100%;
   margin-bottom: 30px;
@@ -23487,6 +23525,7 @@ select {
   width: 100%;
   display: flex;
   border: 1px solid #000;
+  border-bottom: none;
 }
 @media (max-width: 767px) {
   .p-mypage__payment__ticket dl {
@@ -23497,7 +23536,10 @@ select {
   border-bottom: 1px solid #000;
 }
 .p-mypage__payment__ticket dl.penalty dt {
-  background: #ff6a6a;
+  color: #FF0000;
+}
+.p-mypage__payment__ticket dl.compensation dt {
+  color: #009e07;
 }
 .p-mypage__payment__ticket dl.withdrawal dt {
   background: #4fe592;
@@ -23509,6 +23551,8 @@ select {
   border-right: 1px solid #000;
   font-size: 1.4rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 1024px) {
   .p-mypage__payment__ticket dl dt {
@@ -23525,12 +23569,15 @@ select {
   }
 }
 .p-mypage__payment__ticket dl dd {
-  width: 50%;
-  padding: 5px 10px;
+  width: 55%;
+  padding: 10px 10px;
   border-right: 1px solid #000;
   font-size: 1.4rem;
   line-height: 2.6rem;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 @media (max-width: 767px) {
   .p-mypage__payment__ticket dl dd {
@@ -23543,26 +23590,41 @@ select {
 .p-mypage__payment__ticket dl dd.plus {
   padding: 3px 10px;
   color: #00baff;
-  font-size: 1.8rem;
-  line-height: 4rem;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
   font-weight: bold;
 }
 .p-mypage__payment__ticket dl dd.minus {
   padding: 3px 10px;
   color: #ff0000;
-  font-size: 1.8rem;
-  line-height: 4rem;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
   font-weight: bold;
 }
-.p-mypage__payment__ticket dl dd.withdrawal {
+.p-mypage__payment__ticket dl dd.compensation {
   padding: 3px 10px;
-  color: #19bea1;
-  font-size: 1.8rem;
-  line-height: 4rem;
+  color: #009e07;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
   font-weight: bold;
 }
 .p-mypage__payment__ticket dl dd.date {
   font-size: 1rem;
+}
+.p-mypage__payment__ticket dl dd:nth-child(3) {
+  width: 150px;
+}
+.p-mypage__payment__ticket dl dd:nth-child(4) {
+  width: 180px;
+  border-right: none;
+}
+.p-mypage__payment__ticket dl dd a {
+  padding: 5px;
+  background: #ffcc00;
+  color: #202020;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
 }
 .p-mypage__payment__ticket__link {
   width: 100%;
