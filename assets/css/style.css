@@ -23440,11 +23440,10 @@ select {
 }
 .p-mypage__payment__list {
   width: 100%;
-  flex-wrap: wrap;
   display: flex;
 }
 .p-mypage__payment__list__item {
-  width: calc(50% - 20px);
+  width: 100%;
   margin: 0 10px 10px 10px;
   background: #f2f2f2;
   border: 1px solid #999;
@@ -23472,12 +23471,73 @@ select {
   border-radius: 15px;
   margin-top: 15px;
 }
+.p-mypage__payment__list__item__text a {
+  display: block;
+  width: 100%;
+  background: #ffcc00;
+  color: #202020;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+.p-mypage__payment__list__item__text.confirmed a {
+  background: #999;
+  pointer-events: none;
+}
 .p-mypage__payment__list__item input {
   width: 100%;
   max-width: 450px;
   height: 40px;
   padding: 10px;
   background: #e6e6e6;
+}
+.p-mypage__payment__list__item__modal {
+  max-width: 350px !important;
+}
+.p-mypage__payment__list__item__modal__title {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #f2f2f2;
+}
+.p-mypage__payment__list__item__modal__content {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.p-mypage__payment__list__item__modal__subtext {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+.p-mypage__payment__list__item__modal__btn {
+  width: 100%;
+  display: flex;
+}
+.p-mypage__payment__list__item__modal__btn a {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+.p-mypage__payment__list__item__modal__btn a.confirm {
+  background: #ffcc00;
+  color: #202020;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.p-mypage__payment__list__item__modal__btn a.close {
+  background: #f2f2f2;
+  color: #202020;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .p-mypage__payment__tutorlevel {
   width: 100%;

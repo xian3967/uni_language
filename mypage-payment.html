@@ -21,11 +21,14 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
   <script src="https://kit.fontawesome.com/9c4b4c7e12.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/common.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <title>U&I Language</title>
 </head>
 <body>
@@ -332,6 +335,17 @@
                   <li class="p-mypage__payment__list__item">
                     出金可能
                     <span>$100</span>
+                    <div id="ex1" class="modal p-mypage__payment__list__item__modal">
+                      <p class="p-mypage__payment__list__item__modal__title">Did you check your salary?</p>
+                      <p class="p-mypage__payment__list__item__modal__content">Yes, I checked my salary.</p>
+                      <p class="p-mypage__payment__list__item__modal__subtext">If you click OK, We will transfer the payment to your PayPal account in 10th of the next month.</p>
+                      <div class="p-mypage__payment__list__item__modal__btn">
+                        <a href="" class="confirm">OK</a>
+                        <a href="" class="close">Close</a>
+                      </div>
+                    </div>
+                    <div class="p-mypage__payment__list__item__text"><a href="#ex1" rel="modal:open">Confirm</a></div>
+                    <div class="p-mypage__payment__list__item__text confirmed"><a href="#ex1" rel="modal:open">Confirmed</a></div>
                   </li>
                   <li class="p-mypage__payment__list__item">
                     出金完了
@@ -367,7 +381,7 @@
                   </dl>
                   <dl class="penalty">
                     <dt>01.01 11:00 <span>20 min</span></dt>
-                    <dd class="minus">cancel by tutor(50%)</dd>
+                    <dd class="minus">cancel by tutor</dd>
                     <dd class="minus">- $4</dd>
                     <dd class="date"><a href="">レッスン詳細</a></dd>
                   </dl>
@@ -379,7 +393,7 @@
                   </dl>
                   <dl class="compensation">
                     <dt>01.01 11:00 <span>20 min</span></dt>
-                    <dd class="compensation">cancel by student(50%)</dd>
+                    <dd class="compensation">cancel by student</dd>
                     <dd class="compensation">+ $3</dd>
                     <dd class="date"><a href="">レッスン詳細</a></dd>
                   </dl>
