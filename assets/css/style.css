@@ -23622,7 +23622,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-mypage__payment__ticket dl dt {
-    width: 50%;
+    width: 33.3% !important;
     padding: 10px 8px;
     font-size: 1.2rem;
     border-bottom: 1px solid #000;
@@ -23641,7 +23641,7 @@ select {
 }
 @media (max-width: 767px) {
   .p-mypage__payment__ticket dl dd {
-    width: 50%;
+    width: 33.3% !important;
     padding: 10px 8px;
     font-size: 1.2rem;
     border-bottom: 1px solid #000;
