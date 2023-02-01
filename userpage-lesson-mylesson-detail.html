@@ -21,11 +21,14 @@
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
   <script src="https://kit.fontawesome.com/9c4b4c7e12.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/common.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <title>U&I Language</title>
 </head>
 <body>
@@ -184,8 +187,39 @@
           <section class="p-mypage-mylesson-detail__section">
             <ul class="p-mypage-mylesson-detail__list">
               <li class="p-mypage-mylesson-detail__list__item">
+                <div id="ex1" class="modal p-mypage-mylesson-detail__list__item__modal" style="max-width: 500px !important;">
+                  <p class="p-mypage-mylesson-detail__list__item__modal__title">Noshow report</p>
+                  <div class="p-mypage-mylesson-detail__list__item__modal__content">
+                    Didn't the tutor join in this class? Please briefly enter the situations.<br>
+                    <div class="c-select">
+                      ・Noshow type
+                      <select class=" selected__color" name="" selected="selected" style="margin-bottom: 10px;">
+                        <option value="01">--- select ---</option>
+                        <option value="01">google meet link not registered</option>
+                        <option value="01">Didn't the tutor join in this class</option>
+                        <option value="01">etc</option>
+                      </select>
+                      ・Detail
+                      <div class="c-input" style="margin-bottom: 10px;">
+                        <input class="" type="text" id="" placeholder="Detail">
+                      </div>
+                    </div>
+                    <div class="c-input__img-upload" style="width: 100%;">
+                      ・Capture or take picture<br>
+                      <label style="margin-bottom: 10px; display: block;">
+                        <input class="absolute" type="file">
+                      </label>
+                      ※Please capture the lesson time and the current time.
+                      <div class=""><img src="assets/images/lesson/sample.jpg" width="100%"></div>
+                    </div>
+                  </div>
+                  <div class="p-mypage-mylesson-detail__list__item__modal__btn">
+                    <a href="" class="confirm">Send</a>
+                    <a href="" class="close">Close</a>
+                  </div>
+                </div>
                 <div class="p-mypage-mylesson-detail__list__item__wrap">
-                  <a class="p-mypage-mylesson-detail__list__item__status pink" onclick="prompt('Did the tutor not joined the lesson? Please Enter details (optional)')">Noshow report</a>
+                  <a class="p-mypage-mylesson-detail__list__item__status pink" href="#ex1" rel="modal:open">Noshow report</a>
                   <div class="p-mypage-mylesson-detail__list__item__box">
                     <p class="p-mypage-mylesson-detail__list__item__label">1回目</p>
                     <h3 class="p-mypage-mylesson-detail__list__item__title">レッスンタイトル</h3>

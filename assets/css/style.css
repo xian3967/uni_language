@@ -24859,9 +24859,6 @@ select {
     margin-bottom: 20px;
   }
 }
-.p-mypage-mylesson-detail__list__item:first-child {
-  z-index: 20;
-}
 .p-mypage-mylesson-detail__list__item__wrap {
   background: #fff;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
@@ -24905,7 +24902,6 @@ select {
   position: absolute;
   top: 5px;
   right: 5px;
-  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25150,6 +25146,51 @@ select {
   0% {
     stroke-dasharray: 0 100;
   }
+}
+.p-mypage-mylesson-detail__list__item__modal {
+  max-width: 350px !important;
+}
+.p-mypage-mylesson-detail__list__item__modal__title {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #f2f2f2;
+}
+.p-mypage-mylesson-detail__list__item__modal__content {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.p-mypage-mylesson-detail__list__item__modal__subtext {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+.p-mypage-mylesson-detail__list__item__modal__btn {
+  width: 100%;
+  display: flex;
+}
+.p-mypage-mylesson-detail__list__item__modal__btn a {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+.p-mypage-mylesson-detail__list__item__modal__btn a.confirm {
+  background: #ffcc00;
+  color: #202020;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.p-mypage-mylesson-detail__list__item__modal__btn a.close {
+  background: #f2f2f2;
+  color: #202020;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .p-mypage-calendar {
