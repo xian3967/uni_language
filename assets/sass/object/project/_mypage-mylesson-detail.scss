@@ -376,9 +376,6 @@
       @media (max-width: 1024px) {
         margin-bottom: 20px;
       }
-      &:first-child {
-        z-index: 20;
-      }
       &__wrap {
         background: $white;
         //border: 1px solid $black;
@@ -421,7 +418,6 @@
         position: absolute;
         top: 5px;
         right: 5px;
-        z-index: 2;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -660,6 +656,51 @@
       @keyframes progress {
         0% {
           stroke-dasharray: 0 100;
+        }
+      }
+      &__modal {
+        max-width: 350px !important;
+        &__title {
+          width: 100%;
+          padding: 10px;
+          font-size: 1.6rem;
+          font-weight: bold;
+          background: $lightgray;
+        }
+        &__content {
+          width: 100%;
+          padding: 10px 20px;
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        &__subtext {
+          width: 100%;
+          padding: 20px 0;
+          text-align: center;
+          font-size: 1.2rem;
+          color: #999;
+        }
+        &__btn {
+          width: 100%;
+          display: flex;
+          a {
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+            &.confirm {
+              background: $maincolor;
+              color: $blacktext;
+              font-size: 1.2rem;
+              font-weight: bold;
+            }
+            &.close {
+              background: $lightgray;
+              color: $blacktext;
+              font-size: 1.2rem;
+              font-weight: bold;
+            }
+          }
         }
       }
     }
