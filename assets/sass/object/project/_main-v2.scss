@@ -70,6 +70,12 @@
           font-size: 1.8rem;
         }
       }
+      p {
+        @media (max-width: 767px) {
+          font-size: 1.8rem !important;
+          padding: 7% 3%;
+        }
+      }
     }
     &__floating-img {
       text-align: center;
@@ -89,7 +95,7 @@
           max-width: 300px;
         }
       }
-    }
+    } 
     &__text {
       width: 100%;
       margin: 0 auto;
@@ -102,6 +108,7 @@
         padding-bottom: 280px;
         padding-left: 15px;
         padding-right: 15px;
+        text-align: left;
         background: url(../images/top/service_img03.png) bottom left no-repeat;
       }
     }
