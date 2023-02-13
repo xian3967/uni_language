@@ -198,4 +198,79 @@
       }
     }
   }
+
+  &__category1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    &__step1 {
+      margin-right: 5px;
+      padding: 2px;
+      label {
+        width: 100%;
+        display: block;
+        border-radius: 5px;
+        padding: 15px;
+        border: 2px solid $maincolor;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__category2 {
+    width: 100%;
+    padding: 5px 0;
+    &__step2 {
+      width: 100%;
+      display: none;
+      label {
+      }
+    }
+    input {
+      display: none;
+    }
+  }
+}
+#step1-1:checked ~ .p-mypage-lesson__category1 label.step1-1 {
+    background: $maincolor;
+}
+#step1-1:checked ~ .p-mypage-lesson__category2 .step2-1 {
+  display: block !important;
+}
+
+#step1-2:checked ~ .p-mypage-lesson__category1 label.step1-2 {
+  background: $maincolor;
+}
+#step1-2:checked ~ .p-mypage-lesson__category2 .step2-2 {
+  display: block !important;
+}
+
+#step1-3:checked ~ .p-mypage-lesson__category1 label.step1-3 {
+  background: $maincolor;
+}
+#step1-3:checked ~ .p-mypage-lesson__category2 .step2-3 {
+  display: block !important;
+}
+
+#step1-4:checked ~ .p-mypage-lesson__category1 label.step1-4 {
+  background: $maincolor;
+}
+#step1-4:checked ~ .p-mypage-lesson__category2 .step2-4 {
+  display: block !important;
+}
+
+#step1-5:checked ~ .p-mypage-lesson__category1 label.step1-5 {
+  background: $maincolor;
+}
+#step1-5:checked ~ .p-mypage-lesson__category2 .step2-5 {
+  display: block !important;
+}
+
+#step1-6:checked ~ .p-mypage-lesson__category1 label.step1-6 {
+  background: $maincolor;
+}
+#step1-6:checked ~ .p-mypage-lesson__category2 .step2-6 {
+  display: block !important;
 }
