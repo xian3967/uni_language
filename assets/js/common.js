@@ -250,3 +250,11 @@ $(document).on('click', '.close', function () {
   $(this).parents('.c-alert').fadeOut();
 });
 //
+
+
+
+(function($) {
+  $('.js-remove-checked').on('click', function() {
+    $(".p-mypage-lesson__category-remove input").prop('checked', false);
+  });
+})(jQuery);
